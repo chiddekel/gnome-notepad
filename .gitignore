@@ -1,5 +1,6 @@
 build/
 build-flatpak/
+build-flatpak-repo/
 .flatpak-builder/
 
 # Meson-fetched subproject sources (gtkmm/glibmm/pangomm/cairomm/libsigc++/
