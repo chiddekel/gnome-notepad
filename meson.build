@@ -1,5 +1,5 @@
 project('notepad', 'cpp', 'c',
-  version: '0.1.10-Beta',
+  version: '0.1.11-Beta',
   license: 'MIT',
   default_options: [
     'cpp_std=c++17',
