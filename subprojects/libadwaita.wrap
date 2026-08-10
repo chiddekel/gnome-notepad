@@ -1,0 +1,8 @@
+[wrap-file]
+directory = libadwaita-1.8.7
+source_url = https://download.gnome.org/sources/libadwaita/1.8/libadwaita-1.8.7.tar.xz
+source_filename = libadwaita-1.8.7.tar.xz
+source_hash = db61e9ed0f47a210869d4d36809b1deea140776c58632bdb6704691d7d6e7abb
+
+[provide]
+dependency_names = libadwaita-1

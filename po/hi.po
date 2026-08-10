@@ -1,0 +1,415 @@
+# Hindi translation for notepad.
+# Copyright (C) 2026 chiddekel
+# This file is distributed under the same license as the notepad package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: notepad 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 08:42+0200\n"
+"PO-Revision-Date: 2026-08-08 00:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: Hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/window.cpp:360
+msgid "Select Background Image"
+msgstr "पृष्ठभूमि छवि चुनें"
+
+#: src/window.cpp:364
+msgid "Image Files"
+msgstr "छवि फ़ाइलें"
+
+#: src/window.cpp:408
+msgid "Background Opacity"
+msgstr "पृष्ठभूमि अपारदर्शिता"
+
+#: src/window.cpp:411 src/modules/commands.cpp:94 src/modules/dialog.cpp:197
+#: src/modules/dialog.cpp:291
+msgid "_Cancel"
+msgstr "रद्द करें (_C)"
+
+#: src/window.cpp:411 src/modules/dialog.cpp:291
+msgid "_Apply"
+msgstr "लागू करें (_A)"
+
+#: src/window.cpp:459 src/modules/commands.cpp:87 src/modules/commands.cpp:210
+msgid "Untitled"
+msgstr "अनाम"
+
+#: src/window.cpp:469
+msgid "Ln %1, Col %2"
+msgstr "पंक्ति %1, स्तंभ %2"
+
+#: src/modules/commands.cpp:90
+msgid "If you don't save, changes to “%1” will be lost."
+msgstr "यदि आप सहेजते नहीं हैं, तो “%1” में किए गए बदलाव खो जाएँगे।"
+
+#: src/modules/commands.cpp:92
+msgid "Save changes?"
+msgstr "बदलाव सहेजें?"
+
+#: src/modules/commands.cpp:94
+msgid "_Discard"
+msgstr "त्यागें (_D)"
+
+#: src/modules/commands.cpp:95 src/resources/ui/menus.ui:33
+msgid "_Save"
+msgstr "सहेजें (_S)"
+
+#: src/modules/commands.cpp:130
+msgid "Open File"
+msgstr "फ़ाइल खोलें"
+
+#: src/modules/commands.cpp:134
+msgid "Text Documents"
+msgstr "टेक्स्ट दस्तावेज़"
+
+#: src/modules/commands.cpp:138
+msgid "All Files"
+msgstr "सभी फ़ाइलें"
+
+#: src/modules/commands.cpp:177
+msgid "Save As"
+msgstr "इस रूप में सहेजें"
+
+#: src/modules/commands.cpp:179
+msgid "Untitled.txt"
+msgstr "अनाम.txt"
+
+#: src/modules/dialog.cpp:37 src/modules/dialog.cpp:74
+msgid "Replace with…"
+msgstr "इससे बदलें…"
+
+#: src/modules/dialog.cpp:38 src/modules/dialog.cpp:72
+msgid "Replace"
+msgstr "बदलें"
+
+#: src/modules/dialog.cpp:39 src/modules/dialog.cpp:73
+msgid "Replace All"
+msgstr "सभी बदलें"
+
+#: src/modules/dialog.cpp:194
+msgid "Go to Line"
+msgstr "पंक्ति पर जाएँ"
+
+#: src/modules/dialog.cpp:197
+msgid "_Go To"
+msgstr "जाएँ (_G)"
+
+#: src/modules/dialog.cpp:218
+msgid "Choose Font"
+msgstr "फ़ॉन्ट चुनें"
+
+#. GNOME convention: each po/<locale>.po supplies its own translation of
+#. the literal msgid "translator-credits" (name/email per line). gettext
+#. returns the msgid itself when there's no translation for the current
+#. locale, so that has to be treated as "no credits" rather than shown
+#. literally.
+#: src/modules/dialog.cpp:266
+msgid "translator-credits"
+msgstr ""
+
+#: src/modules/dialog.cpp:272
+msgid "Based on"
+msgstr "इस पर आधारित"
+
+#: src/modules/dialog.cpp:288
+msgid "Window Transparency"
+msgstr "विंडो पारदर्शिता"
+
+#: src/resources/ui/menus.ui:22
+msgid "_File"
+msgstr "फ़ाइल (_F)"
+
+#: src/resources/ui/menus.ui:25
+msgid "_New"
+msgstr "नया (_N)"
+
+#: src/resources/ui/menus.ui:29
+msgid "_Open..."
+msgstr "खोलें... (_O)"
+
+#: src/resources/ui/menus.ui:37
+msgid "Save _As..."
+msgstr "इस रूप में सहेजें... (_A)"
+
+#: src/resources/ui/menus.ui:50
+msgid "Recent _Files"
+msgstr "हाल की फ़ाइलें (_F)"
+
+#: src/resources/ui/menus.ui:57
+msgid "_Print..."
+msgstr "छापें... (_P)"
+
+#: src/resources/ui/menus.ui:61
+msgid "Page Set_up..."
+msgstr "पृष्ठ सेटअप... (_U)"
+
+#: src/resources/ui/menus.ui:67
+msgid "E_xit"
+msgstr "बाहर जाएँ (_X)"
+
+#: src/resources/ui/menus.ui:74
+msgid "_Edit"
+msgstr "संपादन (_E)"
+
+#: src/resources/ui/menus.ui:77
+msgid "_Undo"
+msgstr "पूर्ववत करें (_U)"
+
+#: src/resources/ui/menus.ui:81
+msgid "_Redo"
+msgstr "फिर से करें (_R)"
+
+#: src/resources/ui/menus.ui:87
+msgid "Cu_t"
+msgstr "काटें (_T)"
+
+#: src/resources/ui/menus.ui:91
+msgid "_Copy"
+msgstr "नक़ल करें (_C)"
+
+#: src/resources/ui/menus.ui:95
+msgid "_Paste"
+msgstr "चिपकाएँ (_P)"
+
+#: src/resources/ui/menus.ui:99
+msgid "De_lete"
+msgstr "मिटाएँ (_L)"
+
+#: src/resources/ui/menus.ui:105
+msgid "_Find..."
+msgstr "ढूँढें... (_F)"
+
+#: src/resources/ui/menus.ui:109
+msgid "Find _Next"
+msgstr "अगला ढूँढें (_N)"
+
+#: src/resources/ui/menus.ui:113
+msgid "Find Pre_vious"
+msgstr "पिछला ढूँढें (_V)"
+
+#: src/resources/ui/menus.ui:117
+msgid "_Replace..."
+msgstr "बदलें... (_E)"
+
+#: src/resources/ui/menus.ui:121
+msgid "_Go To..."
+msgstr "यहाँ जाएँ... (_G)"
+
+#: src/resources/ui/menus.ui:127
+msgid "Select _All"
+msgstr "सभी चुनें (_A)"
+
+#: src/resources/ui/menus.ui:131
+msgid "Time/_Date"
+msgstr "समय/तिथि (_D)"
+
+#: src/resources/ui/menus.ui:138
+msgid "F_ormat"
+msgstr "प्रारूप (_O)"
+
+#: src/resources/ui/menus.ui:141
+msgid "_Word Wrap"
+msgstr "शब्द रैप (_W)"
+
+#: src/resources/ui/menus.ui:145
+msgid "_Font..."
+msgstr "फ़ॉन्ट... (_F)"
+
+#: src/resources/ui/menus.ui:152
+msgid "_View"
+msgstr "देखें (_V)"
+
+#: src/resources/ui/menus.ui:155
+msgid "Zoom _In"
+msgstr "बड़ा करें (_I)"
+
+#: src/resources/ui/menus.ui:159
+msgid "Zoom _Out"
+msgstr "छोटा करें (_O)"
+
+#: src/resources/ui/menus.ui:163
+msgid "_Restore Default Zoom"
+msgstr "डिफ़ॉल्ट ज़ूम पर लौटें (_R)"
+
+#: src/resources/ui/menus.ui:169
+msgid "_Status Bar"
+msgstr "स्थिति पट्टी (_S)"
+
+#: src/resources/ui/menus.ui:173
+msgid "_Dark Mode"
+msgstr "डार्क मोड (_D)"
+
+#: src/resources/ui/menus.ui:179
+msgid "_Background"
+msgstr "पृष्ठभूमि (_B)"
+
+#: src/resources/ui/menus.ui:182
+msgid "_Select Image..."
+msgstr "छवि चुनें... (_S)"
+
+#: src/resources/ui/menus.ui:186
+msgid "_Clear Background"
+msgstr "पृष्ठभूमि साफ़ करें (_C)"
+
+#: src/resources/ui/menus.ui:190
+msgid "_Opacity..."
+msgstr "अपारदर्शिता... (_O)"
+
+#: src/resources/ui/menus.ui:195
+msgid "_Position"
+msgstr "स्थिति (_P)"
+
+#: src/resources/ui/menus.ui:198
+msgid "Top Left"
+msgstr "ऊपर बाएँ"
+
+#: src/resources/ui/menus.ui:203
+msgid "Top Center"
+msgstr "ऊपर मध्य"
+
+#: src/resources/ui/menus.ui:208
+msgid "Top Right"
+msgstr "ऊपर दाएँ"
+
+#: src/resources/ui/menus.ui:215
+msgid "Center Left"
+msgstr "मध्य बाएँ"
+
+#: src/resources/ui/menus.ui:220
+msgid "Center"
+msgstr "मध्य"
+
+#: src/resources/ui/menus.ui:225
+msgid "Center Right"
+msgstr "मध्य दाएँ"
+
+#: src/resources/ui/menus.ui:232
+msgid "Bottom Left"
+msgstr "नीचे बाएँ"
+
+#: src/resources/ui/menus.ui:237
+msgid "Bottom Center"
+msgstr "नीचे मध्य"
+
+#: src/resources/ui/menus.ui:242
+msgid "Bottom Right"
+msgstr "नीचे दाएँ"
+
+#: src/resources/ui/menus.ui:249
+msgid "Tile"
+msgstr "टाइल"
+
+#: src/resources/ui/menus.ui:254
+msgid "Stretch"
+msgstr "खींचें"
+
+#: src/resources/ui/menus.ui:259
+msgid "Fit"
+msgstr "फ़िट करें"
+
+#: src/resources/ui/menus.ui:264
+msgid "Fill"
+msgstr "भरें"
+
+#: src/resources/ui/menus.ui:274
+msgid "Window _Transparency..."
+msgstr "विंडो पारदर्शिता... (_T)"
+
+#: src/resources/ui/menus.ui:278
+msgid "Always on _Top"
+msgstr "हमेशा ऊपर रखें (_A)"
+
+#: src/resources/ui/menus.ui:285
+msgid "_Language"
+msgstr "भाषा (_L)"
+
+#: src/resources/ui/menus.ui:288
+msgid "_English"
+msgstr "अंग्रेज़ी (_E)"
+
+#: src/resources/ui/menus.ui:293
+msgid "_Spanish"
+msgstr "स्पेनिश (_S)"
+
+#: src/resources/ui/menus.ui:298
+msgid "Por_tuguese"
+msgstr "पुर्तगाली (_T)"
+
+#: src/resources/ui/menus.ui:303
+msgid "_French"
+msgstr "फ़्रेंच (_F)"
+
+#: src/resources/ui/menus.ui:308
+msgid "_German"
+msgstr "जर्मन (_G)"
+
+#: src/resources/ui/menus.ui:313
+msgid "_Japanese"
+msgstr "जापानी (_J)"
+
+#: src/resources/ui/menus.ui:318
+msgid "_Korean"
+msgstr "कोरियाई (_K)"
+
+#: src/resources/ui/menus.ui:323
+msgid "_Arabic"
+msgstr "अरबी (_A)"
+
+#: src/resources/ui/menus.ui:328
+msgid "_Hindi"
+msgstr "हिन्दी (_H)"
+
+#: src/resources/ui/menus.ui:333
+msgid "_Chinese"
+msgstr "चीनी (_C)"
+
+#: src/resources/ui/menus.ui:338
+msgid "_Polish"
+msgstr "पोलिश (_P)"
+
+#: src/resources/ui/menus.ui:346
+msgid "_Help"
+msgstr "मदद (_H)"
+
+#: src/resources/ui/menus.ui:349
+msgid "Check for _Updates..."
+msgstr "अद्यतनों की जाँच करें... (_U)"
+
+#: src/resources/ui/menus.ui:353
+msgid "_About Notepad"
+msgstr "नोटपैड के बारे में (_A)"
+
+#: data/io.github.chiddekel.Notepad.desktop.in:2
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:8
+msgid "A simple, native GNOME text editor"
+msgstr "एक सरल, नेटिव GNOME टेक्स्ट एडिटर"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:11
+msgid ""
+"Notepad is a lightweight, native GNOME port of legacy-notepad, a Win32 "
+"Notepad clone. It supports multi-encoding text (UTF-8, UTF-8 BOM, UTF-16 "
+"LE/BE, ANSI) with configurable line endings, find/replace with wraparound "
+"search, printing, an optional background image behind the editor, and "
+"light/dark themes that follow your system preference."
+msgstr ""
+"Notepad, legacy-notepad का एक हल्का, नेटिव GNOME पोर्ट है, जो Win32 "
+"Notepad का एक क्लोन है। यह मल्टी-एन्कोडिंग टेक्स्ट (UTF-8, UTF-8 BOM, "
+"UTF-16 LE/BE, ANSI) को कॉन्फ़िगर करने योग्य लाइन एंडिंग्स, रैपअराउंड सर्च "
+"के साथ फाइंड/रिप्लेस, प्रिंटिंग, एडिटर के पीछे एक वैकल्पिक बैकग्राउंड "
+"इमेज, और आपके सिस्टम की प्राथमिकता के अनुसार लाइट/डार्क थीम के साथ सपोर्ट "
+"करता है।"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:24
+msgid "Notepad's main editing window"
+msgstr "Notepad की मुख्य एडिटिंग विंडो"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:41
+msgid "Initial release: a native GNOME port of legacy-notepad."
+msgstr "प्रारंभिक रिलीज़: legacy-notepad का एक नेटिव GNOME पोर्ट।"

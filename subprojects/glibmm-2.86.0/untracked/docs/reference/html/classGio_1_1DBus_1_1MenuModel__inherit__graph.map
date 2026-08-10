@@ -1,0 +1,13 @@
+<map id="Gio::DBus::MenuModel" name="Gio::DBus::MenuModel">
+<area shape="rect" id="Node000001" title="MenuModel &#45; A D&#45;Bus Gio::MenuModel implementation." alt="" coords="5,372,176,397"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1MenuModel.html" title="MenuModel &#45; An abstract class representing the contents of a menu." alt="" coords="27,299,155,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,338,93,372,88,372,88,338"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="41,225,140,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,264,93,299,88,299,88,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="25,152,156,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="93,191,93,225,88,225,88,191"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="33,79,149,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="93,118,93,152,88,152,88,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="32,5,149,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="93,44,93,79,88,79,88,44"/>
+</map>

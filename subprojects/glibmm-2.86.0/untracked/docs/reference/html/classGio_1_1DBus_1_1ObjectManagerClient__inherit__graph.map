@@ -1,0 +1,22 @@
+<map id="Gio::DBus::ObjectManagerClient" name="Gio::DBus::ObjectManagerClient">
+<area shape="rect" id="Node000001" title="Client&#45;side object manager." alt="" coords="67,372,261,412"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,264,28,294,27,309,32,323,44,338,58,350,93,370,90,374,55,355,40,341,27,325,22,309,23,292,35,262"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="153,225,268,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="147,184,197,223,194,227,144,188"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Initable.html" title="Failable object initialization interface." alt="" coords="41,299,143,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="114,332,149,370,145,374,110,336"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="181,260,113,301,110,296,178,255"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1AsyncInitable.html" title="AsyncInitable &#45; Asynchronously failable object initialization interface." alt="" coords="167,299,307,324"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="222,263,236,298,231,299,217,265"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1DBus_1_1ObjectManager.html" title="Base type for D&#45;Bus object managers." alt="" coords="331,299,525,324"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="259,252,394,296,392,301,258,257"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="219,336,184,374,180,370,215,332"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="377,330,228,374,227,369,376,325"/>
+</map>

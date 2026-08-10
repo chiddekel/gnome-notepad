@@ -1,0 +1,19 @@
+<map id="Gio::SocketConnection" name="Gio::SocketConnection">
+<area shape="rect" id="Node000001" title="A socket connection." alt="" coords="109,372,277,397"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1TcpConnection.html" title="A TCP SocketConnection." alt="" coords="33,445,179,471"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="170,408,122,447,118,443,167,404"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1UnixConnection.html" title="A Unix domain SocketConnection." alt="" coords="203,445,358,471"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="219,404,268,443,265,447,216,408"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1IOStream.html" title="IOStream &#45; Base class for implementing read/write streams." alt="" coords="136,299,249,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,338,195,372,190,372,190,338"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="143,225,242,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,264,195,299,190,299,190,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="127,152,258,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,191,195,225,190,225,190,191"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="135,79,251,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="195,118,195,152,190,152,190,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="134,5,251,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="195,44,195,79,190,79,190,44"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1TcpWrapperConnection.html" title="Wrapper for non&#45;Gio::SocketConnection&#45;based, Gio::Socket&#45;based Gio::IOStreams." alt="" coords="5,519,207,544"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="109,484,109,519,103,519,103,484"/>
+</map>

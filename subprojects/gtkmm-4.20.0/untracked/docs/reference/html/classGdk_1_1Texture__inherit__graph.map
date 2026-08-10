@@ -1,0 +1,22 @@
+<map id="Gdk::Texture" name="Gdk::Texture">
+<area shape="rect" id="Node000001" title="Pixel data." alt="" coords="194,372,298,397"/>
+<area shape="rect" id="Node000008" href="$classGdk_1_1DmabufTexture.html" title="A Gdk::Texture representing a dma&#45;buf object." alt="" coords="5,445,161,471"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="208,405,111,448,109,443,206,400"/>
+<area shape="rect" id="Node000009" href="$classGdk_1_1GLTexture.html" title="A Gdk::Texture representing a GL texture object." alt="" coords="186,445,306,471"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="249,411,249,445,243,445,243,411"/>
+<area shape="rect" id="Node000010" href="$classGdk_1_1MemoryTexture.html" title="A Gdk::Texture representing image data in memory." alt="" coords="331,445,489,471"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="286,400,384,443,382,448,284,405"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="131,299,230,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,333,237,370,233,374,199,336"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="181,152,311,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,191,188,300,183,297,233,189"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="246,225,361,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="266,186,296,224,292,227,262,190"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="188,79,304,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="249,118,249,152,243,152,243,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="187,5,305,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,44,249,79,243,79,243,44"/>
+<area shape="rect" id="Node000006" href="$classGdk_1_1Paintable.html" title="An interface for a paintable region." alt="" coords="255,299,371,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="294,336,259,374,255,370,290,333"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="309,264,314,298,309,299,304,265"/>
+</map>

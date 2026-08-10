@@ -1,0 +1,18 @@
+<map id="Gio::FileOutputStream" name="Gio::FileOutputStream">
+<area shape="rect" id="Node000001" title="FileOutputStream provides output streams that write their content to a file." alt="" coords="68,372,235,397"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1OutputStream.html" title="Base class for implementing streaming output." alt="" coords="5,299,148,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,331,141,370,137,374,97,335"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="37,225,135,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,265,81,299,76,298,80,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="86,152,217,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,189,99,227,95,223,129,186"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1Interface.html" title=" " alt="" coords="165,225,279,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="175,185,212,223,209,227,171,189"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="93,79,209,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="154,118,154,152,149,152,149,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="93,5,210,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="154,44,154,79,149,79,149,44"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1Seekable.html" title="Stream seeking interface." alt="" coords="172,299,283,324"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="207,335,166,374,162,370,203,331"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="227,264,229,298,224,299,221,265"/>
+</map>

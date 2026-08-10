@@ -1,0 +1,1371 @@
+2023-10-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.6.0
+
+2023-09-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  signal: Add connect_first()
+
+  Add connect_first(const slot_base&) and connect_first(slot_base&&)
+  in internal::signal_impl, signal_base, signal_with_accumulator and
+  trackable_signal_with_accumulator.
+  Replace some calls to connect() by connect_first() in test_signal
+  and test_scoped_connection.
+  Fixes #81
+
+2023-08-06  Daniel Boles  <dboles.src@gmail.com>
+
+  manual: Add paragraph about new scoped_connection
+
+2023-07-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Docs: Update a link in libsigc_manual.xml
+
+2023-07-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use the ubuntu-latest runner
+
+  and use the default versions of gcc and clang.
+
+2023-07-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Add meson-msvc
+
+  and trigger cmake-msvc only manually.
+  
+  Fixes #98
+
+2023-07-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't require the 'dot' command
+
+  Make it possible to build documentation without the dot command.
+  Set the HAVE_DOT option in Doxyfile during configuration.
+  In Autotools builds it's still unconditionally YES.
+  The inheritance diagrams don't look as nice without the dot
+  command from the GraphViz package.
+  
+  See #98
+
+2023-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  scoped_connection.h: Add one more SIGC_API
+
+2023-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  scoped_connection.h: Add SIGC_API on swap()
+
+2023-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  test_scoped_connection.cc: not -> !
+
+  MSVC does not accept the 'not' boolean operator.
+
+2023-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  scoped_connection: Remaining minor fixes
+
+2023-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Trigger clang-format-check only manually
+
+2023-07-23  Daniel Boles  <dboles.src@gmail.com>
+
+  scoped_connection: new wrapper to auto-disconnect…
+
+  …a contained sigc::connection, when the scoped_connection is destructed.
+  
+  https://github.com/libsigcplusplus/libsigcplusplus/issues/87
+
+2023-07-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove AUTHORS and add general information to README.md
+
+  See https://gitlab.gnome.org/GNOME/gtkmm/-/issues/140
+
+2023-07-05  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  sigc++config.h.*: Update comment on MSVC warning C4251
+
+  This still applies here today, sadly, so make the comment clearer.
+
+2023-07-05  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  sigc++config.h.*: Drop Visual Studio noexcept workaround
+
+  We already need Visual Studio 2017 or later, so this part is not used
+  at all here.
+
+2023-06-27  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  MSVC-Builds.md: Add info on CMake and Meson
+
+  Let people know it is also supported to build libsigc++ using CMake or Meson
+  with Visual Studio and the tools required for builds directly from GIT
+  checkouts
+
+2023-06-27  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Visual Studio builds: Convert build docs to MarkDown
+
+  Convert the README.txt to MarkDown format so that it is easier on the eye in
+  terms of formatting, and update some of the info:
+  
+  * ARM64 is actually supported
+  * Move the part on static builds as appropriate
+  * Some other minor tweaks
+
+2023-06-26  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  MSVC_NMake/README.txt: Mention about static builds
+
+2023-06-26  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  sigc++.pc.in: Set -DLIBSIGCXX_STATIC in cxxflags as needed
+
+  Update the Meson build files to put in -DLIBSIGCXX_STATIC when we are building
+  a static build of libsigc++.
+  
+  For the CMake and autotools build, this is not used.
+
+2023-06-26  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Accomodate static builds during "install"
+
+  Copy the built DLL and PDB only if building a shared build, and copy the
+  appropriate .lib file according to the build type.
+
+2023-06-26  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Actually support MSVC static builds
+
+  Apply -DLIBSIGCXX_STATIC as appropriate when we request a static build to be
+  done for the Meson and NMake builds, and skip building the version .rc file
+  if a static build is requested.
+  
+  For the NMake builds, separate the build artifacts from the static and shared
+  builds.
+  
+  The CMake builds are not updated here as it always assumes a shared build, nor
+  are the autotools builds since it is not used for Visual Studio builds at all.
+
+2023-06-26  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Drop _WINDLL from sigc++config.h.[in|meson|cmake]
+
+  ...and add a new check macro LIBSIGCXX_STATIC, to use the appropriate macros to
+  build and link against libsigc++. Drop this from the build files as well.
+
+2023-06-26  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Disallow default_library == 'both' on Visual Studio
+
+  We need different defines/cflags for building static and shared builds of
+  libsigc++, so we can't really support default_library = 'both' for libsigc++
+  without much retinkering.
+  
+  So, just disallow such builds at least for now.
+  
+  Also, save up whether we are attempting a static build in the Visual Studio
+  build.
+
+2023-05-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  connection: Improve the class documentation
+
+  Fixes #88
+
+2023-05-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete entries
+
+2023-05-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  sigc++.pc.in: Update htmlrefpub
+
+2023-04-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md, CI: meson -> meson setup
+
+2023-04-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify if-file-exists test
+
+2023-01-21  Francesco Emanuele D'Agostino  <fedagostino@gmail.com>
+
+  introducing protection to prevent multiple target declaration for uninstall.
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Fix the evaluation of is_git_build on Windows
+
+  See gtkmm#131
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't copy files with configure_file()
+
+  It's deprecated from Meson 0.64. The replacement, fs.copyfile(),
+  is not useful here. It only copies from the source directory to
+  the build directory.
+
+2022-12-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.4.0
+
+2022-12-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Don't distribute the .github directory
+
+2022-12-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Add publish-docs.yml
+
+2022-11-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Always call subdir('tests')
+
+  Make the build_tests check more like the check in cairomm and libxml++.
+  Then it's possible to combine build-tests=false with benchmark=true.
+  See PR#84
+
+2022-11-07  Fabrice Fontaine  <fontaine.fabrice@gmail.com>
+
+  add build_tests option
+
+  Allow the user to disable build of test programs
+  
+  Signed-off-by: Fabrice Fontaine <fontaine.fabrice@gmail.com>
+
+2022-11-07  wael  <40663@proton.me>
+
+  meson: simplify lookup of python command
+
+2022-10-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/devel.md: Change libsigc-list to Discourse
+
+  The libsigc-list will soon be closed for new contributions.
+
+2022-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Detect if we build from a git subtree
+
+  See https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/72 (William Roy)
+
+2022-08-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix build with -Dbuild-deprecated-api=false
+
+  Fixes #82
+
+2022-07-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update README.md
+
+2022-05-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  test_accumulated.cc: clang++ requires another 'template'
+
+2022-05-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add trackable_signal_with_accumulator and trackable_signal
+
+  trackable_signal_with_accumulator derives from trackable.
+  A slot made with trackable_signal_with_accumulator::make_slot() is
+  automatically disconnected when the signal is deleted, as in sigc++2.
+  Fixes #80
+
+2022-05-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Revert "signal_with_accumulator derives from trackable"
+
+  This reverts commit 8fb78907ccf3c4425d23ba1555f365f22d376685.
+  It's not safe. See #80
+
+2022-05-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  test_limit_reference.cc: Don't use auto where a slot is required
+
+  The return values of sigc::bind() and sigc::bind_return() shall be
+  converted to sigc::slot, otherwise automatic disconnection does not work.
+  Fixes #44
+
+2022-05-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  signal_with_accumulator derives from trackable
+
+  A slot made with signal_with_accumulator::make_slot() is then
+  automatically disconnected when the signal is deleted, as in sigc++2.
+  Fixes #80
+
+2022-05-24  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson/MSVC: Re-organize warnings-related compiler flags
+
+  Add a short description for each of the warnings-related compiler flags that we
+  are using.
+  
+  Also, only apply '/wd4267' for 64-bit builds, since it is a warning that should
+  only be related to 64-bit builds.
+
+2022-05-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Compensate for the lack of msvc_recommended_pragmas.h
+
+  libsigc++ does not depend on GLib, so msvc_recommended_pragmas.h may not be
+  available.  If it isn't, disable warning C4244 to compensate for it.
+
+2022-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Format source code to suit clang-format-12
+
+  Format sigc++/signal_base.h.
+
+2022-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  signal::make_slot() docs: Note that signal does not derive from trackable
+
+  and therefore the made slot must be manually disconnected if the
+  signal is deleted. See #80
+
+2022-05-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Remove some tests with autotools
+
+  Remove the tests with autotools build and clang 8, clang 9, gcc 8 and gcc 9.
+  Test meson build with gcc 10 instead of gcc 9.
+
+2022-05-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Avoid configuration warnings
+
+2022-04-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  examples/member_method: Make on_print() non-virtual
+
+  so it can be compiled with the -Wnon-virtual-dtor compiler option.
+
+2022-04-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix some comments
+
+2022-04-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Format source code to suit clang-format-12
+
+  Format sigc++/adaptors/track_obj.h.
+
+2022-04-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add track_object(), deprecate track_obj()
+
+  track_object() checks that the listed objects derive from sigc::trackable.
+  Fixes #78
+
+2022-02-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.2.0
+
+2022-02-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Specify 'check' option in run_command()
+
+  The default value will be changed in future Meson releases.
+  
+  Don't use deprecated python3.path() and execute(..., gui_app: ...).
+
+2022-02-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/reference/Doxyfile.in: Remove obsolete entry
+
+2022-01-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/tutorial-custom-cmd.py: Add comment about used stylesheet
+
+2022-01-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install docbook-xsl where documentation is built
+
+  If docbook-xsl is installed, the xsltproc command reads stylesheets
+  from local files instead of from http://docbook.sourceforge.net.
+  Faster and safer. Reading from docbook.sourceforge.net sometimes fails.
+  
+  Remove test with g++-7.
+
+2021-12-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs: Fix links to sigc::slot and sigc::signal
+
+  Doxygen creates links to sigc::slot and sigc::signal only if
+  template parameters are included in the documentation.
+  sigc::slot<T_return(T_arg...)>, sigc::signal<T_return(T_arg...)>.
+
+2021-12-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  ptr_fun(), mem_fun() docs: Remove left-overs from sigc++-2.0
+
+  Some documentation of template parameters described sigc++-2.0
+  rather than sigc++-3.0.
+
+2021-12-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Reformat to suit clang-format-12
+
+2021-12-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use clang-format-12
+
+  and call clang-format directly without using autogen.sh + make.
+
+2021-12-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Second attempt to suit clang-format 10
+
+  Irritating that different versions of clang-format don't agree on what's
+  an acceptable format, and that clang-format 10 is not easily installable
+  on Ubuntu 21.10.
+
+2021-12-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Format source code to suit clang-format
+
+  * sigc++/functors/mem_fun.h:
+  * sigc++/functors/ptr_fun.h:
+  * tests/test_rvalue_ref.cc: Reformated with clang-format 13,
+  but CI uses clang-format 10.
+  
+  Also add #include <utility> where std::forward was added. Doesn't seem
+  to be necessary with g++ or clang++. Mostly a precaution.
+
+2021-12-23  Slava Andrejev  <vyac.andrejev@gmail.com>
+
+  Add missing perfect forwarding in mem_functor and pointer_functor
+
+  This is a missed addition to the commit that allowed rvalue references
+  in slot parameters.
+
+2021-12-23  Slava Andrejev  <vyac.andrejev@gmail.com>
+
+  Add missing perfect forwarding in bound_mem_functor::operator()
+
+  This is a missed addition to the commit that allowed rvalue references
+  in slot parameters.
+
+2021-12-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CMakeLists.txt: Update sigc++ version to 3.0.7
+
+  Should have been done when configure.ac and meson.build were updated.
+
+2021-11-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Support building with VS2022
+
+  Make the VS2019 builds distinct from VS2022 builds.
+
+2021-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual, Meson config: Check if xmllint can be used
+
+2021-09-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI, Meson build: Install packages for validating XML file
+
+  libxml2-utils and docbook5-xml are necessary in order to validate
+  the XML file in docs/docs/manual/.
+
+2021-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual: Upgrade from DocBook 4.1 to DocBook 5.0
+
+2021-08-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Require meson >= 0.54.0
+
+2021-08-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Check if Perl is required for building documentation
+
+  New versions of mm-common use the Python scripts doc_postprocess.py
+  and doc_install.py instead of the Perl scripts doc-postprocess.pl and
+  doc-install.pl when documentation is built.
+
+2021-07-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs: Remove some obsolete files
+
+  Remove docs/docs/manual/README, docs/docs/reference/README
+  and docs/Makefile.
+
+2021-07-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual: Add some formatting when html files are generated
+
+  making it slightly more similar to gtkmm-documentation and libxml++.
+  In Autotools builds, don't distribute the empty manual/README file.
+
+2021-07-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual/libsigc_manual.xml: Add id on <sect1> elements
+
+2021-06-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  test_rvalue_ref: Small fixes
+
+  * tests/.gitignore:
+  * tests/CMakeLists.txt:
+  * tests/Makefile.am: Add test_rvalue_ref.
+  * tests/test_rvalue_ref.cc: Avoid [-Werror=unused-parameter]
+  when building with warnings=fatal.
+  
+  Some files have been reformated with clang-format in order to
+  make the CI tests happy. Reformated with clang-format 12, but CI
+  uses clang-format 10.
+
+2021-06-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Revert "test_rvalue_ref: Small fixes"
+
+  This reverts commit 01652fdbc9f6fc2e72b217c9de8c89c93f95ba7c.
+
+2021-06-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  test_rvalue_ref: Small fixes
+
+  * tests/.gitignore:
+  * tests/CMakeLists.txt:
+  * tests/Makefile.am: Add test_rvalue_ref.
+  * tests/test_rvalue_ref.cc: Avoid [-Werror=unused-parameter]
+  when building with warnings=fatal.
+  
+  Some files have also been reformated with clang-format in order to
+  make the CI tests happy. Reformated with clang-format 12, but CI
+  uses clang-format 10.
+
+2021-06-02  Slava Andrejev  <vyac.andrejev@gmail.com>
+
+  Allow slots with rvalue reference parameters
+
+  In code based on Glibmm it's quite common to convert a Glib C structure
+  to a Glib::Object's descendant before passing it as a parameter to a
+  slot. If the slot is not supposed to modify the object, then everything
+  is fine, we can declare the parameter as a const reference and the
+  temporary object will be accurately dealt with by the compiler. However,
+  if the Glib based object is getting modified, the only way to pass it to
+  the slot is to declare it a Glib::RefPtr shared pointer. This creates a
+  lot of unnecessary churn of memory allocations for a simple deal of
+  calling a signal. However, C++ has a specific mean for this particular
+  semantic of passing a temporary object: rvalue reference.
+  
+  For example, somewhere inside Gtkmm might be a declaration:
+  _WRAP_SIGNAL(void sun_rose(const Glib::RefPtr<Gtk::Sun> &new_sun),
+  "sun-rose")
+  
+  Instead its more semantically correct to write:
+  _WRAP_SIGNAL(void sun_rose(Gtk::Sun &&new_sun), "sun-rose")
+  
+  And later somewhere in your code:
+  world->signal_sun_rose().connect([&](auto &&new_sun) {
+    new_sun.shine();
+  });
+  
+  This commit makes a couple of simple modifications that allow declaring
+  signals and slots with rvalue reference parameter.
+
+2021-05-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.0.7
+
+2021-05-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Visual Studio build files: Some cleanups
+
+  Replace /wd4530 with /EHsc, as that is the more proper CXXFlag to use for C++ programs
+
+2021-05-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add dependencies to Doxygen tag files in subprojects
+
+  Doxygen in a main project shall not be called before tag files have been
+  created or updated in subprojects.
+
+2021-05-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix build as subproject without building documentation
+
+  * meson.build: If mm-common-get is not found in maintainer-mode
+  with 'required: false', try with 'required: true'.
+  Don't try to use tag_file, if documentation is not built.
+  * docs/docs/reference/meson.build: Don't use variables from modules
+  that don't define doxytagfile. These are subprojects that don't build
+  their documentation.
+  
+  Fixes #71
+
+2021-05-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Subprojects can use meson.add_dist_script() if meson.version() >= 0.58.0
+
+  * meson.build:
+  * MSVC_NMake/meson.build:
+  * docs/docs/manual/meson.build:
+  * docs/docs/reference/meson.build:
+  Call add_dist_script() in a subproject, if meson.version() >= 0.58.0.
+  * tools/handle-built-files.py:
+  * tools/tutorial-custom-cmd.py:
+  Use MESON_PROJECT_DIST_ROOT if it exists, else MESON_DIST_ROOT.
+  It exists if meson.version() >= 0.58.0.
+
+2021-04-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: No implicit_include_directories
+
+2021-03-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: No implicit_include_directories
+
+  It shall not be possible to find a sigc++ header file
+  with #include <xxx.h> instead of #include <sigc++/xxx.h>.
+
+2021-03-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Require only meson.version() >= 0.51.0
+
+  meson.version() >= 0.54.0 is necessary if sigc++ is a subproject,
+  or if mm-common is a subproject of sigc++.
+  Only meson.version() <= 0.53.2 is available in CI. Make it possible
+  to build with version 0.53.2 as long as no subprojects are used.
+
+2021-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Make it possible to use sigc++ as a subproject
+
+  mm-common can be a subproject of sigc++.
+
+2021-03-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/reference/Doxyfile.in: Remove obsolete entries
+
+2021-01-24  Murray Cumming  <murraycu@google.com>
+
+  GitHub Actions CI: Check formatting with clang-format
+
+  This requires clang-format-10, which is available in ubuntu-20.04.
+
+2021-01-24  Murray Cumming  <murraycu@google.com>
+
+  Build: Add target to check code formatting with clang-format
+
+  However, this requires clang 10.
+
+2021-01-24  Murray Cumming  <murrayc@murrayc.com>
+
+  sigc++config.h.* Format with clang-format (clang-format-10)
+
+  So the generated sigc++config.h will have the correct formatting.
+
+2021-01-24  Murray Cumming  <murraycu@google.com>
+
+  run make format (with clang-format-10), to format the code
+
+2021-01-02  Murray Cumming  <murraycu@google.com>
+
+  GitHub Actions: Try gcc 8 and gcc 9 too
+
+2021-01-02  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions: Try clang-10 too
+
+2021-01-02  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub actions: Use ubuntu-20.04 directly
+
+  GitHub Actions now supports ubuntu-20.04 directly, not only via a
+  separate container:
+  https://github.com/actions/virtual-environments
+  
+  And use ubuntu-18.04 instead of ubuntu-latest, because that's what it
+  currently is, but ubuntu-latest will change to mean ubuntu-20.04 soon:
+  https://github.com/actions/virtual-environments/issues/1816
+
+2020-12-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs: Update the web page
+
+  The changes are automatically published at
+  libsigcplusplus.github.io/libsigcplusplus.
+
+2020-12-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Test clang-9 in Ubuntu 20.04
+
+2020-12-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Do some tests with Meson
+
+  Remove test with clang 7.
+  Test gcc 9 and clang 10 with meson instead of autotools.
+
+2020-12-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Remove tests with clang 5 and clang 6
+
+  Building with clang 7, 8, 9 and 10 is enough.
+
+2020-12-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Update the MSVC check and run it on push
+
+2020-11-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Don't run MSVC check on push
+
+  This test does not work any more. I don't know how to fix it.
+  Run it only manually.
+  
+  Unable to process command '##[add-path]C:\Program Files (x86)\
+  Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin' successfully.
+  
+  The `add-path` command is disabled. Please upgrade to using Environment Files
+  or opt into unsecure command execution by setting the
+  `ACTIONS_ALLOW_UNSECURE_COMMANDS` environment variable to `true`.
+  For more information see: https://github.blog/changelog/
+  2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/
+
+2020-11-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.0.6
+
+2020-10-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  sigc++/sigc++.h: Fix a typo
+
+2020-10-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  sigc++/sigc++.h: Describe how to use libsigc++ with meson
+
+2020-10-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Docs: Change libsigc++ webpage mentions to GitHub
+
+  Change libsigc.sourceforge.net to
+  libsigcplusplus.github.io/libsigcplusplus.
+
+2020-09-28  Tom Schoonjans  <Tom.Schoonjans@rfi.ac.uk>
+
+  Meson build: fix versioning on macOS
+
+  See pull request #65
+
+2020-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.0.4
+
+2020-07-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use Meson-style DLL and .lib naming if requested
+
+  To make things more consistent and less prone to confusion, if 'USE_MESON_LIBS'
+  is specified in the NMake command line, build the DLLs and .lib's that are
+  named like the Meson counterparts.  Binaries built with Meson+Visual Studio
+  and the ones that are built via NMake using 'USE_MESON_LIBS' are
+  interchangeable.
+
+2020-07-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Streamline builds from GIT checkouts
+
+  Streamline the source generating process into the 'all' target, so there
+  is no more need to run the 'prep-git-build' target.
+
+2020-07-08  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Support ARM64 Windows builds
+
+  This will make the NMake Makefiles capable of building ARM64 binaries of glibmm
+  and giomm, which can be used on Windows 10 on ARM systems.
+
+2020-06-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/reference/: Update for Doxygen >= 1.8.16
+
+  * docs/docs/reference/meson.build: Doxygen 1.8.16 and later does not store
+  tag file names in the html files. This requires changes in meson.build
+  and in doc-install.pl (in mm-common). Otherwise references to other modules
+  won't be updated in the html files when they are installed.
+  * docs/docs/reference/Doxyfile.in: Remove PERL_PATH and MSCGEN_PATH.
+  Doxygen since version 1.8.0 does not use them.
+
+2020-06-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual/libsigc_manual.xml: Fix description of sigc::retype()
+
+  Although sigc::retype() is a template function, no template parameters
+  shall be specified when it's called.
+
+2020-06-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual/libsigc_manual.xml: Fix previous commit
+
+  Correct the comment about libsigc++2. It accepts both sigc::signal<void,int>
+  and sigc::signal<void(int)>. sigc::signal<void,int> is deprecated.
+
+2020-06-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/manual/libsigc_manual.xml: Update signal and slot syntax
+
+  Update the syntax of template parameters.
+  sigc::signal<void,int> -> sigc::signal<void(int)>.
+  
+  Mention lambda expressions.
+  
+  Fixes #59
+
+2020-06-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use toolset version in DLL filename by default
+
+  The libsigc++ DLL and .lib was only named 'sigc-vc150(d)-3_0' until the
+  previous patches in this series improved Visual Studio 2019 support to
+  name the DLL and .lib by using 'sigc-vc160(d)-3_0'.
+  
+  This updates the naming of the DLL and .lib to the toolset version as
+  defined by Microsoft by default, i.e. 'vc141' for Visual Studio 2017
+  and 'vc142' for Visual Studio 2019.  If the former DLL naming ('vc150')
+  is desired, passing 'USE_COMPAT_LIBS=1' will achive this.
+
+2020-06-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Update MSVC_NMake/README
+
+  Fix some typos and reflect the build information more accurately
+
+2020-06-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Rework NMake Makefiles
+
+  Clean up the NMake Makefiles so that they will become easier to maintain and
+  faster to run by:
+  
+  * Rename instances of 'libsigcpp' to 'sigc'
+  * Just use 'md' directly to create all intermediate directories
+  * "Generate" the rules to build the example and test programs, instead of using
+    generic hand-written rules for all of them, as most of them share common
+    rules.
+  * Add a 'prep-git-build' rule to allow building directly from a GIT checkout
+
+2020-06-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Fix header installation
+
+  We ought to install sigc++.h, too
+
+2020-06-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Support Visual Studio 2019 better
+
+  We ought to separate Visual Studio 2019 from 2017, by all means
+
+2020-06-18  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use 'md' instead of 'mkdir'
+
+  This ensure that we don't accidentally use Cygwin's or MSYS's/MSYS64's mkdir
+  command
+
+2020-04-26  Murray Cumming  <murraycu@google.com>
+
+  GitHub Actions CI: Add a clang++ 10 build
+
+  Like the clang-10 CI, this uses a newer Ubuntu version (20.04) by
+  specifying a different docker image.  Because of that, we no longer need
+  to use sudo with apt.
+
+2020-04-25  Murray Cumming  <murrayc@murrayc.com>
+
+  run make format, to clang-format the code
+
+  This was with clang-format-9
+
+2020-04-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Set default value of the 'warnings' option to 'min'
+
+  * MSVC_NMake/meson.build: Copy sigc++config.h with configure_file().
+  * Makefile.am: Remove tools/dist-cmd.py.
+  * docs/docs/manual/meson.build:
+  * docs/docs/reference/meson.build: Don't use tools/dist-cmd.py.
+  * meson.build: Use dist-warnings when a tarball is tested by
+  'ninja dist' or 'meson dist'. Check if doc-reference.py exists, if not
+  maintainer-mode.
+  * meson_options.txt: Set default value of the 'warnings' to 'min'.
+  Add 'dist-warnings' with default value 'fatal'.
+  * tools/dist-cmd.py: Removed file. It's not necessary in add_dist_script()
+  when the first parameter is python3.path().
+
+2020-03-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.0.3
+
+2020-03-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md: Better describe when maintainer-mode is necessary
+
+  As a libsigc++-3 tarball does not contain generated source code,
+  maintainer-mode is not always necessary when you build with Meson
+  from a tarball that was created by Autotools.
+
+2020-03-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md: Improve the Build section
+
+  and remove README_build. All build information is in README.md.
+
+2020-03-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Update version to 3.0.2
+
+2020-03-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  examples: Disable deprecated API when building with Meson
+
+  Deprecated SIGCXX API is disabled when example programs are built
+  with Autotools. Do the same when building with Meson.
+
+2020-01-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md, README_build: Describe building with Meson
+
+2020-01-08  Robert Middleton  <robert.middleton@rm5248.com>
+
+  Added example of using libsigc++ with Qt
+
+  Pull Request #35.
+
+2020-01-06  Lennard Berger  <lennard.berger@student.uni-tuebingen.de>
+
+  tests: Replace C-style casts with static_cast<>
+
+  murrayc-tuple-utils Pull Request #4 .
+
+2020-01-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/docs/reference/meson.build: Check if perl is found
+
+  Don't use perl.path() when configuring Doxyfile, if perl is not found.
+  Perl is not required, if build-documentation=false.
+  Fixes #53
+
+2020-01-01  Murray Cumming  <murraycu@google.com>
+
+  3.0.2
+
+2019-12-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Change project name, sigc++ -> libsigc++
+
+  Autotools make tarballs called libsigc++-x.y.z.tar.xz. No reason to
+  change that. The leading "lib" is now also restored in some locations
+  in the reference documentation.
+
+2019-12-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update untracked/README
+
+2019-12-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Check if .git is a directory or a file
+
+  In a git worktree, .git is a regular file.
+  
+  See https://gitlab.gnome.org/GNOME/pangomm/merge_requests/8
+
+2019-12-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  sigc++/meson.build: Library name is sigc-3.0
+
+  Pointed out by Chun-wei Fan in PR #51.
+
+2019-12-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake: Split outdir by toolset version
+
+  This makes it less likely for one to accidently mix binaries linked to
+  different CRTs in a single buildtree.
+
+2019-12-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Support NMake builds from Meson tarballs
+
+  This adds the MSVC files in MSVC_NMake/ that are generated during
+  Meson's configure step to the generated release tarball.
+  
+  The NMake Makefiles are updated so that they will be able to find files
+  that are now in untracked/MSVC_NMake, when a release tarball is
+  generated with Meson.
+
+2019-12-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Build Windows .rc files on Windows
+
+  This ensures that on Windows, the version info resources are indeed
+  linked into the libsigc++ DLL.
+
+2019-12-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson/Windows: Fix builds when builddir is a subdir of source tree
+
+  It appears that Meson did not construct the paths properly for
+  shutil.copy2() when building in a build directory that is a
+  subdirectory of the sources, when using meson.current_build_dir(),
+  possibly due how path separators are handled.
+  
+  Fix this by constructing the paths using project_build_root / 'MSVC_NMake'.
+
+2019-12-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson.build: Fix 'meson dist' on Windows
+
+  Since we are assured that we are using Python 3.x on when we run Meson, we
+  do not really need to look for the 'python3' executable, but we could
+  just use whatever Python interpreter that is used to run Meson.
+  
+  This will fix situations where it is commonly the case where we may have
+  multiple Python 3.x installations on Windows (www.python.org, and those
+  from Cygwin/mingw-w64), so that Meson really uses one and only one
+  Python installation to run everything that is Python-related, which will
+  thus fix '[meson|ninja] dist' on Visual Studio builds.
+
+2019-12-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Update version to 3.0.1
+
+2019-12-22  Murray Cumming  <murraycu@google.com>
+
+  3.0.1
+
+2019-12-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson.build: Enable /utf-8 for MSVC builds
+
+  This avoids warnings and mis-compilations on certain system locales when
+  building on Visual Studio, in particular Chinese, Japanese and Korean
+  versions of Windows.
+
+2019-12-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: State clearly mm-common-get is required for maintainer mode
+
+  Instead of showing that 'mm-common-get' is not found, state that it is
+  required for maintainer-mode.
+
+2019-12-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Fix Visual Studio builds
+
+  We need to make sure that SIGC_BUILD and _WINDLL are defined when
+  building the libsigc++ DLL, so that it gets build properly.
+
+2019-12-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add support for building libsigc++-3.0 with Meson
+
+  libsigc++-3.0 can be built with either Autotools or Meson.
+
+2019-12-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Make libsigc_manual.xml valid
+
+  Fix errors reported by "xmllint --postvalid".
+
+2019-11-03  Murray Cumming  <murrayc@murrayc.com>
+
+  tests: Remove unused SIGC_CXX_TYPEOF alternative code
+
+  This was apparently related to some long-since removed libsigc++ support
+  for a non-standard a gcc typeof() extension.
+  https://gcc.gnu.org/onlinedocs/gcc/Typeof.html
+
+2019-11-02  Murray Cumming  <murrayc@murrayc.com>
+
+  test_mem_fun(): Re-enable tests of overloaded functions
+
+  But, as with test_ptr_fun(), we need to specify the types.
+  The compiler doesn't seem to be able to figure it out based on the
+  values passed.
+
+2019-11-02  Murray Cumming  <murrayc@murrayc.com>
+
+  test_ptr_fun: Re-enable tests of overloaded functions
+
+2019-10-29  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions CI: Remove extra configure calls
+
+  ./autogen.sh already runs configure, passing the arguments.
+  This is why the builds didn't fail when there were compiler errors.
+
+2019-10-29  Murray Cumming  <murrayc@murrayc.com>
+
+  test_limit_reference: Avoid virtual-move-assign warning
+
+  "= delete" Bases's move operations because the defaulted one
+  would call non-trivial assignment operators in the virtual bases.
+  
+  This avoids this compiler warning, at least with g++ 9.2:
+  
+  test_limit_reference.cc:12:7: error: defaulted move assignment for ‘{anonymous}::Base’ calls a non-trivial move assignment operator for virtual base ‘sigc::trackable’ [-Werror=virtual-move-assign]
+     12 | class Base : virtual public sigc::trackable
+        |       ^~~~
+  test_limit_reference.cc:22:7: error: defaulted move assignment for ‘{anonymous}::Derived’ calls a non-trivial move assignment operator for virtual base ‘{anonymous}::Base’ [-Werror=virtual-move-assign]
+     22 | class Derived : virtual public Base, public Base2
+  
+  It would be nice if this test had a comment saying what it is testing.
+
+2019-10-29  Murray Cumming  <murrayc@murrayc.com>
+
+  signal: slot_iterator_buf: Remove T_result default type
+
+  This expected a result_type type alias. Luckily, in the few places where
+  we use this, we always specify the type, ignoring the default.
+
+2019-10-29  Murray Cumming  <murrayc@murrayc.com>
+
+  tests: Remove unnecessary result_type aliases
+
+  This was necessary with older pre-C++11 versions of libsigc++.
+
+2019-10-28  Murray Cumming  <murrayc@murrayc.com>
+
+  Reformat code with make format
+
+2019-10-28  Murray Cumming  <murrayc@murrayc.com>
+
+  Build: Add target to format code with clang-format
+
+  This lets us do "make format" to reformat the code.
+
+2019-10-27  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions CI: Specify CXX before make distcheck
+
+  As in the build step. Otherwise, the distcheck's configure run will
+  just pick up the default compiler again.
+
+2019-10-27  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions CI: Add a clang++ 9 build
+
+  This uses a newer Ubuntu version by specifying a different docker image.
+  Because of that, we no longer need to use sudo with apt.
+
+2019-10-27  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions CI: autotools-clang-8: Don't try to use Ubuntu 19.10
+
+  The uses: line was actually a separate step that didn't influence the
+  following step. Ubuntu 18.04 (what GitHub actions uses for
+  "ubuntu-latest") actually has clang-8 anyway.
+
+2019-10-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  sigc++/adaptors/bind.h: Make bind_functor::bound_ public
+
+  It's used by sigc::visitor::do_visit_each().
+  Add a test case in tests/test_bind.cc.
+  Fixes #26
+
+2019-10-25  Stuart Dootson  <stuart.dootson@gmail.com>
+
+  MSVC build: Add version check to MSVC warning removal
+
+  CMake 3.15 removes /W3 as a default flag for MSVC, so we no longer need to remove it.
+2019-10-25  Stuart Dootson  <stuart.dootson@gmail.com>
+
+  MSVC build: Add code comments
+
+2019-10-25  Stuart Dootson  <u404261@methods.local>
+
+  MSVC build: Silence 'C4100: unreferenced formal parameter' warnings
+
+  Added 'static_cast<void>(parameter-name)' in all paths where the parameter isn't used
+2019-10-25  Stuart Dootson  <u404261@methods.local>
+
+  MSVC build: Disable C4244 (conversion, possible loss of data) for relevant tests
+
+2019-10-25  Stuart Dootson  <u404261@methods.local>
+
+  MSVC build: Fix 'C4127: conditional expression is constant' warning
+
+2019-10-25  Stuart Dootson  <u404261@methods.local>
+
+  Add default warning flags
+
+2019-10-11  Stuart Dootson  <stuart.dootson@gmail.com>
+
+  CMake Build: tests: Let MSVC find the library
+
+  Use 'cmake -E env ... <test-executable>' to execute the test executable.
+  The '-E env' option allows the environment to be altered for the executed test.
+  
+  Use generator expressions to retrieve the build directory/file for the
+  sigc++ & test targets
+
+2019-10-11  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions: Add workflow on Windows (MSVC compiler)
+
+2019-10-11  Murray Cumming  <murrayc@murrayc.com>
+
+  Github Actions: Use --enable-warnings=fatal
+
+  This enables more warnings and makes the build fail if they happen.
+
+2019-09-28  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions: Add workflow for clang 8
+
+  Using Ubuntu 19.10 (Eoan) instead of Ubuntu 18.04.
+
+2019-09-28  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions: Add workflow for gcc 9
+
+  Using Ubuntu 19.10 (Eoan) instead of Ubuntu 18.04.
+
+2019-09-28  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions: Use specific compiler versions
+
+  We only try compiler versions that are known to have C++17 support.
+  There is no point in trying older compiler versions.
+
+2019-09-28  Murray Cumming  <murrayc@murrayc.com>
+
+  GitHub Actions: Better workflow names
+
+2019-09-27  Murray Cumming  <murrayc@murrayc.com>
+
+  Add GitHub Actions build workflow (cmake build)
+
+2019-09-27  Murray Cumming  <murrayc@murrayc.com>
+
+  Add GitHub Actions build workflow (autotools build)
+
+2019-09-26  Murray Cumming  <murrayc@murrayc.com>
+
+  tests: Add test_connection, to check copying
+
+  For now, this just confirms that we can now copy empty sigc::connection
+  instances. (See the previous commit.)
+
+2019-09-26  AIGRIND  <AIGRIND-LLC@users.noreply.github.com>
+
+  Empty connections can be safely copied now
+
+  Copy constructor and `operator=` could fail if `src` was empty.
+  ```
+  sigc::connection con1;
+  sigc::connection con2(con1); // failed
+  ```
+  ```
+  sigc::connection con3;
+  sigc::connection con4;
+  con3 = con4; // failed
+  ```
+2019-09-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  3.0.0
+
+2019-09-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README_build: Refer MSVC users to MSVC_NMake/README.txt
+
+2019-09-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tuple_transform_each(): Fix for libc++
+
+  Tuples which are input data to std::tuple_cat() are not declared const.
+  Some versions of libc++ has a bug in std::tuple_cat(): All output
+  elements coming from a const tuple become const.
+  It can break 'make check' when using clang++ and -stdlib=libc++.
+  
+  Fixes issue #25
+
+2019-09-01  Murray Cumming  <murrayc@murrayc.com>
+
+  tests: Don't call static method via instance
+
+2019-09-01  Murray Cumming  <murrayc@murrayc.com>
+
+  tests: Remove an unnecessary semicolon
+
+2019-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests/test_track_obj.cc: Remove obsolete comments
+
+2019-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  bind(), track_obj() documentation: Remove obsolete restrictions
+
+  The number of objects and arguments are not restricted to max 7
+  now that variadic templates have replaced the .m4 files in libsigc++-2
+  that generated 7 copies.
+
+2019-07-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests/test_track_obj: Fix for clang++
+
+  clang++ complains if private members are unused, so make them protected.
+  
+  error: private field 'bar_' is not used [-Werror,-Wunused-private-field]
+
+2019-06-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.99.13
+
+2019-06-03  Jeff Trull  <edaskel@att.net>
+
+  CMake: supply SIGC_BUILD and use CMAKE_CXX_STANDARD, for MSVC
+
+2019-03-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete preprocessor macros
+
+  The removed macros are not used anywhere in libsigc++ 3.0.
+
+2019-02-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  sigc::tuple_transform_each: std::result_of -> std::invoke_result
+
+  std::result_of is deprecated in C++17 and will be removed in C++20.
+  
+  Fixes issue #19
+
+2019-02-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Makefile.am: Distribute README.md
+
+2019-02-13  Jürg Billeter  <j@bitron.ch>
+
+  configure.ac: Set `foreign` option to fix build
+
+  Without the `foreign` option, automake requires a README file, which no
+  longer exists.
+  
+  	Makefile.am: error: required file './README' not found
+  
+  Fixes: 8a0cb176 ("README: Rename to README.md and reformat as markdown")
+
+2019-01-10  Murray Cumming  <murrayc@murrayc.com>
+
+  README.md: Add some build hints
+
+  This fixes issue #18:
+  https://github.com/libsigcplusplus/libsigcplusplus/issues/18
+  
+  Note that this file should not duplicate too much from the website.
+  Information should be on the website or in the README.md, but rarely in
+  both places.
+

@@ -1,0 +1,25 @@
+<map id="Gio::InputStream" name="Gio::InputStream">
+<area shape="rect" id="Node000001" title="Base class for implementing streaming input." alt="" coords="660,80,792,105"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1FileInputStream.html" title="FileInputStream provides input streams that take their content from a file." alt="" coords="856,5,1011,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="765,71,839,41,880,28,881,33,841,46,767,76"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1FilterInputStream.html" title="Filter Input Stream." alt="" coords="851,55,1016,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="805,80,850,75,851,80,806,86"/>
+<area shape="rect" id="Node000011" href="$classGio_1_1MemoryInputStream.html" title="MemoryInputStream implements InputStream for arbitrary memory chunks." alt="" coords="840,104,1027,129"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="806,99,840,103,840,109,805,104"/>
+<area shape="rect" id="Node000012" href="$classGio_1_1UnixInputStream.html" title="UnixInputStream implements InputStream for reading from a unix file descriptor, including asynchronou..." alt="" coords="852,153,1015,179"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="767,109,841,139,878,151,877,156,839,145,765,114"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="513,80,612,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,90,660,90,660,95,626,95"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="335,80,465,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,90,513,90,513,95,479,95"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,80,287,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,90,335,90,335,95,301,95"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,80,123,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,90,170,90,170,95,137,95"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1BufferedInputStream.html" title="The buffered input stream implements FilterInputStream and provides for buffered reads." alt="" coords="1079,31,1266,56"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1029,55,1079,50,1079,55,1030,60"/>
+<area shape="rect" id="Node000010" href="$classGio_1_1ConverterInputStream.html" title="ConverterInputstream &#45; Converter Input Stream." alt="" coords="1075,80,1271,105"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="1030,75,1075,80,1074,85,1029,80"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1DataInputStream.html" title="An implementation of BufferedInputStream that allows for high&#45;level data manipulation of arbitrary da..." alt="" coords="1319,31,1481,56"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1280,41,1319,41,1319,46,1280,46"/>
+</map>

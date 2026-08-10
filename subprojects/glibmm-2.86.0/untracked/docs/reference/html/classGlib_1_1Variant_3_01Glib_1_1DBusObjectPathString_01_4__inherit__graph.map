@@ -1,0 +1,7 @@
+<map id="Glib::Variant&lt; Glib::DBusObjectPathString &gt;" name="Glib::Variant&lt; Glib::DBusObjectPathString &gt;">
+<area shape="rect" id="Node000001" title="Specialization of Variant containing a Glib::DBusObjectPathString, for variants of type object path." alt="" coords="5,152,192,192"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1VariantStringBase.html" title="Base class from which string variant classes derive." alt="" coords="13,79,185,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,118,101,152,96,152,96,118"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1VariantBase.html" title="This is the base class for all Variant types." alt="" coords="31,5,166,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,44,101,79,96,79,96,44"/>
+</map>

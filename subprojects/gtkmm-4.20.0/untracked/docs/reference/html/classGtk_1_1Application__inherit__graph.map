@@ -1,0 +1,21 @@
+<map id="Gtk::Application" name="Gtk::Application">
+<area shape="rect" id="Node000001" title="Application class." alt="" coords="95,445,222,471"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGio_1_1Application.html" title=" " alt="" coords="96,372,221,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,411,161,445,156,445,156,411"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,263,68,293,82,322,109,350,138,370,135,374,105,354,78,326,63,295,55,265"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000008" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="128,225,243,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="142,186,177,223,173,227,138,189"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGio_1_1ActionGroup.html" title=" " alt="" coords="93,299,225,324"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="161,338,161,372,156,372,156,338"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="179,265,165,299,160,298,174,263"/>
+<area shape="rect" id="Node000009" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGio_1_1ActionMap.html" title=" " alt="" coords="249,299,370,324"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="218,255,290,296,288,301,216,260"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="274,332,184,374,182,369,272,327"/>
+</map>

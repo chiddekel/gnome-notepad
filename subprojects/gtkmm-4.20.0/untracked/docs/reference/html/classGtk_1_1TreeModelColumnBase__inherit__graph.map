@@ -1,0 +1,9 @@
+<map id="Gtk::TreeModelColumnBase" name="Gtk::TreeModelColumnBase">
+<area shape="rect" id="Node000001" title="Base class of TreeModelColumn templates." alt="" coords="5,77,208,102"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1TreeModelColumn.html" title=" " alt="" coords="275,5,445,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,71,279,43,281,48,172,76"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1TreeModelColumn.html" title=" " alt="" coords="275,69,445,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,87,274,87,274,92,222,92"/>
+<area shape="rect" id="Node000004" href="$classGtk_1_1TreeModelColumn.html" title="A Gtk::TreeModelColumn describes the C++ type of the data in a model column, and identifies that colu..." alt="" coords="256,134,464,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,102,304,131,303,137,176,108"/>
+</map>

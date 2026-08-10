@@ -1,0 +1,13 @@
+<map id="Gtk::ListItemFactory" name="Gtk::ListItemFactory">
+<area shape="rect" id="Node000001" title="Mapping list items to widgets." alt="" coords="25,299,179,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1SignalListItemFactory.html" title="A listitem factory providing signals." alt="" coords="5,372,199,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="105,338,105,372,99,372,99,338"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="53,225,151,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,264,105,299,99,299,99,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="37,152,167,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,191,105,225,99,225,99,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="44,79,160,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,118,105,152,99,152,99,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="43,5,161,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="105,44,105,79,99,79,99,44"/>
+</map>

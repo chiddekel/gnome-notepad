@@ -1,0 +1,17 @@
+<map id="Gio::PollableOutputStream" name="Gio::PollableOutputStream">
+<area shape="rect" id="Node000001" title="PollableOutputStream &#45; Interface for pollable output streams." alt="" coords="238,299,433,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1ConverterOutputStream.html" title="ConverterOutputstream &#45; Converter Output Stream." alt="" coords="5,372,212,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="287,331,146,374,145,369,285,326"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1MemoryOutputStream.html" title="Streaming output operations on memory chunks." alt="" coords="237,372,434,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="338,338,338,372,333,372,333,338"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1UnixOutputStream.html" title="UnixOutputStream implements OutputStream for writing to a a unix file descriptor, including asynchron..." alt="" coords="458,372,631,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="383,326,512,369,510,374,381,331"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="278,225,393,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="338,264,338,299,333,299,333,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="270,152,401,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,191,338,225,333,225,333,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="277,79,393,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="338,118,338,152,333,152,333,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="277,5,394,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="338,44,338,79,333,79,333,44"/>
+</map>

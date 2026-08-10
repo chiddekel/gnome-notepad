@@ -1,0 +1,35 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="/usr/share/mm-common/doctags/libstdc++.tag$a05615.html" title=" " alt="" coords="5,351,120,376"/>
+<area shape="rect" id="Node000001" href="$classGlib_1_1Error.html" title=" " alt="" coords="168,351,255,376"/>
+<area shape="poly" id="edge275_Node000000_Node000001" title=" " alt="" coords="134,361,168,361,168,366,134,366"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1DBus_1_1Error.html" title=" " alt="" coords="324,5,449,31"/>
+<area shape="poly" id="edge276_Node000001_Node000002" title=" " alt="" coords="209,337,212,276,224,197,235,155,252,113,273,74,301,40,322,26,325,30,304,44,277,77,256,115,240,156,229,198,217,277,215,337"/>
+<area shape="rect" id="Node000003" href="$classGio_1_1Error.html" title="Exception class for giomm errors." alt="" coords="345,55,428,80"/>
+<area shape="poly" id="edge277_Node000001_Node000003" title=" " alt="" coords="211,336,216,285,230,218,242,183,257,149,277,118,301,89,321,76,344,69,346,74,324,81,304,93,281,121,262,152,247,185,236,220,222,286,216,337"/>
+<area shape="rect" id="Node000004" href="$classGio_1_1ResolverError.html" title=" " alt="" coords="317,104,457,129"/>
+<area shape="poly" id="edge278_Node000001_Node000004" title=" " alt="" coords="213,336,222,293,237,240,263,186,280,161,301,139,318,127,321,132,304,143,284,164,268,188,242,242,227,295,218,337"/>
+<area shape="rect" id="Node000005" href="$classGio_1_1ResourceError.html" title="Exception class for resource file handling errors." alt="" coords="315,153,458,179"/>
+<area shape="poly" id="edge279_Node000001_Node000005" title=" " alt="" coords="217,336,228,302,245,262,269,222,301,188,320,176,323,181,304,192,273,226,250,265,233,304,222,338"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1TlsError.html" title=" " alt="" coords="335,203,438,228"/>
+<area shape="poly" id="edge280_Node000001_Node000006" title=" " alt="" coords="222,337,253,286,275,260,301,237,334,222,336,227,304,242,279,264,257,289,227,340"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1ConvertError.html" title="Exception class for charset conversion errors." alt="" coords="317,252,456,277"/>
+<area shape="poly" id="edge281_Node000001_Node000007" title=" " alt="" coords="233,339,264,312,301,286,329,275,331,280,304,291,267,316,236,343"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1FileError.html" title="Exception class for file&#45;related errors." alt="" coords="331,301,442,327"/>
+<area shape="poly" id="edge282_Node000001_Node000008" title=" " alt="" coords="267,345,340,324,341,329,269,350"/>
+<area shape="rect" id="Node000009" href="$classGlib_1_1IOChannelError.html" title="Exception class for IOChannel errors." alt="" coords="309,351,464,376"/>
+<area shape="poly" id="edge283_Node000001_Node000009" title=" " alt="" coords="268,361,309,361,309,366,268,366"/>
+<area shape="rect" id="Node000010" href="$classGlib_1_1KeyFileError.html" title="Exception class for KeyFile errors." alt="" coords="319,400,454,425"/>
+<area shape="poly" id="edge284_Node000001_Node000010" title=" " alt="" coords="269,377,341,397,340,402,267,382"/>
+<area shape="rect" id="Node000011" href="$classGlib_1_1MarkupError.html" title="Exception class for markup parsing errors." alt="" coords="319,449,454,475"/>
+<area shape="poly" id="edge285_Node000001_Node000011" title=" " alt="" coords="237,384,267,410,304,434,334,447,332,452,301,439,264,414,233,388"/>
+<area shape="rect" id="Node000012" href="$classGlib_1_1OptionError.html" title="Exception class for options." alt="" coords="321,499,452,524"/>
+<area shape="poly" id="edge286_Node000001_Node000012" title=" " alt="" coords="227,387,258,436,279,462,304,484,328,496,325,501,301,488,276,466,254,440,223,390"/>
+<area shape="rect" id="Node000013" href="$classGlib_1_1RegexError.html" title="Exception class for Regex" alt="" coords="323,548,451,573"/>
+<area shape="poly" id="edge287_Node000001_Node000013" title=" " alt="" coords="222,389,233,422,250,461,274,500,304,533,325,546,322,550,301,537,269,503,245,463,228,424,217,390"/>
+<area shape="rect" id="Node000014" href="$classGlib_1_1ShellError.html" title="Exception class for shell utility errors." alt="" coords="327,597,446,623"/>
+<area shape="poly" id="edge288_Node000001_Node000014" title=" " alt="" coords="219,390,227,432,243,484,268,537,285,561,304,583,328,597,326,602,301,587,281,565,263,540,238,486,222,433,213,391"/>
+<area shape="rect" id="Node000015" href="$classGlib_1_1SpawnError.html" title="Exception class for errors occuring when spawning processes." alt="" coords="321,647,452,672"/>
+<area shape="poly" id="edge289_Node000001_Node000015" title=" " alt="" coords="216,389,222,441,236,506,262,574,281,605,304,632,323,645,320,649,301,636,277,608,258,576,231,507,217,441,211,390"/>
+<area shape="rect" id="Node000016" href="$classGlib_1_1VariantParseError.html" title="Exception class for Variant parse errors." alt="" coords="303,696,471,721"/>
+<area shape="poly" id="edge290_Node000001_Node000016" title=" " alt="" coords="215,390,218,449,230,528,241,569,257,610,278,648,304,681,322,694,319,698,301,685,273,651,252,612,236,571,224,529,212,450,209,390"/>
+</map>

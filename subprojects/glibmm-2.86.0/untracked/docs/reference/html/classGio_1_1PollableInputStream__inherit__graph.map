@@ -1,0 +1,17 @@
+<map id="Gio::PollableInputStream" name="Gio::PollableInputStream">
+<area shape="rect" id="Node000001" title="PollableInputStream &#45; Interface for pollable input streams." alt="" coords="227,299,411,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1ConverterInputStream.html" title="ConverterInputstream &#45; Converter Input Stream." alt="" coords="5,372,201,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="272,331,139,374,137,369,271,326"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1MemoryInputStream.html" title="MemoryInputStream implements InputStream for arbitrary memory chunks." alt="" coords="226,372,413,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="322,338,322,372,317,372,317,338"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1UnixInputStream.html" title="UnixInputStream implements InputStream for reading from a unix file descriptor, including asynchronou..." alt="" coords="437,372,599,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="365,326,486,369,485,374,363,331"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="262,225,377,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="322,264,322,299,317,299,317,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="254,152,385,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="322,191,322,225,317,225,317,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="261,79,377,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,118,322,152,317,152,317,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="261,5,378,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="322,44,322,79,317,79,317,44"/>
+</map>

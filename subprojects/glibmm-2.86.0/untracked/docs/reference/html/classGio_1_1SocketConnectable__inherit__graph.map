@@ -1,0 +1,23 @@
+<map id="Gio::SocketConnectable" name="Gio::SocketConnectable">
+<area shape="rect" id="Node000001" title="Interface for potential socket endpoints." alt="" coords="178,299,354,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1NetworkAddress.html" title="A SocketConnectable for resolving hostnames." alt="" coords="5,372,164,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="225,331,115,374,113,369,223,326"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1NetworkService.html" title="A GSocketConnectable for resolving SRV records." alt="" coords="189,372,343,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="269,338,269,372,263,372,263,338"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1SocketAddress.html" title="Abstract base class representing endpoints for socket communication." alt="" coords="367,372,514,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="308,327,413,369,411,374,306,332"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="209,225,323,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,264,269,299,263,299,263,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="201,152,331,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="269,191,269,225,263,225,263,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="208,79,324,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="269,118,269,152,263,152,263,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="207,5,325,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="269,44,269,79,263,79,263,44"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1InetSocketAddress.html" title="Internet SocketAddress." alt="" coords="255,445,427,471"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="415,407,359,447,355,443,412,403"/>
+<area shape="rect" id="Node000011" href="$classGio_1_1UnixSocketAddress.html" title="UnixSocketAddress &#45; UNIX SocketAddress." alt="" coords="451,445,628,471"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="469,403,525,443,522,447,466,407"/>
+<area shape="rect" id="Node000010" href="$classGio_1_1ProxyAddress.html" title="ProxyAddress &#45; An internet address with proxy information." alt="" coords="270,519,411,544"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="343,484,343,519,338,519,338,484"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Gtk::EntryCompletion" name="Gtk::EntryCompletion">
+<area shape="rect" id="Node000001" title="Completion functionality for Gtk::Entry." alt="" coords="72,372,235,397"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,264,68,293,82,323,107,350,135,370,131,374,104,354,78,325,63,295,56,265"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="128,225,243,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="142,186,177,223,173,227,138,189"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1CellLayout.html" title="An interface for packing cells." alt="" coords="92,299,215,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="156,338,156,372,151,372,151,338"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="177,264,161,300,156,297,172,262"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1Buildable.html" title="A base class for objects that can be built by Gtk::Builder." alt="" coords="239,299,353,324"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="216,256,279,296,276,301,213,260"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="262,332,178,374,175,369,260,328"/>
+</map>

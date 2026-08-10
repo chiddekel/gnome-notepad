@@ -1,0 +1,17 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classGtk_1_1TreeIterBase.html" title="Base of TreeIter, TreeRow and TreeNodeChildren." alt="" coords="5,55,140,80"/>
+<area shape="rect" id="Node000001" href="$classGtk_1_1TreeIterBase2.html" title="Base of TreeIter, TreeRow and TreeNodeChildren." alt="" coords="188,55,331,80"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="154,65,188,65,188,70,154,70"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1TreeConstRow.html" title="Typedefed as TreeModel::ConstRow." alt="" coords="409,5,554,31"/>
+<area shape="poly" id="edge10_Node000001_Node000002" title=" " alt="" coords="330,49,423,28,424,33,331,54"/>
+<area shape="rect" id="Node000004" href="$classGtk_1_1TreeIterBase3.html" title="Base of TreeIter." alt="" coords="410,55,553,80"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="345,65,410,65,410,70,345,70"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1TreeNodeConstChildren.html" title="Typedefed as TreeModel::ConstChildren." alt="" coords="379,104,584,129"/>
+<area shape="poly" id="edge14_Node000001_Node000006" title=" " alt="" coords="331,80,424,101,423,107,330,86"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1TreeRow.html" title="Typedefed as TreeModel::Row." alt="" coords="662,5,770,31"/>
+<area shape="poly" id="edge11_Node000002_Node000003" title=" " alt="" coords="568,15,662,15,662,21,568,21"/>
+<area shape="rect" id="Node000005" href="$classGtk_1_1TreeIter.html" title="Typedefed as TreeModel::iterator and TreeModel::const_iterator." alt="" coords="646,55,786,80"/>
+<area shape="poly" id="edge13_Node000004_Node000005" title=" " alt="" coords="566,65,646,65,646,70,566,70"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1TreeNodeChildren.html" title="Typedefed as TreeModel::Children." alt="" coords="632,104,800,129"/>
+<area shape="poly" id="edge15_Node000006_Node000007" title=" " alt="" coords="598,114,632,114,632,119,598,119"/>
+</map>

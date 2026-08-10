@@ -1,0 +1,17 @@
+<map id="Gio::AsyncInitable" name="Gio::AsyncInitable">
+<area shape="rect" id="Node000001" title="AsyncInitable &#45; Asynchronously failable object initialization interface." alt="" coords="223,299,363,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1DBus_1_1Connection.html" title="A D&#45;Bus Connection." alt="" coords="5,379,172,405"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="251,331,119,382,117,377,249,326"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1DBus_1_1ObjectManagerClient.html" title="Client&#45;side object manager." alt="" coords="196,372,389,412"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="295,338,295,372,290,372,290,338"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1DBus_1_1Proxy.html" title="A client&#45;side proxy." alt="" coords="414,379,545,405"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="333,327,453,377,451,382,331,332"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="235,225,350,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,264,295,299,290,299,290,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="227,152,358,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,191,295,225,290,225,290,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="235,79,351,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="295,118,295,152,290,152,290,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="234,5,351,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="295,44,295,79,290,79,290,44"/>
+</map>

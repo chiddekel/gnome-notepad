@@ -1,0 +1,15 @@
+<map id="Gtk::ColorChooser" name="Gtk::ColorChooser">
+<area shape="rect" id="Node000001" title="This interface can be implemented by widgets which allow the user to choose a color." alt="" coords="91,299,231,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ColorButton.html" title="A button to launch a color selection dialog." alt="" coords="5,372,136,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="137,335,87,374,84,370,134,330"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1ColorChooserDialog.html" title="This dialog is for choosing a color." alt="" coords="161,372,343,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="188,330,239,370,236,374,185,335"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="104,225,219,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,264,164,299,159,299,159,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="96,152,227,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,191,164,225,159,225,159,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="103,79,219,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="164,118,164,152,159,152,159,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="103,5,220,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="164,44,164,79,159,79,159,44"/>
+</map>

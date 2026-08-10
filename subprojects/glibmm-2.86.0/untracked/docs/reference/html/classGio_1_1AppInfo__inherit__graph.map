@@ -1,0 +1,13 @@
+<map id="Gio::AppInfo" name="Gio::AppInfo">
+<area shape="rect" id="Node000001" title="Application information, to describe applications installed on the system, and launch them." alt="" coords="32,299,135,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1DesktopAppInfo.html" title="DesktopAppInfo is an implementation of AppInfo based on desktop files." alt="" coords="5,372,161,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="86,338,86,372,81,372,81,338"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="26,225,141,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,264,86,299,81,299,81,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="18,152,149,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,191,86,225,81,225,81,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="25,79,141,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,118,86,152,81,152,81,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="25,5,142,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="86,44,86,79,81,79,81,44"/>
+</map>

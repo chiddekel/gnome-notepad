@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <enum id="io.github.chiddekel.Notepad.ColorScheme">
+    <value nick="system" value="0"/>
+    <value nick="light" value="1"/>
+    <value nick="dark" value="2"/>
+  </enum>
+  <enum id="io.github.chiddekel.Notepad.LineEnding">
+    <value nick="crlf" value="0"/>
+    <value nick="lf" value="1"/>
+    <value nick="cr" value="2"/>
+  </enum>
+  <enum id="io.github.chiddekel.Notepad.BackgroundPosition">
+    <value nick="top-left" value="0"/>
+    <value nick="top-center" value="1"/>
+    <value nick="top-right" value="2"/>
+    <value nick="center-left" value="3"/>
+    <value nick="center" value="4"/>
+    <value nick="center-right" value="5"/>
+    <value nick="bottom-left" value="6"/>
+    <value nick="bottom-center" value="7"/>
+    <value nick="bottom-right" value="8"/>
+    <value nick="tile" value="9"/>
+    <value nick="stretch" value="10"/>
+    <value nick="fit" value="11"/>
+    <value nick="fill" value="12"/>
+  </enum>
+
+  <schema id="io.github.chiddekel.Notepad" path="/io/github/chiddekel/Notepad/">
+    <key name="window-width" type="i">
+      <default>640</default>
+      <summary>Window width</summary>
+    </key>
+    <key name="window-height" type="i">
+      <default>480</default>
+      <summary>Window height</summary>
+    </key>
+    <key name="window-maximized" type="b">
+      <default>false</default>
+      <summary>Whether the window is maximized</summary>
+      <description>
+        Absolute window position (window-x/window-y in the original Windows
+        app) is intentionally not stored: Wayland does not let clients query
+        or restore an absolute position, so only size and maximized state
+        are persisted.
+      </description>
+    </key>
+    <key name="word-wrap" type="b">
+      <default>false</default>
+      <summary>Word wrap enabled</summary>
+    </key>
+    <key name="zoom-level" type="i">
+      <range min="25" max="500"/>
+      <default>100</default>
+      <summary>Editor zoom level, percent</summary>
+    </key>
+    <key name="show-statusbar" type="b">
+      <default>true</default>
+      <summary>Whether the status bar is visible</summary>
+    </key>
+    <key name="color-scheme" enum="io.github.chiddekel.Notepad.ColorScheme">
+      <default>"system"</default>
+      <summary>Preferred color scheme</summary>
+    </key>
+    <key name="font-name" type="s">
+      <default>"Monospace"</default>
+      <summary>Editor font family</summary>
+    </key>
+    <key name="font-size" type="i">
+      <range min="8" max="72"/>
+      <default>11</default>
+      <summary>Editor font size</summary>
+    </key>
+    <key name="font-weight" type="i">
+      <default>400</default>
+      <summary>Editor font weight (Pango numeric scale)</summary>
+    </key>
+    <key name="font-italic" type="b">
+      <default>false</default>
+      <summary>Editor font italic</summary>
+    </key>
+    <key name="font-underline" type="b">
+      <default>false</default>
+      <summary>Editor font underline</summary>
+    </key>
+    <key name="always-on-top" type="b">
+      <default>false</default>
+      <summary>Keep window above others</summary>
+      <description>
+        Best-effort only: Wayland compositors generally do not allow clients
+        to request always-on-top.
+      </description>
+    </key>
+    <key name="default-line-ending" enum="io.github.chiddekel.Notepad.LineEnding">
+      <default>"lf"</default>
+      <summary>Default line ending for new files</summary>
+    </key>
+    <key name="background-enabled" type="b">
+      <default>false</default>
+      <summary>Whether a background image is shown behind the editor</summary>
+    </key>
+    <key name="background-image-path" type="s">
+      <default>""</default>
+      <summary>Path to the background image</summary>
+    </key>
+    <key name="background-position" enum="io.github.chiddekel.Notepad.BackgroundPosition">
+      <default>"center"</default>
+      <summary>Background image placement mode</summary>
+    </key>
+    <key name="background-opacity" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.5</default>
+      <summary>Background image opacity</summary>
+    </key>
+    <key name="recent-files" type="as">
+      <default>[]</default>
+      <summary>Recently opened files (private MRU list, capped at 10)</summary>
+    </key>
+    <key name="language-override" type="s">
+      <default>""</default>
+      <summary>Forced UI language, empty for system locale (applies immediately)</summary>
+    </key>
+  </schema>
+</schemalist>

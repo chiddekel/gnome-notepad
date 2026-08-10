@@ -1,0 +1,29 @@
+<map id="Gtk::GestureSingle" name="Gtk::GestureSingle">
+<area shape="rect" id="Node000001" title="Abstract base class for mouse/single&#45;touch gestures." alt="" coords="1015,129,1159,155"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1DragSource.html" title="Event controller to initiate DND operations." alt="" coords="1228,5,1356,31"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1108,117,1151,78,1205,41,1236,28,1238,33,1208,46,1154,83,1111,121"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1GestureClick.html" title="Multipress gesture." alt="" coords="1224,55,1360,80"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1128,121,1206,90,1245,78,1246,83,1208,95,1130,126"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1GestureDrag.html" title="Drag gesture." alt="" coords="1225,104,1359,129"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1172,129,1224,122,1225,128,1173,134"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1GestureLongPress.html" title="&quot;Press and Hold&quot; gesture." alt="" coords="1207,153,1377,179"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1173,149,1207,153,1206,159,1172,155"/>
+<area shape="rect" id="Node000013" href="$classGtk_1_1GestureStylus.html" title="Gesture for stylus input." alt="" coords="1220,203,1364,228"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1130,158,1208,189,1243,200,1242,205,1206,194,1128,163"/>
+<area shape="rect" id="Node000014" href="$classGtk_1_1GestureSwipe.html" title="Swipe gesture." alt="" coords="1221,252,1363,277"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1111,163,1154,202,1208,238,1235,249,1233,254,1205,243,1151,206,1108,167"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1Gesture.html" title="Abstract base class for gestures." alt="" coords="863,129,967,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="980,139,1015,139,1015,145,980,145"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1EventController.html" title="Self&#45;contained handler of series of events." alt="" coords="660,129,815,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="828,139,863,139,863,145,828,145"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="513,129,612,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="626,139,660,139,660,145,626,145"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="335,129,465,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,139,513,139,513,145,479,145"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,129,287,155"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="301,139,335,139,335,145,301,145"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,129,123,155"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="137,139,170,139,170,145,137,145"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1GesturePan.html" title="Pan gesture." alt="" coords="1425,104,1552,129"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1373,114,1425,114,1425,119,1373,119"/>
+</map>

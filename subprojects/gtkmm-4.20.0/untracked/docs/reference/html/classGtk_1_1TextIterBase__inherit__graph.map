@@ -1,0 +1,7 @@
+<map id="Gtk::TextIterBase" name="Gtk::TextIterBase">
+<area shape="rect" id="Node000001" title="Common base class of TextIter and TextConstIter." alt="" coords="79,5,214,31"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1TextConstIter.html" title="Typedefed as Gtk::TextBuffer::const_iterator." alt="" coords="5,79,144,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,43,88,80,84,77,123,39"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1TextIter.html" title="Typedefed as Gtk::TextBuffer::iterator." alt="" coords="169,79,271,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,38,210,77,206,80,167,42"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="Gtk::CellEditable" name="Gtk::CellEditable">
+<area shape="rect" id="Node000001" title="Interface for widgets which are used for editing cells." alt="" coords="171,299,302,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ComboBox.html" title="A widget used to choose from a list of items." alt="" coords="36,372,160,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="204,333,122,374,119,369,201,328"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1Entry.html" title="A single line text entry field." alt="" coords="193,372,280,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="239,338,239,372,234,372,234,338"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1SpinButton.html" title="Numeric Entry with up/down buttons." alt="" coords="304,372,428,397"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="271,328,346,369,344,374,268,333"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="179,225,294,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,264,239,299,234,299,234,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="171,152,302,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,191,239,225,234,225,234,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="179,79,295,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,118,239,152,234,152,234,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="178,5,295,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,44,239,79,234,79,234,44"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1ComboBoxText.html" title="This is a simple variant of ComboBox that hides the model&#45;view complexity for simple text&#45;only use ca..." alt="" coords="5,445,156,471"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="95,411,86,446,81,445,89,410"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1SearchEntry.html" title="This is a subclass of Gtk::Entry that has been tailored for use as a search entry." alt="" coords="181,445,311,471"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="243,411,247,445,242,446,237,411"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="sigc::notifiable" name="sigc::notifiable">
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,123,120"/>
+<area shape="rect" id="node2" title=" " alt="" coords="171,5,321,61"/>
+<area shape="rect" id="node3" title=" " alt="" coords="171,86,321,127"/>
+<area shape="rect" id="node4" href="$structsigc_1_1trackable.html" title="Base class for objects with auto&#45;disconnection." alt="" coords="188,152,304,179"/>
+<area shape="rect" id="node5" href="$classsigc_1_1trackable__signal__with__accumulator.html" title=" " alt="" coords="369,24,588,80"/>
+<area shape="rect" id="node7" href="$classsigc_1_1trackable__signal__with__accumulator.html" title=" " alt="" coords="369,104,588,160"/>
+<area shape="rect" id="node9" title=" " alt="" coords="395,184,562,211"/>
+<area shape="rect" id="node11" href="$classsigc_1_1trackable__signal__with__accumulator.html" title="Signal declaration." alt="" coords="369,235,588,291"/>
+<area shape="rect" id="node6" href="$classsigc_1_1trackable__signal_3_01T__return_07T__arg_8_8_8_08_4.html" title="trackable_signal can be used to connect() slots that are invoked during subsequent calls to emit()." alt="" coords="675,31,837,73"/>
+<area shape="rect" id="node8" href="$classsigc_1_1trackable__signal_3_01T__return_07T__arg_8_8_8_08_4_1_1accumulated.html" title="Like sigc::trackable_signal but the additional template parameter T_accumulator defines the accumulat..." alt="" coords="636,100,876,156"/>
+<area shape="rect" id="node10" title=" " alt="" coords="670,181,842,222"/>
+</map>

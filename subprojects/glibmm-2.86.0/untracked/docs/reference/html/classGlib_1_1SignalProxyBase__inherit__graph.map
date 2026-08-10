@@ -1,0 +1,17 @@
+<map id="Glib::SignalProxyBase" name="Glib::SignalProxyBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,141,171,166"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1SignalProxyDetailedBase.html" title="The SignalProxy provides an API similar to sigc::signal that can be used to connect sigc::slots to gl..." alt="" coords="219,77,439,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,134,279,100,281,105,151,140"/>
+<area shape="rect" id="Node000005" href="$classGlib_1_1SignalProxyNormal.html" title="The SignalProxy provides an API similar to sigc::signal that can be used to connect sigc::slots to gl..." alt="" coords="238,141,419,166"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="185,151,238,151,238,156,185,156"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1SignalProxyProperty.html" title="Use the connect() method, with sigc::ptr_fun() or sigc::mem_fun() to connect signals to signal handle..." alt="" coords="235,190,423,215"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="164,166,266,187,265,193,163,171"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1SignalProxyDetailed_3_01R_07T_8_8_8_08_4.html" title="Proxy for signals with any number of arguments and possibly a detailed name." alt="" coords="487,5,675,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="392,71,500,43,502,48,394,76"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1SignalProxyDetailed_3_01void_07T_8_8_8_08_4.html" title="Proxy for signals with any number of arguments and possibly a detailed name." alt="" coords="487,69,675,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="452,87,487,87,487,92,452,92"/>
+<area shape="rect" id="Node000006" href="$classGlib_1_1SignalProxy_3_01R_07T_8_8_8_08_4.html" title="Proxy for signals with any number of arguments." alt="" coords="509,133,653,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="433,151,508,151,508,156,433,156"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1SignalProxy_3_01void_07T_8_8_8_08_4.html" title="Proxy for signals with any number of arguments." alt="" coords="509,197,653,237"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="404,166,439,175,513,195,511,200,438,180,403,172"/>
+</map>

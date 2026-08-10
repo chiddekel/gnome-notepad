@@ -1,0 +1,17 @@
+<map id="Gtk::CellRendererAccel" name="Gtk::CellRendererAccel">
+<area shape="rect" id="Node000001" title="Renders a keyboard accelerator in a cell." alt="" coords="5,519,177,544"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1CellRendererText.html" title="Renders text in a cell." alt="" coords="9,445,173,471"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,484,94,519,89,519,89,484"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1CellRenderer.html" title="CellRenderers are used by Gtk::TreeView columns to render the Gtk::TreeModel column data appropriatel..." alt="" coords="23,372,160,397"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,411,94,445,89,445,89,411"/>
+<area shape="rect" id="Node000004" href="$classGtk_1_1Object.html" title="Gtk::Object is the base class for all widgets, and for a few non&#45;widget objects such as Gtk::CellRend..." alt="" coords="44,299,139,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,338,94,372,89,372,89,338"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="42,225,141,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="94,264,94,299,89,299,89,264"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="26,152,157,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="94,191,94,225,89,225,89,191"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="33,79,149,104"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="94,118,94,152,89,152,89,118"/>
+<area shape="rect" id="Node000008" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="33,5,150,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="94,44,94,79,89,79,89,44"/>
+</map>

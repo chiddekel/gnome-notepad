@@ -1,0 +1,25 @@
+<map id="Gio::OutputStream" name="Gio::OutputStream">
+<area shape="rect" id="Node000001" title="Base class for implementing streaming output." alt="" coords="660,80,803,105"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1FileOutputStream.html" title="FileOutputStream provides output streams that write their content to a file." alt="" coords="866,5,1033,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="770,72,850,39,889,28,891,33,852,45,772,77"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1FilterOutputStream.html" title="Filter Output Stream." alt="" coords="861,55,1037,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="816,80,861,75,861,80,817,85"/>
+<area shape="rect" id="Node000011" href="$classGio_1_1MemoryOutputStream.html" title="Streaming output operations on memory chunks." alt="" coords="851,104,1048,129"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="817,99,851,103,850,108,816,105"/>
+<area shape="rect" id="Node000012" href="$classGio_1_1UnixOutputStream.html" title="UnixOutputStream implements OutputStream for writing to a a unix file descriptor, including asynchron..." alt="" coords="863,153,1036,179"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="773,109,852,139,891,151,889,156,850,145,771,114"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="513,80,612,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="625,90,660,90,660,95,625,95"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="335,80,465,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,90,513,90,513,95,479,95"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,80,287,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,90,335,90,335,95,301,95"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,80,123,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,90,170,90,170,95,137,95"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1BufferedOutputStream.html" title="The buffered output stream implements FilterOutputStream and provides for buffered writes." alt="" coords="1100,5,1299,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1027,49,1134,28,1135,33,1028,55"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1ConverterOutputStream.html" title="ConverterOutputstream &#45; Converter Output Stream." alt="" coords="1096,55,1303,80"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1051,65,1096,65,1096,70,1051,70"/>
+<area shape="rect" id="Node000010" href="$classGio_1_1DataOutputStream.html" title="An implementation of FilterOutputStream that allows for high&#45;level data manipulation of arbitrary dat..." alt="" coords="1112,104,1287,129"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="1028,80,1135,101,1134,107,1027,85"/>
+</map>

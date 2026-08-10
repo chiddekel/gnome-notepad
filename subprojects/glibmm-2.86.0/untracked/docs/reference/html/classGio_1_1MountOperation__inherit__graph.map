@@ -1,0 +1,11 @@
+<map id="Gio::MountOperation" name="Gio::MountOperation">
+<area shape="rect" id="Node000001" title="Authentication methods for mountable locations." alt="" coords="5,299,163,324"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="35,225,133,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,264,87,299,81,299,81,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="19,152,149,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,191,87,225,81,225,81,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="26,79,142,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,118,87,152,81,152,81,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="25,5,143,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,44,87,79,81,79,81,44"/>
+</map>

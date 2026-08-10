@@ -1,0 +1,25 @@
+<map id="Gio::Initable" name="Gio::Initable">
+<area shape="rect" id="Node000001" title="Failable object initialization interface." alt="" coords="676,169,777,195"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1CharsetConverter.html" title="CharsetConverter &#45; Convert between charsets." alt="" coords="839,5,1005,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="736,155,770,97,794,66,824,40,846,28,848,33,827,44,798,70,774,100,741,158"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1DBus_1_1Connection.html" title="A D&#45;Bus Connection." alt="" coords="839,55,1005,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="746,157,780,122,824,90,854,78,856,83,827,95,783,126,749,161"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1DBus_1_1ObjectManagerClient.html" title="Client&#45;side object manager." alt="" coords="825,105,1019,145"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="783,163,853,142,854,147,785,168"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1DBus_1_1Proxy.html" title="A client&#45;side proxy." alt="" coords="857,169,987,195"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="791,179,857,179,857,185,791,185"/>
+<area shape="rect" id="Node000010" href="$classGio_1_1DBus_1_1Server.html" title="This is a helper for listening to and accepting D&#45;Bus connections." alt="" coords="854,219,990,244"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="790,196,826,205,870,216,869,221,825,210,789,201"/>
+<area shape="rect" id="Node000011" href="$classGio_1_1Socket.html" title="Low&#45;level socket object." alt="" coords="875,268,969,293"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="753,202,786,229,826,254,875,270,873,275,824,259,783,234,749,206"/>
+<area shape="rect" id="Node000012" href="$classGio_1_1Subprocess.html" title="Child processes." alt="" coords="859,317,985,343"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="743,205,777,256,800,282,827,304,859,318,857,323,824,308,796,286,772,259,739,208"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="513,169,628,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,179,676,179,676,185,642,185"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="335,169,465,195"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,179,513,179,513,185,479,185"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,169,287,195"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,179,335,179,335,185,301,185"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,169,123,195"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,179,170,179,170,185,137,185"/>
+</map>

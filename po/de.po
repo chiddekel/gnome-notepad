@@ -1,0 +1,415 @@
+# German translation for notepad.
+# Copyright (C) 2026 chiddekel
+# This file is distributed under the same license as the notepad package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: notepad 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 08:42+0200\n"
+"PO-Revision-Date: 2026-08-08 00:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/window.cpp:360
+msgid "Select Background Image"
+msgstr "Hintergrundbild auswählen"
+
+#: src/window.cpp:364
+msgid "Image Files"
+msgstr "Bilddateien"
+
+#: src/window.cpp:408
+msgid "Background Opacity"
+msgstr "Deckkraft des Hintergrunds"
+
+#: src/window.cpp:411 src/modules/commands.cpp:94 src/modules/dialog.cpp:197
+#: src/modules/dialog.cpp:291
+msgid "_Cancel"
+msgstr "_Abbrechen"
+
+#: src/window.cpp:411 src/modules/dialog.cpp:291
+msgid "_Apply"
+msgstr "Über_nehmen"
+
+#: src/window.cpp:459 src/modules/commands.cpp:87 src/modules/commands.cpp:210
+msgid "Untitled"
+msgstr "Unbenannt"
+
+#: src/window.cpp:469
+msgid "Ln %1, Col %2"
+msgstr "Zeile %1, Spalte %2"
+
+#: src/modules/commands.cpp:90
+msgid "If you don't save, changes to “%1” will be lost."
+msgstr "Nicht gespeicherte Änderungen an „%1“ gehen verloren."
+
+#: src/modules/commands.cpp:92
+msgid "Save changes?"
+msgstr "Änderungen speichern?"
+
+#: src/modules/commands.cpp:94
+msgid "_Discard"
+msgstr "_Verwerfen"
+
+#: src/modules/commands.cpp:95 src/resources/ui/menus.ui:33
+msgid "_Save"
+msgstr "_Speichern"
+
+#: src/modules/commands.cpp:130
+msgid "Open File"
+msgstr "Datei öffnen"
+
+#: src/modules/commands.cpp:134
+msgid "Text Documents"
+msgstr "Textdokumente"
+
+#: src/modules/commands.cpp:138
+msgid "All Files"
+msgstr "Alle Dateien"
+
+#: src/modules/commands.cpp:177
+msgid "Save As"
+msgstr "Speichern unter"
+
+#: src/modules/commands.cpp:179
+msgid "Untitled.txt"
+msgstr "Unbenannt.txt"
+
+#: src/modules/dialog.cpp:37 src/modules/dialog.cpp:74
+msgid "Replace with…"
+msgstr "Ersetzen durch…"
+
+#: src/modules/dialog.cpp:38 src/modules/dialog.cpp:72
+msgid "Replace"
+msgstr "Ersetzen"
+
+#: src/modules/dialog.cpp:39 src/modules/dialog.cpp:73
+msgid "Replace All"
+msgstr "Alle ersetzen"
+
+#: src/modules/dialog.cpp:194
+msgid "Go to Line"
+msgstr "Gehe zu Zeile"
+
+#: src/modules/dialog.cpp:197
+msgid "_Go To"
+msgstr "_Gehe zu"
+
+#: src/modules/dialog.cpp:218
+msgid "Choose Font"
+msgstr "Schriftart wählen"
+
+#. GNOME convention: each po/<locale>.po supplies its own translation of
+#. the literal msgid "translator-credits" (name/email per line). gettext
+#. returns the msgid itself when there's no translation for the current
+#. locale, so that has to be treated as "no credits" rather than shown
+#. literally.
+#: src/modules/dialog.cpp:266
+msgid "translator-credits"
+msgstr ""
+
+#: src/modules/dialog.cpp:272
+msgid "Based on"
+msgstr "Basierend auf"
+
+#: src/modules/dialog.cpp:288
+msgid "Window Transparency"
+msgstr "Fenstertransparenz"
+
+#: src/resources/ui/menus.ui:22
+msgid "_File"
+msgstr "_Datei"
+
+#: src/resources/ui/menus.ui:25
+msgid "_New"
+msgstr "_Neu"
+
+#: src/resources/ui/menus.ui:29
+msgid "_Open..."
+msgstr "Ö_ffnen..."
+
+#: src/resources/ui/menus.ui:37
+msgid "Save _As..."
+msgstr "Speichern _unter..."
+
+#: src/resources/ui/menus.ui:50
+msgid "Recent _Files"
+msgstr "_Zuletzt verwendete Dateien"
+
+#: src/resources/ui/menus.ui:57
+msgid "_Print..."
+msgstr "_Drucken..."
+
+#: src/resources/ui/menus.ui:61
+msgid "Page Set_up..."
+msgstr "Seite einric_hten..."
+
+#: src/resources/ui/menus.ui:67
+msgid "E_xit"
+msgstr "_Beenden"
+
+#: src/resources/ui/menus.ui:74
+msgid "_Edit"
+msgstr "_Bearbeiten"
+
+#: src/resources/ui/menus.ui:77
+msgid "_Undo"
+msgstr "_Rückgängig"
+
+#: src/resources/ui/menus.ui:81
+msgid "_Redo"
+msgstr "_Wiederholen"
+
+#: src/resources/ui/menus.ui:87
+msgid "Cu_t"
+msgstr "_Ausschneiden"
+
+#: src/resources/ui/menus.ui:91
+msgid "_Copy"
+msgstr "_Kopieren"
+
+#: src/resources/ui/menus.ui:95
+msgid "_Paste"
+msgstr "_Einfügen"
+
+#: src/resources/ui/menus.ui:99
+msgid "De_lete"
+msgstr "_Löschen"
+
+#: src/resources/ui/menus.ui:105
+msgid "_Find..."
+msgstr "_Suchen..."
+
+#: src/resources/ui/menus.ui:109
+msgid "Find _Next"
+msgstr "_Nächstes suchen"
+
+#: src/resources/ui/menus.ui:113
+msgid "Find Pre_vious"
+msgstr "_Vorheriges suchen"
+
+#: src/resources/ui/menus.ui:117
+msgid "_Replace..."
+msgstr "Erset_zen..."
+
+#: src/resources/ui/menus.ui:121
+msgid "_Go To..."
+msgstr "_Gehe zu..."
+
+#: src/resources/ui/menus.ui:127
+msgid "Select _All"
+msgstr "Alles a_uswählen"
+
+#: src/resources/ui/menus.ui:131
+msgid "Time/_Date"
+msgstr "_Datum/Uhrzeit"
+
+#: src/resources/ui/menus.ui:138
+msgid "F_ormat"
+msgstr "F_ormat"
+
+#: src/resources/ui/menus.ui:141
+msgid "_Word Wrap"
+msgstr "_Zeilenumbruch"
+
+#: src/resources/ui/menus.ui:145
+msgid "_Font..."
+msgstr "_Schriftart..."
+
+#: src/resources/ui/menus.ui:152
+msgid "_View"
+msgstr "_Ansicht"
+
+#: src/resources/ui/menus.ui:155
+msgid "Zoom _In"
+msgstr "_Vergrößern"
+
+#: src/resources/ui/menus.ui:159
+msgid "Zoom _Out"
+msgstr "Ver_kleinern"
+
+#: src/resources/ui/menus.ui:163
+msgid "_Restore Default Zoom"
+msgstr "_Standardzoom wiederherstellen"
+
+#: src/resources/ui/menus.ui:169
+msgid "_Status Bar"
+msgstr "S_tatusleiste"
+
+#: src/resources/ui/menus.ui:173
+msgid "_Dark Mode"
+msgstr "_Dunkler Modus"
+
+#: src/resources/ui/menus.ui:179
+msgid "_Background"
+msgstr "_Hintergrund"
+
+#: src/resources/ui/menus.ui:182
+msgid "_Select Image..."
+msgstr "_Bild auswählen..."
+
+#: src/resources/ui/menus.ui:186
+msgid "_Clear Background"
+msgstr "Hintergrund _entfernen"
+
+#: src/resources/ui/menus.ui:190
+msgid "_Opacity..."
+msgstr "_Deckkraft..."
+
+#: src/resources/ui/menus.ui:195
+msgid "_Position"
+msgstr "_Position"
+
+#: src/resources/ui/menus.ui:198
+msgid "Top Left"
+msgstr "Oben links"
+
+#: src/resources/ui/menus.ui:203
+msgid "Top Center"
+msgstr "Oben Mitte"
+
+#: src/resources/ui/menus.ui:208
+msgid "Top Right"
+msgstr "Oben rechts"
+
+#: src/resources/ui/menus.ui:215
+msgid "Center Left"
+msgstr "Mitte links"
+
+#: src/resources/ui/menus.ui:220
+msgid "Center"
+msgstr "Mitte"
+
+#: src/resources/ui/menus.ui:225
+msgid "Center Right"
+msgstr "Mitte rechts"
+
+#: src/resources/ui/menus.ui:232
+msgid "Bottom Left"
+msgstr "Unten links"
+
+#: src/resources/ui/menus.ui:237
+msgid "Bottom Center"
+msgstr "Unten Mitte"
+
+#: src/resources/ui/menus.ui:242
+msgid "Bottom Right"
+msgstr "Unten rechts"
+
+#: src/resources/ui/menus.ui:249
+msgid "Tile"
+msgstr "Kacheln"
+
+#: src/resources/ui/menus.ui:254
+msgid "Stretch"
+msgstr "Strecken"
+
+#: src/resources/ui/menus.ui:259
+msgid "Fit"
+msgstr "Einpassen"
+
+#: src/resources/ui/menus.ui:264
+msgid "Fill"
+msgstr "Ausfüllen"
+
+#: src/resources/ui/menus.ui:274
+msgid "Window _Transparency..."
+msgstr "Fenstertranspa_renz..."
+
+#: src/resources/ui/menus.ui:278
+msgid "Always on _Top"
+msgstr "Immer im Vordergr_und"
+
+#: src/resources/ui/menus.ui:285
+msgid "_Language"
+msgstr "Spr_ache"
+
+#: src/resources/ui/menus.ui:288
+msgid "_English"
+msgstr "_Englisch"
+
+#: src/resources/ui/menus.ui:293
+msgid "_Spanish"
+msgstr "_Spanisch"
+
+#: src/resources/ui/menus.ui:298
+msgid "Por_tuguese"
+msgstr "Por_tugiesisch"
+
+#: src/resources/ui/menus.ui:303
+msgid "_French"
+msgstr "_Französisch"
+
+#: src/resources/ui/menus.ui:308
+msgid "_German"
+msgstr "_Deutsch"
+
+#: src/resources/ui/menus.ui:313
+msgid "_Japanese"
+msgstr "_Japanisch"
+
+#: src/resources/ui/menus.ui:318
+msgid "_Korean"
+msgstr "_Koreanisch"
+
+#: src/resources/ui/menus.ui:323
+msgid "_Arabic"
+msgstr "_Arabisch"
+
+#: src/resources/ui/menus.ui:328
+msgid "_Hindi"
+msgstr "_Hindi"
+
+#: src/resources/ui/menus.ui:333
+msgid "_Chinese"
+msgstr "_Chinesisch"
+
+#: src/resources/ui/menus.ui:338
+msgid "_Polish"
+msgstr "_Polnisch"
+
+#: src/resources/ui/menus.ui:346
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: src/resources/ui/menus.ui:349
+msgid "Check for _Updates..."
+msgstr "Nach _Updates suchen..."
+
+#: src/resources/ui/menus.ui:353
+msgid "_About Notepad"
+msgstr "_Info zu Notepad"
+
+#: data/io.github.chiddekel.Notepad.desktop.in:2
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:8
+msgid "A simple, native GNOME text editor"
+msgstr "Ein einfacher, nativer GNOME-Texteditor"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:11
+msgid ""
+"Notepad is a lightweight, native GNOME port of legacy-notepad, a Win32 "
+"Notepad clone. It supports multi-encoding text (UTF-8, UTF-8 BOM, UTF-16 "
+"LE/BE, ANSI) with configurable line endings, find/replace with wraparound "
+"search, printing, an optional background image behind the editor, and "
+"light/dark themes that follow your system preference."
+msgstr ""
+"Notepad ist ein leichtgewichtiger, nativer GNOME-Port von legacy-notepad, "
+"einem Klon des Win32-Editors. Es unterstützt Text in mehreren Kodierungen "
+"(UTF-8, UTF-8 BOM, UTF-16 LE/BE, ANSI) mit konfigurierbaren Zeilenenden, "
+"Suchen/Ersetzen mit umlaufender Suche, Drucken, einem optionalen "
+"Hintergrundbild hinter dem Editor sowie hellen/dunklen Designs, die der "
+"Systemeinstellung folgen."
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:24
+msgid "Notepad's main editing window"
+msgstr "Hauptfenster von Notepad"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:41
+msgid "Initial release: a native GNOME port of legacy-notepad."
+msgstr "Erstveröffentlichung: ein nativer GNOME-Port von legacy-notepad."

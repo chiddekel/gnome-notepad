@@ -1,0 +1,13 @@
+<map id="Gdk::Toplevel" name="Gdk::Toplevel">
+<area shape="rect" id="Node000001" title="Interface for toplevel surfaces." alt="" coords="44,299,155,324"/>
+<area shape="rect" id="Node000006" href="$classGdk_1_1ToplevelSurfaceImpl.html" title="Gdk::ToplevelSurfaceImpl is a Gdk::Surface that implements the Gdk::Toplevel interface." alt="" coords="5,372,193,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="102,338,102,372,97,372,97,338"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="42,225,157,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,264,102,299,97,299,97,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="34,152,165,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,191,102,225,97,225,97,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="41,79,157,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="102,118,102,152,97,152,97,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="41,5,158,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="102,44,102,79,97,79,97,44"/>
+</map>

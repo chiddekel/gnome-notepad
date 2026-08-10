@@ -1,0 +1,31 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="/builds/GNOME/gtkmm/_build/subprojects/mm-common/libstdc++.tag$a04718.html" title=" " alt="" coords="5,317,120,343"/>
+<area shape="rect" id="Node000001" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Error.html" title=" " alt="" coords="168,317,255,343"/>
+<area shape="poly" id="edge469_Node000000_Node000001" title=" " alt="" coords="134,327,168,327,168,333,134,333"/>
+<area shape="rect" id="Node000002" href="$classGdk_1_1DmabufError.html" title=" " alt="" coords="327,5,465,31"/>
+<area shape="poly" id="edge470_Node000001_Node000002" title=" " alt="" coords="210,303,215,248,228,178,239,140,255,104,275,70,301,40,325,25,328,29,304,44,280,73,260,106,244,142,233,179,220,249,216,303"/>
+<area shape="rect" id="Node000003" href="$classGdk_1_1GLError.html" title=" " alt="" coords="344,55,448,80"/>
+<area shape="poly" id="edge471_Node000001_Node000003" title=" " alt="" coords="212,303,219,257,235,199,261,140,279,113,301,89,321,77,343,69,345,74,323,81,304,93,283,116,265,143,240,201,225,258,218,304"/>
+<area shape="rect" id="Node000004" href="$classGdk_1_1PixbufError.html" title="Exception class for Gdk::Pixbuf errors." alt="" coords="332,104,460,129"/>
+<area shape="poly" id="edge472_Node000001_Node000004" title=" " alt="" coords="215,303,225,266,242,222,267,177,301,139,330,123,333,128,304,143,271,180,247,224,230,268,220,305"/>
+<area shape="rect" id="Node000005" href="$classGdk_1_1TextureError.html" title=" " alt="" coords="329,153,463,179"/>
+<area shape="poly" id="edge473_Node000001_Node000005" title=" " alt="" coords="220,304,250,245,273,214,301,188,327,174,330,179,304,192,277,218,254,248,224,306"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1BuilderError.html" title="Exception class for Gdk::Builder errors." alt="" coords="331,203,461,228"/>
+<area shape="poly" id="edge474_Node000001_Node000006" title=" " alt="" coords="229,304,260,270,301,238,330,226,333,231,304,243,264,274,233,308"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1ConstraintVflParserError.html" title=" " alt="" coords="307,253,485,293"/>
+<area shape="poly" id="edge475_Node000001_Node000007" title=" " alt="" coords="265,311,330,290,332,295,267,316"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1CssParserError.html" title=" " alt="" coords="323,317,469,343"/>
+<area shape="poly" id="edge476_Node000001_Node000008" title=" " alt="" coords="269,327,322,327,322,333,269,333"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1CssParserWarning.html" title=" " alt="" coords="311,367,481,392"/>
+<area shape="poly" id="edge477_Node000001_Node000009" title=" " alt="" coords="269,342,348,364,347,369,267,348"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1DialogError.html" title=" " alt="" coords="333,416,459,441"/>
+<area shape="poly" id="edge478_Node000001_Node000010" title=" " alt="" coords="236,350,267,377,304,401,335,413,333,418,301,406,264,381,233,354"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1FileChooserError.html" title="Exception class for Gdk::FileChooser errors." alt="" coords="316,465,476,491"/>
+<area shape="poly" id="edge479_Node000001_Node000011" title=" " alt="" coords="227,354,258,404,279,429,304,450,329,463,326,468,301,455,275,433,253,407,222,357"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1IconThemeError.html" title="Exception class for Gtk::IconTheme errors." alt="" coords="318,515,474,540"/>
+<area shape="poly" id="edge480_Node000001_Node000012" title=" " alt="" coords="222,356,233,389,250,428,273,467,304,500,326,512,323,517,301,504,269,470,245,430,228,391,217,357"/>
+<area shape="rect" id="Node000013" href="$classGtk_1_1PrintError.html" title=" " alt="" coords="339,564,453,589"/>
+<area shape="poly" id="edge481_Node000001_Node000013" title=" " alt="" coords="218,356,227,398,242,451,268,504,284,528,304,549,321,560,339,567,338,572,318,565,301,553,280,532,263,507,237,453,221,400,213,357"/>
+<area shape="rect" id="Node000014" href="$classGtk_1_1RecentManagerError.html" title="Exception class for Gtk::RecentManager errors." alt="" coords="303,613,489,639"/>
+<area shape="poly" id="edge482_Node000001_Node000014" title=" " alt="" coords="216,356,222,408,236,473,247,507,262,541,281,572,304,599,323,611,320,615,301,603,277,575,257,543,242,509,230,474,216,408,211,357"/>
+</map>

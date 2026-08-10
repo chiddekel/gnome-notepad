@@ -1,0 +1,15 @@
+<map id="Gio::DBus::ObjectManager" name="Gio::DBus::ObjectManager">
+<area shape="rect" id="Node000001" title="Base type for D&#45;Bus object managers." alt="" coords="113,299,307,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1DBus_1_1ObjectManagerClient.html" title="Client&#45;side object manager." alt="" coords="5,372,199,412"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="184,334,130,374,126,370,181,330"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1DBus_1_1ObjectManagerServer.html" title="Service&#45;side object manager." alt="" coords="223,372,416,412"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="239,330,295,370,291,374,235,334"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="153,225,267,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,264,213,299,207,299,207,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="145,152,275,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,191,213,225,207,225,207,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="152,79,268,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="213,118,213,152,207,152,207,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="151,5,269,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="213,44,213,79,207,79,207,44"/>
+</map>

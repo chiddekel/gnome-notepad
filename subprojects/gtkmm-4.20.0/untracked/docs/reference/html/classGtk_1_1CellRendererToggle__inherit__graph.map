@@ -1,0 +1,15 @@
+<map id="Gtk::CellRendererToggle" name="Gtk::CellRendererToggle">
+<area shape="rect" id="Node000001" title="Renders a toggle button in a cell." alt="" coords="5,445,184,471"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1CellRenderer.html" title="CellRenderers are used by Gtk::TreeView columns to render the Gtk::TreeModel column data appropriatel..." alt="" coords="26,372,163,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,411,97,445,92,445,92,411"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1Object.html" title="Gtk::Object is the base class for all widgets, and for a few non&#45;widget objects such as Gtk::CellRend..." alt="" coords="47,299,142,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,338,97,372,92,372,92,338"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="45,225,144,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="97,264,97,299,92,299,92,264"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="29,152,160,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="97,191,97,225,92,225,92,191"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="37,79,153,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="97,118,97,152,92,152,92,118"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="36,5,153,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="97,44,97,79,92,79,92,44"/>
+</map>

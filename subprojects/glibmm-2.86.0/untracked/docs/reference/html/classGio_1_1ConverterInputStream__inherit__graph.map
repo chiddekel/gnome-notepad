@@ -1,0 +1,20 @@
+<map id="Gio::ConverterInputStream" name="Gio::ConverterInputStream">
+<area shape="rect" id="Node000001" title="ConverterInputstream &#45; Converter Input Stream." alt="" coords="89,445,285,471"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1FilterInputStream.html" title="Filter Input Stream." alt="" coords="5,372,171,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,403,172,443,169,447,113,407"/>
+<area shape="rect" id="Node000003" href="$classGio_1_1InputStream.html" title="Base class for implementing streaming input." alt="" coords="39,299,171,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,338,93,373,88,371,97,337"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1Object.html" title=" " alt="" coords="89,225,188,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,264,113,300,108,297,125,262"/>
+<area shape="rect" id="Node000005" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="139,152,269,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="186,189,151,227,147,223,182,186"/>
+<area shape="rect" id="Node000009" href="$classGlib_1_1Interface.html" title=" " alt="" coords="220,225,335,251"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="228,185,267,223,264,227,224,189"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="146,79,262,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="207,118,207,152,201,152,201,118"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="145,5,263,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="207,44,207,79,201,79,201,44"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1PollableInputStream.html" title="PollableInputStream &#45; Interface for pollable input streams." alt="" coords="195,372,379,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="261,407,205,447,201,443,258,403"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="282,265,289,372,283,372,276,265"/>
+</map>

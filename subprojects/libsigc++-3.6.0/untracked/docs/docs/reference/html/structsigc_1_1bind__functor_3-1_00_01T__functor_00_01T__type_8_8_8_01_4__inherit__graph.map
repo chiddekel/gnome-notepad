@@ -1,0 +1,5 @@
+<map id="sigc::bind_functor&lt;&#45;1, T_functor, T_type... &gt;" name="sigc::bind_functor&lt;&#45;1, T_functor, T_type... &gt;">
+<area shape="rect" id="node1" title="Adaptor that binds argument(s) to the wrapped functor." alt="" coords="5,155,200,196"/>
+<area shape="rect" id="node2" href="$structsigc_1_1adapts.html" title="Base type for adaptors." alt="" coords="7,80,198,107"/>
+<area shape="rect" id="node3" href="$structsigc_1_1adaptor__base.html" title="A hint to the compiler." alt="" coords="31,5,175,32"/>
+</map>

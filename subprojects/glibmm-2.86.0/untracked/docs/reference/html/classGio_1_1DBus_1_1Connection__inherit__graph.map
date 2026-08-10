@@ -1,0 +1,19 @@
+<map id="Gio::DBus::Connection" name="Gio::DBus::Connection">
+<area shape="rect" id="Node000001" title="A D&#45;Bus Connection." alt="" coords="59,372,226,397"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,264,69,293,82,323,104,349,128,370,125,374,101,353,78,325,64,295,56,265"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="128,225,243,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="142,186,177,223,173,227,138,189"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Initable.html" title="Failable object initialization interface." alt="" coords="92,299,193,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="145,338,145,372,140,372,140,338"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="174,264,152,300,147,297,169,261"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1AsyncInitable.html" title="AsyncInitable &#45; Asynchronously failable object initialization interface." alt="" coords="218,299,358,324"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="215,256,273,296,270,301,212,261"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="254,332,168,374,165,369,251,328"/>
+</map>

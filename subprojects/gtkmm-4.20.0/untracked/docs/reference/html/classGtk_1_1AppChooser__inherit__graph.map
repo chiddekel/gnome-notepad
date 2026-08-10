@@ -1,0 +1,17 @@
+<map id="Gtk::AppChooser" name="Gtk::AppChooser">
+<area shape="rect" id="Node000001" title="Interface implemented by widgets for choosing an application." alt="" coords="226,299,357,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1AppChooserButton.html" title="A button to launch an application chooser dialog." alt="" coords="5,372,180,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="247,331,126,374,124,369,246,326"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1AppChooserDialog.html" title="An application chooser dialog." alt="" coords="205,372,378,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="294,338,294,372,289,372,289,338"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1AppChooserWidget.html" title="An application chooser widget that can be embedded in other widgets." alt="" coords="403,372,580,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="337,326,460,369,458,374,336,331"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="234,225,349,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,264,294,299,289,299,289,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="226,152,357,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,191,294,225,289,225,289,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="233,79,349,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,118,294,152,289,152,289,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="233,5,350,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="294,44,294,79,289,79,289,44"/>
+</map>

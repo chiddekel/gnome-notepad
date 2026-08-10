@@ -1,0 +1,23 @@
+<map id="Gtk::LayoutManager" name="Gtk::LayoutManager">
+<area shape="rect" id="Node000001" title="Base class for layout manager." alt="" coords="660,129,815,155"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1BinLayout.html" title="A layout manager for bin&#45;like widgets." alt="" coords="885,5,1004,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="759,118,804,78,861,40,889,28,891,33,864,44,807,82,763,122"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1BoxLayout.html" title="Layout manager for placing all children in a single row or column." alt="" coords="883,55,1006,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="779,121,862,89,897,77,899,83,864,94,781,126"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1CenterLayout.html" title="A centering layout." alt="" coords="875,104,1015,129"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="828,128,874,123,875,128,829,134"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1ConstraintLayout.html" title="A layout manager using constraints." alt="" coords="863,153,1027,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="828,150,863,154,862,159,828,155"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1FixedLayout.html" title="A layout manager that places child widgets at fixed positions." alt="" coords="879,203,1010,228"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="782,157,864,189,899,200,897,205,862,194,780,162"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1GridLayout.html" title="Layout manager for grid&#45;like widgets." alt="" coords="883,252,1007,277"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="763,162,807,201,864,238,891,250,889,254,861,243,804,205,759,166"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="513,129,612,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,139,660,139,660,145,626,145"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="335,129,465,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,139,513,139,513,145,479,145"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,129,287,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,139,335,139,335,145,301,145"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,129,123,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,139,170,139,170,145,137,145"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="Glib::ValueBase_Object" name="Glib::ValueBase_Object">
+<area shape="rect" id="Node000001" title=" " alt="" coords="177,127,351,153"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Value__Pointer.html" title=" " alt="" coords="437,5,583,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,117,340,86,398,55,436,41,438,46,400,60,343,90,295,122"/>
+<area shape="rect" id="Node000005" href="$classGlib_1_1Value__Pointer.html" title=" " alt="" coords="437,69,583,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="340,122,436,102,437,107,341,127"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Value_3_01Glib_1_1RefPtr_3_01T_01_4_00_01typename_01std_1_1enable__if__t_3_01Glib_1beeeb147356734744b9b859f55c4981e.html" title="Partial specialization for RefPtr&lt;&gt; to Glib::Object." alt="" coords="399,134,621,247"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="340,153,399,165,398,170,339,158"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1Value__Pointer.html" title=" " alt="" coords="437,272,583,312"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="287,161,335,210,366,236,400,258,438,274,436,279,397,262,363,240,332,214,283,165"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1ValueBase.html" title=" " alt="" coords="5,127,129,153"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,137,177,137,177,143,143,143"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1Value_3_01T_01_5_00_01Enable_01_4.html" title="Specialization for pointers to instances of any type." alt="" coords="669,13,863,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,23,669,23,669,28,596,28"/>
+<area shape="rect" id="Node000006" href="$classGlib_1_1Value_3_01const_01T_01_5_00_01Enable_01_4.html" title="Specialization for pointers to const instances of any type." alt="" coords="695,69,837,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="596,87,695,87,695,92,596,92"/>
+</map>

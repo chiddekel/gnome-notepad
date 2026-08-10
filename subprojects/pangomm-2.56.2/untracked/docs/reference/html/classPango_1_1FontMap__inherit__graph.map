@@ -1,0 +1,18 @@
+<map id="Pango::FontMap" name="Pango::FontMap">
+<area shape="rect" id="Node000001" title="A Pango::FontMap represents the set of fonts available for a particular rendering system." alt="" coords="56,384,180,411"/>
+<area shape="rect" id="Node000008" href="$classPango_1_1CairoFontMapImpl.html" title="Gdk::CairoFontMapImpl is a Pango::FontMap that implements the Pango::CairoFontMap interface." alt="" coords="24,459,212,487"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="120,425,120,460,116,458,116,429"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,308,103,336"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,345,109,383,104,384,75,350"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="53,157,183,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,201,62,308,57,306,107,196"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="117,232,231,260"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="137,194,167,231,161,232,137,199"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="60,81,176,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,122,121,157,115,156,118,127"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="60,5,176,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="118,46,121,81,115,80,118,51"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGio_1_1ListModel.html" title=" " alt="" coords="126,308,240,336"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="164,346,131,385,128,381,160,349"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="179,273,184,308,179,307,177,278"/>
+</map>

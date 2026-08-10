@@ -1,0 +1,27 @@
+<map id="Gdk::Paintable" name="Gdk::Paintable">
+<area shape="rect" id="Node000001" title="An interface for a paintable region." alt="" coords="427,299,543,324"/>
+<area shape="rect" id="Node000006" href="$classGdk_1_1Texture.html" title="Pixel data." alt="" coords="201,372,305,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="435,330,291,374,289,369,434,325"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1IconPaintable.html" title="An icon, used with Gtk::IconTheme." alt="" coords="333,372,473,397"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="463,335,418,374,415,370,460,331"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1MediaStream.html" title="Display media in GTK." alt="" coords="497,372,637,397"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="510,331,556,370,552,374,507,335"/>
+<area shape="rect" id="Node000013" href="$classGtk_1_1WidgetPaintable.html" title="Drawing a widget elsewhere." alt="" coords="661,372,820,397"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="539,325,700,369,699,374,538,330"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="427,225,542,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,264,487,299,482,299,482,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="419,152,550,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,191,487,225,482,225,482,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="427,79,543,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="487,118,487,152,482,152,482,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="426,5,543,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="487,44,487,79,482,79,482,44"/>
+<area shape="rect" id="Node000007" href="$classGdk_1_1DmabufTexture.html" title="A Gdk::Texture representing a dma&#45;buf object." alt="" coords="5,445,161,471"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="214,405,112,448,110,443,212,400"/>
+<area shape="rect" id="Node000008" href="$classGdk_1_1GLTexture.html" title="A Gdk::Texture representing a GL texture object." alt="" coords="186,445,306,471"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="253,411,250,445,244,445,248,411"/>
+<area shape="rect" id="Node000009" href="$classGdk_1_1MemoryTexture.html" title="A Gdk::Texture representing image data in memory." alt="" coords="331,445,489,471"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="292,401,385,443,383,448,289,405"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1MediaFile.html" title="Open media files for use in GTK." alt="" coords="513,445,629,471"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="571,411,573,445,568,445,566,411"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Gtk::StackPage" name="Gtk::StackPage">
+<area shape="rect" id="Node000001" title="Holds properties of a Gtk::Stack page." alt="" coords="61,372,181,397"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,299,104,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,333,112,370,109,374,73,336"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="56,152,187,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,191,62,300,58,297,108,189"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="121,225,236,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="141,186,171,224,167,227,137,190"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="63,79,179,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="124,118,124,152,119,152,119,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="63,5,180,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="124,44,124,79,119,79,119,44"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1Accessible.html" title="Accessible interface." alt="" coords="128,299,251,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="171,336,134,374,130,370,167,332"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="185,264,190,298,185,299,180,265"/>
+</map>

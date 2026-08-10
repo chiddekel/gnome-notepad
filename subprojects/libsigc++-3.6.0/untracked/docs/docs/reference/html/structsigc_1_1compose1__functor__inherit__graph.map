@@ -1,0 +1,5 @@
+<map id="sigc::compose1_functor&lt; T_setter, T_getter &gt;" name="sigc::compose1_functor&lt; T_setter, T_getter &gt;">
+<area shape="rect" id="node1" title="Adaptor that combines two functors." alt="" coords="9,155,185,196"/>
+<area shape="rect" id="node2" href="$structsigc_1_1adapts.html" title=" " alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node3" href="$structsigc_1_1adaptor__base.html" title="A hint to the compiler." alt="" coords="25,5,169,32"/>
+</map>

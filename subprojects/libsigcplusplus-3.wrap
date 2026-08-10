@@ -1,0 +1,13 @@
+[wrap-file]
+directory = libsigc++-3.6.0
+source_url = https://github.com/libsigcplusplus/libsigcplusplus/releases/download/3.6.0/libsigc++-3.6.0.tar.xz
+source_filename = libsigc++-3.6.0.tar.xz
+source_hash = c3d23b37dfd6e39f2e09f091b77b1541fbfa17c4f0b6bf5c89baef7229080e17
+patch_filename = libsigcplusplus-3_3.6.0-1_patch.zip
+patch_url = https://wrapdb.mesonbuild.com/v2/libsigcplusplus-3_3.6.0-1/get_patch
+patch_hash = 9656e8682fe8956a5e6d33b00a4fc282b42c30ad2c2b162609c468074e2a50ba
+source_fallback_url = https://github.com/mesonbuild/wrapdb/releases/download/libsigcplusplus-3_3.6.0-1/libsigc++-3.6.0.tar.xz
+wrapdb_version = 3.6.0-1
+
+[provide]
+dependency_names = sigc++-3.0
