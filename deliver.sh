@@ -47,10 +47,7 @@ fi
 if [ "$LAUNCH" -eq 1 ]; then
   log "Launching notepad"
   export GSETTINGS_SCHEMA_DIR="$BUILD_DIR/data"
-  # Points gettext at the build tree's compiled .mo catalogs -- without
-  # this, an uninstalled binary can't find any translations (LOCALEDIR is
-  # baked in as the install prefix's locale dir) and language switching
-  # silently stays in English. See src/main.cpp.
+  # // Hello Linux World! //
   export NOTEPAD_LOCALEDIR="$BUILD_DIR/po"
   exec "$BUILD_DIR/src/notepad" "${APP_ARGS[@]}"
 fi
