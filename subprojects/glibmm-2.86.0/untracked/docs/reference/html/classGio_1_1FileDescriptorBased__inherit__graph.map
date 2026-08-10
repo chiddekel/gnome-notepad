@@ -1,0 +1,15 @@
+<map id="Gio::FileDescriptorBased" name="Gio::FileDescriptorBased">
+<area shape="rect" id="Node000001" title="Interface for file descriptor based IO." alt="" coords="91,299,274,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1UnixInputStream.html" title="UnixInputStream implements InputStream for reading from a unix file descriptor, including asynchronou..." alt="" coords="5,372,168,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="158,334,104,374,101,370,155,330"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1UnixOutputStream.html" title="UnixOutputStream implements OutputStream for writing to a a unix file descriptor, including asynchron..." alt="" coords="192,372,365,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="211,330,265,370,261,374,208,334"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="125,225,240,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,264,185,299,180,299,180,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="117,152,248,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,191,185,225,180,225,180,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="125,79,241,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,118,185,152,180,152,180,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="124,5,241,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="185,44,185,79,180,79,180,44"/>
+</map>

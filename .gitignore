@@ -1,0 +1,22 @@
+build/
+build-flatpak/
+build-flatpak-repo/
+.flatpak-builder/
+
+# Meson-fetched subproject sources (gtkmm/glibmm/pangomm/cairomm/libsigc++/
+# libadwaita + libadwaita's own sassc dependency, plus WrapDB's package
+# cache and lock file) -- reproducible from subprojects/*.wrap, not
+# committed. The .wrap files themselves and our local patches in
+# subprojects/packagefiles/ ARE tracked.
+subprojects/*
+!subprojects/*.wrap
+!subprojects/packagefiles/
+!subprojects/packagefiles/**
+*.gresource
+po/*.gmo
+po/*.mo
+*.o
+*.obj
+.vscode/
+.idea/
+compile_commands.json

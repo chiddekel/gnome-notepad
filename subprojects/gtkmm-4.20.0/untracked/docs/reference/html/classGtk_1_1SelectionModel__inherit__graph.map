@@ -1,0 +1,19 @@
+<map id="Gtk::SelectionModel" name="Gtk::SelectionModel">
+<area shape="rect" id="Node000001" title="An extension of the list model interface that handles selections." alt="" coords="676,80,829,105"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1MultiSelection.html" title="A selection model that allows selecting multiple items." alt="" coords="907,5,1053,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="793,72,876,39,918,28,919,33,878,45,795,77"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1NoSelection.html" title="A selection model that does not allow selecting anything." alt="" coords="915,55,1045,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="843,80,914,72,915,77,844,85"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1SelectionListModelImpl.html" title="Gtk::SelectionListModelImpl is an object that implements the Gio::ListModel and Gtk::SelectionModel i..." alt="" coords="877,104,1083,129"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="843,100,877,103,877,108,843,105"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1SingleSelection.html" title="A selection model that allows selecting a single item." alt="" coords="903,153,1057,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="796,108,878,139,919,151,918,156,877,145,794,113"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="513,80,628,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,90,676,90,676,95,642,95"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="335,80,465,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,90,513,90,513,95,479,95"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,80,287,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,90,335,90,335,95,301,95"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,80,123,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,90,170,90,170,95,137,95"/>
+</map>

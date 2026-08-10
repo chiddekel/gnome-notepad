@@ -1,0 +1,5 @@
+<map id="Pango::AttrFloat" name="Pango::AttrFloat">
+<area shape="rect" id="Node000001" title="A Pango::AttrFloat is used to represent an attribute with a float or double value." alt="" coords="5,81,131,109"/>
+<area shape="rect" id="Node000002" href="$classPango_1_1Attribute.html" title="The Pango::Attribute structure represents the common portions of all attributes." alt="" coords="5,5,131,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,47,71,81,65,80,66,51"/>
+</map>

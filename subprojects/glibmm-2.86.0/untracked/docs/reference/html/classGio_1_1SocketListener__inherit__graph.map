@@ -1,0 +1,15 @@
+<map id="Gio::SocketListener" name="Gio::SocketListener">
+<area shape="rect" id="Node000001" title="Helper for accepting network client connections." alt="" coords="34,299,181,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1SocketService.html" title="Make it easy to implement a network service." alt="" coords="36,372,179,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="110,338,110,372,105,372,105,338"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="58,225,157,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,264,110,299,105,299,105,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="42,152,173,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,191,110,225,105,225,105,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="49,79,165,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="110,118,110,152,105,152,105,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="49,5,166,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="110,44,110,79,105,79,105,44"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1ThreadedSocketService.html" title="A threaded GSocketService." alt="" coords="5,445,209,471"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="110,411,110,445,105,445,105,411"/>
+</map>

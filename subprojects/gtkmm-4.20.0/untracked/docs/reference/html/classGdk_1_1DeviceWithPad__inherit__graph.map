@@ -1,0 +1,18 @@
+<map id="Gdk::DeviceWithPad" name="Gdk::DeviceWithPad">
+<area shape="rect" id="Node000001" title="A Gdk::DeviceWithPad is a Gdk::Device that implements the Gdk::DevicePad interface." alt="" coords="47,372,201,397"/>
+<area shape="rect" id="Node000002" href="$classGdk_1_1Device.html" title="A Gdk::Device instance contains a detailed description of an extended input device." alt="" coords="5,299,107,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,332,115,370,111,374,75,336"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="9,225,108,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,265,59,299,54,298,55,264"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="59,152,189,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,189,71,227,67,223,102,186"/>
+<area shape="rect" id="Node000008" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="133,225,248,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="146,186,182,223,178,227,143,190"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="66,79,182,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="127,118,127,152,121,152,121,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="65,5,183,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="127,44,127,79,121,79,121,44"/>
+<area shape="rect" id="Node000007" href="$classGdk_1_1DevicePad.html" title="Pad device interface." alt="" coords="131,299,255,324"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="174,336,137,374,133,370,171,332"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="194,264,196,298,190,299,189,265"/>
+</map>

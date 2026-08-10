@@ -1,0 +1,19 @@
+<map id="Gtk::ShortcutTrigger" name="Gtk::ShortcutTrigger">
+<area shape="rect" id="Node000001" title="Triggers to track if shortcuts should be activated." alt="" coords="283,299,433,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1AlternativeTrigger.html" title="A Gtk::ShortcutTrigger that triggers when either of two ShortcutTriggers trigger." alt="" coords="5,372,175,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="302,330,134,374,133,369,301,325"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1KeyvalTrigger.html" title="A Gtk::ShortcutTrigger that triggers when a specific keyval and (optionally) modifiers are pressed." alt="" coords="199,372,341,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="335,335,286,374,283,370,332,330"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1MnemonicTrigger.html" title="A Gtk::ShortcutTrigger that triggers when a specific mnemonic is pressed." alt="" coords="365,372,530,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="385,330,434,370,431,374,381,335"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1NeverTrigger.html" title="A Gtk::ShortcutTrigger that never triggers." alt="" coords="554,372,690,397"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="414,325,580,369,579,374,413,330"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="309,225,407,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="361,264,361,299,355,299,355,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="293,152,423,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,191,361,225,355,225,355,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="300,79,416,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="361,118,361,152,355,152,355,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="299,5,417,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="361,44,361,79,355,79,355,44"/>
+</map>

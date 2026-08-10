@@ -1,0 +1,13 @@
+<map id="Gio::TlsServerConnection" name="Gio::TlsServerConnection">
+<area shape="rect" id="Node000001" title="TLS server&#45;side connection." alt="" coords="19,299,206,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1TlsServerConnectionImpl.html" title="Gio::TlsServerConnectionImpl is a Gio::TlsConnection that implements the Gio::TlsServerConnection int..." alt="" coords="5,372,220,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="115,338,115,372,110,372,110,338"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="55,225,170,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,264,115,299,110,299,110,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="47,152,178,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,191,115,225,110,225,110,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="55,79,171,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,118,115,152,110,152,110,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="54,5,171,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="115,44,115,79,110,79,110,44"/>
+</map>

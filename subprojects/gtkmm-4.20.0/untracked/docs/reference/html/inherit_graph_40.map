@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classGtk_1_1TextIterBase.html" title="Common base class of TextIter and TextConstIter." alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000001" href="$classGtk_1_1TextConstIter.html" title="Typedefed as Gtk::TextBuffer::const_iterator." alt="" coords="188,5,327,31"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="153,30,187,25,188,30,154,35"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1TextIter.html" title="Typedefed as Gtk::TextBuffer::iterator." alt="" coords="206,55,309,80"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="154,51,206,58,205,63,153,56"/>
+</map>

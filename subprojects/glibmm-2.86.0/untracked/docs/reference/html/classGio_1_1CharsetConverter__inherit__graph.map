@@ -1,0 +1,19 @@
+<map id="Gio::CharsetConverter" name="Gio::CharsetConverter">
+<area shape="rect" id="Node000001" title="CharsetConverter &#45; Convert between charsets." alt="" coords="67,372,234,397"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,264,68,293,82,323,107,350,133,370,130,374,103,354,78,325,63,295,56,265"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="128,225,243,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="142,186,177,223,173,227,138,189"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Converter.html" title="Converter &#45; Data conversion interface." alt="" coords="93,299,209,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="153,338,153,372,148,372,148,338"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="176,264,159,300,154,297,171,262"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1Initable.html" title="Failable object initialization interface." alt="" coords="233,299,335,324"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="214,256,269,296,266,301,210,261"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="252,333,174,374,171,369,249,328"/>
+</map>

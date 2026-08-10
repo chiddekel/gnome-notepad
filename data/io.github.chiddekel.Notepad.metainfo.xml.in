@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.chiddekel.Notepad</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <name>Notepad</name>
+  <summary>A simple, native GNOME text editor</summary>
+
+  <description>
+    <p>
+      Notepad is a lightweight, native GNOME port of legacy-notepad, a Win32
+      Notepad clone. It supports multi-encoding text (UTF-8, UTF-8 BOM,
+      UTF-16 LE/BE, ANSI) with configurable line endings, find/replace with
+      wraparound search, printing, an optional background image behind the
+      editor, and light/dark themes that follow your system preference.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.chiddekel.Notepad.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Notepad's main editing window</caption>
+      <image type="source" width="640" height="480">https://raw.githubusercontent.com/chiddekel/gnome-notepad/v0.1.9-Beta/data/screenshots/main-window.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://chiddekel.github.io/gnome-notepad/</url>
+  <url type="bugtracker">https://github.com/chiddekel/gnome-notepad/issues</url>
+
+  <developer id="io.github.chiddekel">
+    <name>chiddekel</name>
+  </developer>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="0.1.10-Beta" date="2026-08-10">
+      <description>
+        <p>Add an encoding picker (ANSI, UTF-8, UTF-8 BOM, UTF-16 LE, UTF-16 BE) to the Save As dialog.</p>
+      </description>
+    </release>
+    <release version="0.1.9-Beta" date="2026-08-10">
+      <description>
+        <p>Final beta release.</p>
+      </description>
+    </release>
+    <release version="0.1.8" date="2026-08-09">
+      <description>
+        <p>Fix the website's install-command copy button: it was collapsing the line-continuation backslash into an escaped space, producing a command that made flatpak misparse the remote name and URL as one argument.</p>
+      </description>
+    </release>
+    <release version="0.1.7" date="2026-08-09">
+      <description>
+        <p>Replace the plain project-website page with a full designed landing page (features, screenshot walkthrough, install instructions) served from website/index.html.</p>
+      </description>
+    </release>
+    <release version="0.1.6" date="2026-08-09">
+      <description>
+        <p>GPG-sign the self-hosted Flatpak repo. The public key is now embedded in notepad.flatpakrepo, so `--no-gpg-verify` is no longer needed and system-wide installs work correctly too.</p>
+      </description>
+    </release>
+    <release version="0.1.5" date="2026-08-09">
+      <description>
+        <p>Fix the self-hosted repo's install instructions: use `flatpak --user` so an upstream Flatpak bug (system-scope --no-gpg-verify not being persisted) doesn't block installation.</p>
+      </description>
+    </release>
+    <release version="0.1.4" date="2026-08-09">
+      <description>
+        <p>Publish a self-hosted, unsigned Flatpak repo on GitHub Pages so the app can be installed and updated directly, without going through Flathub.</p>
+      </description>
+    </release>
+    <release version="0.1.3" date="2026-08-09">
+      <description>
+        <p>Pin the screenshot URL to a release tag instead of the main branch, and remove the last mentions of the maintainer's personal email from the app credits and translations.</p>
+      </description>
+    </release>
+    <release version="0.1.2" date="2026-08-09">
+      <description>
+        <p>Fix live language switching in the Flatpak build: translations were being split into a separate .Locale extension that never shipped with the standalone bundle.</p>
+      </description>
+    </release>
+    <release version="0.1.1" date="2026-08-09">
+      <description>
+        <p>Fix the Flatpak build so the screenshot is mirrored into the bundle and shows up in GNOME Software.</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2026-08-07">
+      <description>
+        <p>Initial release: a native GNOME port of legacy-notepad.</p>
+      </description>
+    </release>
+  </releases>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+
+  <recommends>
+    <display_length compare="ge">360</display_length>
+  </recommends>
+</component>

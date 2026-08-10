@@ -1,0 +1,11 @@
+<map id="Gio::DBus::MethodInvocation" name="Gio::DBus::MethodInvocation">
+<area shape="rect" id="Node000001" title="An Object for handling remote calls." alt="" coords="5,299,216,324"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="61,225,160,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,264,113,299,108,299,108,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="45,152,176,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,191,113,225,108,225,108,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="53,79,169,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,118,113,152,108,152,108,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="52,5,169,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,44,113,79,108,79,108,44"/>
+</map>

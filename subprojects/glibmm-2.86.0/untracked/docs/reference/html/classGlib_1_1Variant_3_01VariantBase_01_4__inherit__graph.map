@@ -1,0 +1,7 @@
+<map id="Glib::Variant&lt; VariantBase &gt;" name="Glib::Variant&lt; VariantBase &gt;">
+<area shape="rect" id="Node000001" title="Specialization of Variant containing a VariantBase." alt="" coords="5,152,216,177"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1VariantContainerBase.html" title="The base class for multiple&#45;item Variants, such as Variants containing tuples or arrays,..." alt="" coords="12,79,209,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,118,113,152,108,152,108,118"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1VariantBase.html" title="This is the base class for all Variant types." alt="" coords="43,5,178,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,44,113,79,108,79,108,44"/>
+</map>

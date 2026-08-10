@@ -1,0 +1,5 @@
+<map id="Glib::DBusObjectPathString" name="Glib::DBusObjectPathString">
+<area shape="rect" id="Node000001" title="String class for D&#45;Bus object paths in Glib::Variant." alt="" coords="5,79,204,104"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ..." alt="" coords="54,5,155,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,44,107,79,102,79,102,44"/>
+</map>

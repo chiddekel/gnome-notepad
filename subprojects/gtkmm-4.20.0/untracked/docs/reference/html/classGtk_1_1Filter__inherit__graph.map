@@ -1,0 +1,23 @@
+<map id="Gtk::Filter" name="Gtk::Filter">
+<area shape="rect" id="Node000001" title="Filtering items." alt="" coords="225,299,311,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1BoolFilter.html" title="Filtering by boolean expressions." alt="" coords="5,372,120,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="223,331,97,374,95,369,221,326"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1FileFilter.html" title="A filter for selecting a file subset." alt="" coords="144,372,253,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="249,336,212,374,208,370,245,332"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1MultiFilter.html" title="Combining multiple filters." alt="" coords="278,372,397,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="291,332,328,370,324,374,287,336"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1StringFilter.html" title="Filtering by strings." alt="" coords="421,372,545,397"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="316,326,449,369,447,374,315,331"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="219,225,317,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,264,271,299,265,299,265,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="203,152,333,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,191,271,225,265,225,265,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="210,79,326,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="271,118,271,152,265,152,265,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="209,5,327,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="271,44,271,79,265,79,265,44"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1AnyFilter.html" title="Matches when at least one filter matches." alt="" coords="211,445,322,471"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="318,409,280,447,276,443,314,405"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1EveryFilter.html" title="Matches when each of its filter matches." alt="" coords="347,445,469,471"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="361,405,398,443,395,447,357,409"/>
+</map>

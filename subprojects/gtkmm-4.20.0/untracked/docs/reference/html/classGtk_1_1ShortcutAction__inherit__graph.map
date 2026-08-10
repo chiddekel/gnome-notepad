@@ -1,0 +1,23 @@
+<map id="Gtk::ShortcutAction" name="Gtk::ShortcutAction">
+<area shape="rect" id="Node000001" title="Tracking if shortcuts should be activated." alt="" coords="660,129,808,155"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ActivateAction.html" title="A Gtk::ShortcutAction that calls Gtk::Widget::activate()." alt="" coords="863,5,1011,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="756,117,799,78,855,40,882,28,884,33,857,44,803,82,759,121"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1CallbackAction.html" title="A Gtk::ShortcutAction that invokes a callback." alt="" coords="862,55,1013,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="775,121,855,89,890,78,891,83,857,94,777,126"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1MnemonicAction.html" title="A Gtk::ShortcutAction that calls Gtk::Widget::mnemonic_activate()." alt="" coords="856,104,1019,129"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="821,128,856,124,856,129,822,134"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1NamedAction.html" title="A Gtk::ShortcutAction that activates an action by name." alt="" coords="867,153,1008,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="822,150,866,155,866,160,821,155"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1NothingAction.html" title="A Gtk::ShortcutAction that does nothing." alt="" coords="865,203,1010,228"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="778,158,857,189,892,200,890,205,855,194,776,163"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1SignalAction.html" title="A Gtk::ShortcutAction that emits a signal." alt="" coords="870,252,1005,277"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="759,163,803,201,857,238,884,249,882,254,855,243,799,206,756,167"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="513,129,612,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,139,660,139,660,145,626,145"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="335,129,465,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,139,513,139,513,145,479,145"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,129,287,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,139,335,139,335,145,301,145"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,129,123,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,139,170,139,170,145,137,145"/>
+</map>

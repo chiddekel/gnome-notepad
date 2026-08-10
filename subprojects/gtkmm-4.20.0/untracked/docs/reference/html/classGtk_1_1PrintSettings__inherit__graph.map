@@ -1,0 +1,11 @@
+<map id="Gtk::PrintSettings" name="Gtk::PrintSettings">
+<area shape="rect" id="Node000001" title="A PrintSettings object represents the settings of a print dialog in a system&#45;independent way." alt="" coords="5,299,141,324"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="24,225,123,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,264,76,299,71,299,71,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="8,152,139,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,191,76,225,71,225,71,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="15,79,131,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="76,118,76,152,71,152,71,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="15,5,132,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="76,44,76,79,71,79,71,44"/>
+</map>

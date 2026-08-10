@@ -1,0 +1,7 @@
+<map id="sigc::trackable_signal&lt; T_return(T_arg...)&gt;::accumulated&lt; T_accumulator &gt;" name="sigc::trackable_signal&lt; T_return(T_arg...)&gt;::accumulated&lt; T_accumulator &gt;">
+<area shape="rect" id="node1" title="Like sigc::trackable_signal but the additional template parameter T_accumulator defines the accumulat..." alt="" coords="27,259,267,315"/>
+<area shape="rect" id="node2" href="$classsigc_1_1trackable__signal__with__accumulator.html" title=" " alt="" coords="37,155,256,211"/>
+<area shape="rect" id="node3" href="$structsigc_1_1signal__base.html" title="Base class for the sigc::signal template." alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node4" href="$structsigc_1_1trackable.html" title="Base class for objects with auto&#45;disconnection." alt="" coords="163,80,279,107"/>
+<area shape="rect" id="node5" href="$structsigc_1_1notifiable.html" title=" " alt="" coords="163,5,280,32"/>
+</map>

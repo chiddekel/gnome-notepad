@@ -1,0 +1,21 @@
+<map id="Gtk::Sorter" name="Gtk::Sorter">
+<area shape="rect" id="Node000001" title="Sorting items." alt="" coords="309,299,401,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ColumnViewSorter.html" title="A sorter implementation that is geared towards the needs of Gtk::ColumnView." alt="" coords="5,372,180,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="301,330,136,374,135,369,299,325"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1MultiSorter.html" title="Combining multiple sorters." alt="" coords="205,372,330,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="332,335,283,374,280,370,329,330"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1NumericSorterBase.html" title="Base class for Gtk::NumericSorter." alt="" coords="354,372,533,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="382,330,431,370,427,374,378,335"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1StringSorter.html" title="Sort by comparing strings." alt="" coords="557,372,687,397"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="412,325,580,369,578,374,411,330"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="306,225,405,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,264,358,299,353,299,353,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="290,152,421,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="358,191,358,225,353,225,353,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="297,79,413,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,118,358,152,353,152,353,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="297,5,414,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="358,44,358,79,353,79,353,44"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1NumericSorter.html" title="Sort by comparing numbers." alt="" coords="351,445,536,471"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="446,411,446,445,441,445,441,411"/>
+</map>

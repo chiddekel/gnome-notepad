@@ -1,0 +1,9 @@
+<map id="Glib::Value&lt; T *, Enable &gt;" name="Glib::Value&lt; T *, Enable &gt;">
+<area shape="rect" id="Node000001" title="Specialization for pointers to instances of any type." alt="" coords="5,240,199,265"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Value__Pointer.html" title=" " alt="" coords="29,152,175,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,206,105,240,99,240,99,206"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ValueBase__Object.html" title=" " alt="" coords="15,79,189,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,118,105,152,99,152,99,118"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ValueBase.html" title=" " alt="" coords="40,5,164,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,44,105,79,99,79,99,44"/>
+</map>

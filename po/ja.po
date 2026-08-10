@@ -1,0 +1,414 @@
+# Japanese translation for notepad.
+# Copyright (C) 2026 chiddekel
+# This file is distributed under the same license as the notepad package.
+# Terminology follows legacy-notepad's src/lang/ja.h where the concepts
+# overlap (e.g. "無題" for Untitled).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: notepad 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 08:42+0200\n"
+"PO-Revision-Date: 2026-08-08 00:00+0200\n"
+"Last-Translator: chiddekel\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/window.cpp:360
+msgid "Select Background Image"
+msgstr "背景画像を選択..."
+
+#: src/window.cpp:364
+msgid "Image Files"
+msgstr "画像ファイル"
+
+#: src/window.cpp:408
+msgid "Background Opacity"
+msgstr "背景の不透明度"
+
+#: src/window.cpp:411 src/modules/commands.cpp:94 src/modules/dialog.cpp:197
+#: src/modules/dialog.cpp:291
+msgid "_Cancel"
+msgstr "キャンセル(_C)"
+
+#: src/window.cpp:411 src/modules/dialog.cpp:291
+msgid "_Apply"
+msgstr "適用(_A)"
+
+#: src/window.cpp:459 src/modules/commands.cpp:87 src/modules/commands.cpp:210
+msgid "Untitled"
+msgstr "無題"
+
+#: src/window.cpp:469
+msgid "Ln %1, Col %2"
+msgstr "%1 行, %2 列"
+
+#: src/modules/commands.cpp:90
+msgid "If you don't save, changes to “%1” will be lost."
+msgstr "保存しない場合、「%1」への変更は失われます。"
+
+#: src/modules/commands.cpp:92
+msgid "Save changes?"
+msgstr "変更を保存しますか?"
+
+#: src/modules/commands.cpp:94
+msgid "_Discard"
+msgstr "破棄(_D)"
+
+#: src/modules/commands.cpp:95 src/resources/ui/menus.ui:33
+msgid "_Save"
+msgstr "保存(_S)"
+
+#: src/modules/commands.cpp:130
+msgid "Open File"
+msgstr "ファイルを開く"
+
+#: src/modules/commands.cpp:134
+msgid "Text Documents"
+msgstr "テキスト ドキュメント"
+
+#: src/modules/commands.cpp:138
+msgid "All Files"
+msgstr "すべてのファイル"
+
+#: src/modules/commands.cpp:177
+msgid "Save As"
+msgstr "名前を付けて保存"
+
+#: src/modules/commands.cpp:179
+msgid "Untitled.txt"
+msgstr "無題.txt"
+
+#: src/modules/dialog.cpp:37 src/modules/dialog.cpp:74
+msgid "Replace with…"
+msgstr "置換後の文字列…"
+
+#: src/modules/dialog.cpp:38 src/modules/dialog.cpp:72
+msgid "Replace"
+msgstr "置換"
+
+#: src/modules/dialog.cpp:39 src/modules/dialog.cpp:73
+msgid "Replace All"
+msgstr "すべて置換"
+
+#: src/modules/dialog.cpp:194
+msgid "Go to Line"
+msgstr "指定行へ移動"
+
+#: src/modules/dialog.cpp:197
+msgid "_Go To"
+msgstr "移動(_G)"
+
+#: src/modules/dialog.cpp:218
+msgid "Choose Font"
+msgstr "フォントの選択"
+
+#. GNOME convention: each po/<locale>.po supplies its own translation of
+#. the literal msgid "translator-credits" (name/email per line). gettext
+#. returns the msgid itself when there's no translation for the current
+#. locale, so that has to be treated as "no credits" rather than shown
+#. literally.
+#: src/modules/dialog.cpp:266
+msgid "translator-credits"
+msgstr "chiddekel <qp2boih4e@mozmail.com>"
+
+#: src/modules/dialog.cpp:272
+msgid "Based on"
+msgstr "原案"
+
+#: src/modules/dialog.cpp:288
+msgid "Window Transparency"
+msgstr "ウィンドウの透明度"
+
+#: src/resources/ui/menus.ui:22
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: src/resources/ui/menus.ui:25
+msgid "_New"
+msgstr "新規(_N)"
+
+#: src/resources/ui/menus.ui:29
+msgid "_Open..."
+msgstr "開く...(_O)"
+
+#: src/resources/ui/menus.ui:37
+msgid "Save _As..."
+msgstr "名前を付けて保存...(_A)"
+
+#: src/resources/ui/menus.ui:50
+msgid "Recent _Files"
+msgstr "最近使ったファイル(_F)"
+
+#: src/resources/ui/menus.ui:57
+msgid "_Print..."
+msgstr "印刷...(_P)"
+
+#: src/resources/ui/menus.ui:61
+msgid "Page Set_up..."
+msgstr "ページ設定...(_U)"
+
+#: src/resources/ui/menus.ui:67
+msgid "E_xit"
+msgstr "終了(_X)"
+
+#: src/resources/ui/menus.ui:74
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: src/resources/ui/menus.ui:77
+msgid "_Undo"
+msgstr "元に戻す(_U)"
+
+#: src/resources/ui/menus.ui:81
+msgid "_Redo"
+msgstr "やり直し(_R)"
+
+#: src/resources/ui/menus.ui:87
+msgid "Cu_t"
+msgstr "切り取り(_T)"
+
+#: src/resources/ui/menus.ui:91
+msgid "_Copy"
+msgstr "コピー(_C)"
+
+#: src/resources/ui/menus.ui:95
+msgid "_Paste"
+msgstr "貼り付け(_P)"
+
+#: src/resources/ui/menus.ui:99
+msgid "De_lete"
+msgstr "削除(_L)"
+
+#: src/resources/ui/menus.ui:105
+msgid "_Find..."
+msgstr "検索...(_F)"
+
+#: src/resources/ui/menus.ui:109
+msgid "Find _Next"
+msgstr "次を検索(_N)"
+
+#: src/resources/ui/menus.ui:113
+msgid "Find Pre_vious"
+msgstr "前を検索(_V)"
+
+#: src/resources/ui/menus.ui:117
+msgid "_Replace..."
+msgstr "置換...(_R)"
+
+#: src/resources/ui/menus.ui:121
+msgid "_Go To..."
+msgstr "指定行へ移動...(_G)"
+
+#: src/resources/ui/menus.ui:127
+msgid "Select _All"
+msgstr "すべて選択(_A)"
+
+#: src/resources/ui/menus.ui:131
+msgid "Time/_Date"
+msgstr "日付と時刻(_D)"
+
+#: src/resources/ui/menus.ui:138
+msgid "F_ormat"
+msgstr "書式(_O)"
+
+#: src/resources/ui/menus.ui:141
+msgid "_Word Wrap"
+msgstr "右端で折り返す(_W)"
+
+#: src/resources/ui/menus.ui:145
+msgid "_Font..."
+msgstr "フォント...(_F)"
+
+#: src/resources/ui/menus.ui:152
+msgid "_View"
+msgstr "表示(_V)"
+
+#: src/resources/ui/menus.ui:155
+msgid "Zoom _In"
+msgstr "拡大(_I)"
+
+#: src/resources/ui/menus.ui:159
+msgid "Zoom _Out"
+msgstr "縮小(_O)"
+
+#: src/resources/ui/menus.ui:163
+msgid "_Restore Default Zoom"
+msgstr "ズームを既定に戻す(_R)"
+
+#: src/resources/ui/menus.ui:169
+msgid "_Status Bar"
+msgstr "ステータス バー(_S)"
+
+#: src/resources/ui/menus.ui:173
+msgid "_Dark Mode"
+msgstr "ダーク モード(_D)"
+
+#: src/resources/ui/menus.ui:179
+msgid "_Background"
+msgstr "背景(_B)"
+
+#: src/resources/ui/menus.ui:182
+msgid "_Select Image..."
+msgstr "画像を選択...(_S)"
+
+#: src/resources/ui/menus.ui:186
+msgid "_Clear Background"
+msgstr "背景を消去(_C)"
+
+#: src/resources/ui/menus.ui:190
+msgid "_Opacity..."
+msgstr "不透明度...(_O)"
+
+#: src/resources/ui/menus.ui:195
+msgid "_Position"
+msgstr "配置(_P)"
+
+#: src/resources/ui/menus.ui:198
+msgid "Top Left"
+msgstr "左上"
+
+#: src/resources/ui/menus.ui:203
+msgid "Top Center"
+msgstr "上中央"
+
+#: src/resources/ui/menus.ui:208
+msgid "Top Right"
+msgstr "右上"
+
+#: src/resources/ui/menus.ui:215
+msgid "Center Left"
+msgstr "左中央"
+
+#: src/resources/ui/menus.ui:220
+msgid "Center"
+msgstr "中央"
+
+#: src/resources/ui/menus.ui:225
+msgid "Center Right"
+msgstr "右中央"
+
+#: src/resources/ui/menus.ui:232
+msgid "Bottom Left"
+msgstr "左下"
+
+#: src/resources/ui/menus.ui:237
+msgid "Bottom Center"
+msgstr "下中央"
+
+#: src/resources/ui/menus.ui:242
+msgid "Bottom Right"
+msgstr "右下"
+
+#: src/resources/ui/menus.ui:249
+msgid "Tile"
+msgstr "並べて表示"
+
+#: src/resources/ui/menus.ui:254
+msgid "Stretch"
+msgstr "伸縮"
+
+#: src/resources/ui/menus.ui:259
+msgid "Fit"
+msgstr "全体表示"
+
+#: src/resources/ui/menus.ui:264
+msgid "Fill"
+msgstr "埋める"
+
+#: src/resources/ui/menus.ui:274
+msgid "Window _Transparency..."
+msgstr "ウィンドウの透明度...(_T)"
+
+#: src/resources/ui/menus.ui:278
+msgid "Always on _Top"
+msgstr "常に手前に表示(_T)"
+
+#: src/resources/ui/menus.ui:285
+msgid "_Language"
+msgstr "言語(_L)"
+
+#: src/resources/ui/menus.ui:288
+msgid "_English"
+msgstr "英語(_E)"
+
+#: src/resources/ui/menus.ui:293
+msgid "_Spanish"
+msgstr "スペイン語(_S)"
+
+#: src/resources/ui/menus.ui:298
+msgid "Por_tuguese"
+msgstr "ポルトガル語(_T)"
+
+#: src/resources/ui/menus.ui:303
+msgid "_French"
+msgstr "フランス語(_F)"
+
+#: src/resources/ui/menus.ui:308
+msgid "_German"
+msgstr "ドイツ語(_G)"
+
+#: src/resources/ui/menus.ui:313
+msgid "_Japanese"
+msgstr "日本語(_J)"
+
+#: src/resources/ui/menus.ui:318
+msgid "_Korean"
+msgstr "韓国語(_K)"
+
+#: src/resources/ui/menus.ui:323
+msgid "_Arabic"
+msgstr "アラビア語(_A)"
+
+#: src/resources/ui/menus.ui:328
+msgid "_Hindi"
+msgstr "ヒンディー語(_H)"
+
+#: src/resources/ui/menus.ui:333
+msgid "_Chinese"
+msgstr "中国語(_C)"
+
+#: src/resources/ui/menus.ui:338
+msgid "_Polish"
+msgstr "ポーランド語(_P)"
+
+#: src/resources/ui/menus.ui:346
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: src/resources/ui/menus.ui:349
+msgid "Check for _Updates..."
+msgstr "更新の確認...(_U)"
+
+#: src/resources/ui/menus.ui:353
+msgid "_About Notepad"
+msgstr "メモ帳について(_A)"
+
+#: data/io.github.chiddekel.Notepad.desktop.in:2
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:8
+msgid "A simple, native GNOME text editor"
+msgstr "シンプルなGNOMEネイティブのテキストエディタ"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:11
+msgid ""
+"Notepad is a lightweight, native GNOME port of legacy-notepad, a Win32 "
+"Notepad clone. It supports multi-encoding text (UTF-8, UTF-8 BOM, UTF-16 "
+"LE/BE, ANSI) with configurable line endings, find/replace with wraparound "
+"search, printing, an optional background image behind the editor, and "
+"light/dark themes that follow your system preference."
+msgstr ""
+"Notepadは、Win32のメモ帳のクローンであるlegacy-notepadを軽量かつネイティブにGNOME向けに移植したものです。複数のエンコーディング(UTF-8、UTF-8 "
+"BOM、UTF-16 "
+"LE/BE、ANSI)のテキストに対応し、設定可能な改行コード、折り返し検索に対応した検索/置換、印刷、エディタの背後に表示できる任意の背景画像、システムの設定に従うライト/ダークテーマをサポートします。"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:24
+msgid "Notepad's main editing window"
+msgstr "Notepadのメイン編集ウィンドウ"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:41
+msgid "Initial release: a native GNOME port of legacy-notepad."
+msgstr "初回リリース: legacy-notepadのネイティブGNOME移植版です。"

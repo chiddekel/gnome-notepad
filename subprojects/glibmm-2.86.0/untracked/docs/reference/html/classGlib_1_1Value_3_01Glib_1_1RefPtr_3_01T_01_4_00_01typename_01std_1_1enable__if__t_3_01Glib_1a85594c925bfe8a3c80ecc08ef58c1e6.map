@@ -1,0 +1,7 @@
+<map id="Glib::Value&lt; Glib::RefPtr&lt; T &gt;, typename std::enable_if_t&lt; Glib::Traits::HasGetBaseType&lt; T, GType()&gt;::value||Glib::Traits::IsIncompleteClassType&lt; T &gt;::value &gt; &gt;" name="Glib::Value&lt; Glib::RefPtr&lt; T &gt;, typename std::enable_if_t&lt; Glib::Traits::HasGetBaseType&lt; T, GType()&gt;::value||Glib::Traits::IsIncompleteClassType&lt; T &gt;::value &gt; &gt;">
+<area shape="rect" id="Node000001" title="Partial specialization for RefPtr&lt;&gt; to Glib::Object." alt="" coords="5,152,228,265"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1ValueBase__Object.html" title=" " alt="" coords="30,79,203,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,118,119,152,114,152,114,118"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ValueBase.html" title=" " alt="" coords="55,5,179,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,44,119,79,114,79,114,44"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Gio::NetworkService" name="Gio::NetworkService">
+<area shape="rect" id="Node000001" title="A GSocketConnectable for resolving SRV records." alt="" coords="57,372,212,397"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,299,104,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,331,123,370,120,374,76,335"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="69,152,200,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,191,63,300,59,297,119,188"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="141,225,256,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="156,186,190,223,186,227,152,189"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="77,79,193,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,118,137,152,132,152,132,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="76,5,193,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,44,137,79,132,79,132,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1SocketConnectable.html" title="Interface for potential socket endpoints." alt="" coords="128,299,304,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="194,335,150,374,146,370,191,331"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="207,263,216,298,211,299,202,265"/>
+</map>

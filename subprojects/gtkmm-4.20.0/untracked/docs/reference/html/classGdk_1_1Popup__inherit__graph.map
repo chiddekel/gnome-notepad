@@ -1,0 +1,13 @@
+<map id="Gdk::Popup" name="Gdk::Popup">
+<area shape="rect" id="Node000001" title="Interface for popup surfaces." alt="" coords="45,299,141,324"/>
+<area shape="rect" id="Node000006" href="$classGdk_1_1PopupSurfaceImpl.html" title="Gdk::PopupSurfaceImpl is a Gdk::Surface that implements the Gdk::Popup interface." alt="" coords="5,372,180,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="95,338,95,372,90,372,90,338"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="35,225,150,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,264,95,299,90,299,90,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="27,152,158,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,191,95,225,90,225,90,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="35,79,151,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,118,95,152,90,152,90,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="34,5,151,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>

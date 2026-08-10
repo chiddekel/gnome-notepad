@@ -1,0 +1,2 @@
+option('profile', type: 'combo', choices: ['default', 'devel'], value: 'default',
+  description: 'Build profile: default (stable app id) or devel (suffixed app id/icon for parallel install)')

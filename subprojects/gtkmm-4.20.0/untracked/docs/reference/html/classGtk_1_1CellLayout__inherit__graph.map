@@ -1,0 +1,27 @@
+<map id="Gtk::CellLayout" name="Gtk::CellLayout">
+<area shape="rect" id="Node000001" title="An interface for packing cells." alt="" coords="676,129,799,155"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1CellArea.html" title="An abstract base class for laying out CellRenderers." alt="" coords="874,5,982,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="757,117,795,78,845,41,874,28,876,33,848,46,799,82,760,121"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1CellView.html" title="A widget displaying a single row of a TreeModel." alt="" coords="873,55,983,80"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="776,121,846,90,882,78,884,83,848,95,778,126"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1ComboBox.html" title="A widget used to choose from a list of items." alt="" coords="866,104,990,129"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="812,129,866,122,866,127,812,135"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1EntryCompletion.html" title="Completion functionality for Gtk::Entry." alt="" coords="847,153,1009,179"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="813,149,847,153,846,158,812,154"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1IconView.html" title="The IconView provides an alternative view of a list model." alt="" coords="872,203,984,228"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="777,158,848,189,881,200,879,205,846,194,775,163"/>
+<area shape="rect" id="Node000013" href="$classGtk_1_1TreeViewColumn.html" title="Typedefed as Gtk::TreeView::Column." alt="" coords="847,252,1009,277"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="760,164,799,202,848,238,873,250,871,254,845,243,795,206,757,167"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="513,129,628,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,139,676,139,676,145,642,145"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="335,129,465,155"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,139,513,139,513,145,479,145"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,129,287,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,139,335,139,335,145,301,145"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,129,123,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,139,170,139,170,145,137,145"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1CellAreaBox.html" title="A cell area that renders CellRenderers into a row or a colum, depending on its orientation." alt="" coords="1066,5,1199,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="996,15,1066,15,1066,21,996,21"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1ComboBoxText.html" title="This is a simple variant of ComboBox that hides the model&#45;view complexity for simple text&#45;only use ca..." alt="" coords="1057,104,1208,129"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1004,114,1057,114,1057,119,1004,119"/>
+</map>

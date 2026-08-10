@@ -1,0 +1,18 @@
+<map id="Gtk::BoxLayout" name="Gtk::BoxLayout">
+<area shape="rect" id="Node000001" title="Layout manager for placing all children in a single row or column." alt="" coords="103,372,225,397"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1LayoutManager.html" title="Base class for layout manager." alt="" coords="5,299,160,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,331,152,370,149,374,104,335"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="49,225,148,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,265,88,299,83,298,90,263"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="99,152,229,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="146,189,111,227,107,223,142,186"/>
+<area shape="rect" id="Node000008" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="180,225,295,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="188,185,227,223,224,227,184,189"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="106,79,222,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="167,118,167,152,161,152,161,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="105,5,223,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="167,44,167,79,161,79,161,44"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1Orientable.html" title="This interface is implemented by all widgets that can be oriented horizontally or vertically." alt="" coords="185,299,306,324"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="224,335,179,374,176,370,220,331"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="243,264,247,298,241,299,238,265"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Gtk::TreeDragDest" name="Gtk::TreeDragDest">
+<area shape="rect" id="Node000001" title="Interface for Drag&#45;and&#45;Drop destinations in Gtk::TreeView." alt="" coords="58,299,199,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ListStore.html" title="This is a list model for use with a Gtk::TreeView widget." alt="" coords="5,372,116,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="110,336,74,374,70,370,106,332"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1TreeStore.html" title="A tree&#45;like data structure that can be used with the Gtk::TreeView." alt="" coords="141,372,255,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="151,332,189,370,185,374,148,336"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="71,225,186,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,264,131,299,126,299,126,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="63,152,194,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,191,131,225,126,225,126,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="71,79,187,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,118,131,152,126,152,126,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="70,5,187,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="131,44,131,79,126,79,126,44"/>
+</map>

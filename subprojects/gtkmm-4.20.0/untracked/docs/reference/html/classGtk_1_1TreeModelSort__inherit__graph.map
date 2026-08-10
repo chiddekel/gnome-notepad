@@ -1,0 +1,22 @@
+<map id="Gtk::TreeModelSort" name="Gtk::TreeModelSort">
+<area shape="rect" id="Node000001" title="A wrapper which makes an underlying Gtk::TreeModel sortable." alt="" coords="96,372,243,397"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,263,21,293,19,308,24,323,38,339,56,352,97,369,95,374,53,357,34,343,19,325,13,309,16,291,32,260"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="157,225,272,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="148,183,201,223,198,227,145,188"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget." alt="" coords="33,299,153,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="117,331,159,370,155,374,114,335"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="184,260,115,301,112,296,182,255"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1TreeSortable.html" title="The interface for sortable models used by Gtk::TreeView." alt="" coords="178,299,313,324"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="228,262,243,297,238,300,223,264"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1TreeDragSource.html" title="Interface for Drag&#45;and&#45;Drop sources in Gtk::TreeView." alt="" coords="337,299,492,324"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="261,253,383,296,381,301,259,258"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="225,335,184,374,180,370,221,331"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="363,330,210,374,208,369,362,325"/>
+</map>

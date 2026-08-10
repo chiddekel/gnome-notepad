@@ -1,0 +1,15 @@
+<map id="Gtk::NumericSorter&lt; T &gt;" name="Gtk::NumericSorter&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Sort by comparing numbers." alt="" coords="5,445,191,471"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1NumericSorterBase.html" title="Base class for Gtk::NumericSorter." alt="" coords="9,372,187,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,411,101,445,95,445,95,411"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1Sorter.html" title="Sorting items." alt="" coords="52,299,144,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,338,101,372,95,372,95,338"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="49,225,147,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,264,101,299,95,299,95,264"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="33,152,163,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="101,191,101,225,95,225,95,191"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="40,79,156,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="101,118,101,152,95,152,95,118"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="39,5,157,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="101,44,101,79,95,79,95,44"/>
+</map>

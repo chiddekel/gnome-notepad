@@ -1,0 +1,111 @@
+name: Flatpak
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build Flatpak
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-50
+      options: --privileged
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+        with:
+          bundle: io.github.chiddekel.Notepad.flatpak
+          manifest-path: build-aux/flatpak/io.github.chiddekel.Notepad.json
+          cache-key: flatpak-builder-${{ github.sha }}
+          mirror-screenshots-url: https://raw.githubusercontent.com/chiddekel/gnome-notepad/main/data/screenshots
+          run-tests: true
+
+  release:
+    name: Publish release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: io.github.chiddekel.Notepad-x86_64.flatpak
+          path: dist
+
+      - name: Generate SHA256 checksum
+        run: sha256sum dist/*.flatpak > dist/SHA256SUMS.txt
+
+      - uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            dist/*.flatpak
+            dist/SHA256SUMS.txt
+
+  build-repo:
+    name: Build self-hosted Flatpak repo
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-50
+      options: --privileged
+    env:
+      GNUPGHOME: /tmp/gnupg-flatpak-repo
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Import the repo signing key
+        run: |
+          mkdir -m 700 -p "$GNUPGHOME"
+          echo "${{ secrets.FLATPAK_GPG_KEY }}" | gpg --batch --import
+          key_id=$(gpg --batch --with-colons --list-secret-keys | awk -F: '/^sec/ {print $5; exit}')
+          echo "GPG_KEY_ID=$key_id" >> "$GITHUB_ENV"
+          gpg --batch --export "$key_id" | base64 -w0 > gpg-public-key.b64
+
+      - name: Build and export to an OSTree repo
+        run: |
+          flatpak-builder --force-clean --disable-rofiles-fuse \
+            --gpg-sign="$GPG_KEY_ID" --repo=repo \
+            build-dir build-aux/flatpak/io.github.chiddekel.Notepad.json
+          flatpak build-update-repo --gpg-sign="$GPG_KEY_ID" repo
+
+      - name: Assemble Pages site
+        run: |
+          mkdir -p _site
+          cp -r repo _site/repo
+          cat > _site/notepad.flatpakrepo <<EOF
+          [Flatpak Repo]
+          Title=Notepad
+          Url=https://chiddekel.github.io/gnome-notepad/repo/
+          Homepage=https://chiddekel.github.io/gnome-notepad/
+          Comment=A simple, native GNOME text editor
+          Description=A lightweight, native GNOME port of legacy-notepad, a Win32 Notepad clone.
+          Icon=https://raw.githubusercontent.com/chiddekel/gnome-notepad/${{ github.ref_name }}/data/icons/hicolor/scalable/apps/io.github.chiddekel.Notepad.svg
+          GPGKey=$(cat gpg-public-key.b64)
+          EOF
+          cp website/index.html _site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy-repo:
+    name: Deploy Flatpak repo to GitHub Pages
+    needs: build-repo
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

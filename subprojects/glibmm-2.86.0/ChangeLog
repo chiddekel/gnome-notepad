@@ -1,0 +1,1486 @@
+2025-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.86.0
+
+2025-09-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gio/giomm/meson.build: dummy_header.h depends on all built .h files
+
+  not just the used ones. Even the unused ones shall be built before
+  the used ones are compiled. Unused ones may be #included in used ones.
+
+2025-09-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Use SPDX expression for license
+
+  This is the recommended format.
+  See https://gitlab.freedesktop.org/cairo/cairomm/-/merge_requests/33
+
+2025-09-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml files
+
+  using glib files from glib 2.86.0.
+  The .defs files are identical to the ones in glibmm 2.85.0,
+  using glib files from glib 2.85.4.
+
+2025-09-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml files
+
+  * gio/src/gio_docs.xml:
+  * glib/src/glib_docs.xml: Regenerate.
+  * gio/src/gio_docs_override.xml:
+  * glib/src/glib_docs_override.xml: Remove documentation of enumerators.
+
+2025-09-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/defs_gen/docextract: Improve extraction of enum enumerators
+
+  New enumerators in glib, gtk, pango are usually documented with one
+  enumerator per documentation block. No formal difference from the
+  documentation of a preprocessor macro.
+  
+  * tools/defs_gen/docenumdefs.py: New file. Parse header files to find
+  definitions of enums and their enumerators.
+  * tools/defs_gen/docextract.py: Call docenumdefs.parse_file().
+
+2025-08-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.85.0
+
+2025-08-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add new API from glib 2.85.2
+
+  * configure.ac:
+  * meson.build: Require glib >= 2.85.2.
+  * gio/src/inetaddress.hg: Add get/property_scope_id(),
+  get/property_flowinfo(), create(bytes, family, flowinfo, scope_id).
+  * gio/src/zlibcompressor.hg: Add get/set/property_os().
+  * glib/src/date.[ccg|hg]: Add get_week_of_year() and get_weeks_in_year().
+
+2025-08-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.85.4.
+  Update gio_docs_override.xml and glib_docs_override.xml.
+
+2025-07-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update the docs_override.xml files with enum documentation
+
+  * glib/src/glib_docs_override.xml:
+  * gio/src/gio_docs_override.xml: Add enum documentation that
+  glibmm/tools/defs_gen/docextract_to_xml.py has not been able to extract.
+
+2025-07-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/defs_gen/h2def.py: Avoid a deprecation warning from Python
+
+  DeprecationWarning: 'count' is passed as positional argument
+    mname = re.sub(regex, '', name, 1)
+
+2025-04-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove obsolete FSF (Free Software Foundation) address
+
+  See https://github.com/libxmlplusplus/libxmlplusplus/pull/72
+
+2025-03-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Use the Python installation that Meson uses
+
+  See !67
+
+2025-03-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove ChangeLog.pre-2-36-2
+
+2025-03-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.84.0
+
+2025-03-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Small fixes to better fit glib 2.84
+
+  * configure.ac:
+  * meson.build: Require glib >= 2.83.4.
+  * gio/src/dbusconnection.hg: Add an _IGNORE().
+  * glib/glibmm/class.cc:
+  * glib/glibmm/interface.cc: g_type_default_interface_ref() -> ..._get().
+  Remove call to g_type_default_interface_unref(). It's a no-op.
+  * glib/glibmm/object.cc: g_type_class_ref() -> g_type_class_get().
+  Remove call to  g_type_class_unref(). It's a no-op.
+
+2025-03-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.84.0.
+
+2025-03-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::spawn_*() doc: Suppress erroneous links
+
+  * glib/src/spawn.hg: Doxygen generates strange links from "exec()",
+  "main()", etc. Suppress the links with "%exec()", "%main()", etc.
+  Remove references to non-existent gdk_spawn_on_screen() and
+  spawn_on_screen_with_pipes().
+
+2025-02-26  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  README.win32.md: Add note on %PATH% for Python
+
+  This helps working around woes that arise from accidentally picking up
+  the Python installation that comes from MSYS/MSYS64 or Cygwin, as we
+  need tools from them to perform a maintainer build or a build from a GIT
+  checkout.
+
+2025-02-26  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  Meson: Use python[.exe] to check for Python for MSVC
+
+  ...and MSVC-style builds, as we might accidentally pull in the 'python3'
+  executable from Cygwin or MSYS2, especially if a maintainer build (i.e.
+  GIT checkout) build is being used, which can cause confusion and/or
+  trouble, as they expect different PATH conventions.
+  
+  If we want, we can always go back to using the Python module from Meson
+  to look for the Python installation that is used to invoke Meson.
+  
+  The stock Python Windows installers from www.python.org ship with
+  'python.exe', not 'python3.exe'.
+
+2025-02-26  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  tests: Fix running on Windows 11
+
+  Windows 11 deprecated and removed WordPad in the 24H2 update[1], meaning
+  the "c:/Windows/write.exe" path is no longer applicable.
+  
+  Use the venerable NotePad instead here to make sure things continue to
+  work, ie. "c:/Windows/notepad.exe".
+  
+  [1]: https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features-resources
+
+2025-02-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Add install_tag keyword argument
+
+2025-02-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.83.1
+
+2025-02-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Don't run GLib tests when building a release tarball
+
+2025-02-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.83.0
+
+2025-02-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::Resource::has_children() and some other API
+
+  * configure.ac:
+  * meson.build: Require glib >= 2.83.0.
+  * gio/src/file.hg: Add query_default_handler_async/finish().
+  * gio/src/resource.hg: Add has_children() and has_children_global().
+  * gio/src/socketlistener.[hg|ccg]: Add enum Gio::SocketListener::Event
+  and signal_event().
+  * tools/m4/convert_gio.m4: Add conversions for Gio::SocketListener::Event.
+
+2025-02-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.83.3.
+
+2025-02-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use libsigc++'s tag file when building a tarball
+
+2025-02-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Publish the generated glibmm-2.68.tag file
+
+  and use libsigc++'s published tag file.
+  The *-doc modules don't install the tag files.
+
+2025-01-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Update for the new release-service component
+
+  * citemplates/release-service is necessary when making a release.
+    See https://handbook.gnome.org/maintainers/making-a-release.html
+  * Install sigc++ documentation.
+    Will (hopefully) make glibmm's inheritance diagrams complete.
+  * Don't build glib tests.
+
+2024-12-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Replace gtkmm.org by gtkmm.gnome.org
+
+2024-12-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Include the Property and Option examples in the documentation
+
+  * glib/glibmm/property.h: Add @example properties/properties_example.cc.
+  * glib/glibmm/ustring.h: Fix a reference to operator--().
+  * glib/src/optioncontext.hg: Add @example options/main.cc.
+  Replace "--" by "\--" in documentation to make Doxygen write two dashes
+  instead of one n-dash.
+  *  glib/src/regex.hg: Update enum constants (Regex::MatchFlags and
+  Regex::CompileFlags) in documentation.
+  Replace static_cast<CompileFlags>(0) and static_cast<MatchFlags>(0) by
+  CompileFlags::DEFAULT and MatchFlags::DEFAULT in parameter default values.
+
+2024-12-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  examples: Remove unnecessary calls to std::locale()
+
+  * examples/compose/main.cc:
+  * examples/dbus/client_bus_listnames.cc:
+  * examples/dbus/server_without_bus.cc:
+  * examples/dbus/session_bus_service.cc:
+  * examples/options/main.cc:
+  * examples/settings/settings.cc: Remove std::locale::global(std::locale("")).
+  This is done by Glib::init().
+
+2024-11-04  Christian Eggers  <ceggers@arri.de>
+
+  giomm: DBus: Fix memory leak.
+
+  The string returned by g_dbus_error_get_remote_error() must be free'd
+  with g_free().
+  
+  https://docs.gtk.org/gio/type_func.DBusError.get_remote_error.html#return-value
+2024-11-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib: Don't allow Value<Glib::RefPtr<T>> with incomplete class type
+
+  * glib/glibmm/value.h: Make Glib::Value<Glib::RefPtr<T>> and
+  Glib::Value<Glib::RefPtr<const T>> fail to compile if T is an incomplete
+  class type. A run-time error is replaced by a compile-time error.
+  * tests/glibmm_ustring_compare/main.cc: Remove an unnecessary #include.
+  * tests/glibmm_value/main.cc: Test that Glib::Value<Glib::RefPtr<T>> and
+  Glib::Value<Glib::RefPtr<const T>> don't compile when T is an incomplete
+  class type (forward declared class).
+  The new tests are added only in Meson builds (ninja test).
+  * tests/meson.build: Add the new tests.
+  
+  See https://discourse.gnome.org/t/gtk-cellrendererpixbuf-criticals-is-this-a-gtkmm-bug/24669
+
+2024-11-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove unsupported entries
+
+2024-10-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::ustring: Allow comparison with objects implicitly convertible to ustring
+
+  This makes it possible to compare a Glib::ustring with a std::string.
+  That's an unwanted side effect of allowing comparison between ustring
+  and Gtk::TreeValueProxy<T, Glib::ustring> and other objects that can be
+  implicitly converted to a ustring.
+  Fixes #121
+
+2024-10-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use ubuntu:rolling again, it's now 24.10
+
+2024-09-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use ubuntu:devel (24.10)
+
+  Hopefully it contains meson >= 1.4.0 for glib.
+
+2024-09-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Revert "CI: Install meson with pip instead of apt"
+
+  This reverts commit cc5c9caef0f947e6db5d2ca23ab6080421237093.
+
+2024-09-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install meson with pip instead of apt
+
+  glib is built as a subprocess and it requires meson >= 1.4.0.
+
+2024-09-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update gio_docs_override.xml
+
+  Improves the documentation of Gio::DesktopAppInfo::get_startup_wm_class().
+
+2024-08-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  glib_generate_methods.sh: Don't read gvariant-core.h
+
+  * glib/src/glib_functions.defs: Remove gvariant-core.h data.
+  * glib/src/variant.hg: Remove an _IGNORE() directive.
+  * tools/gen_scripts/glib_generate_methods.sh: Don't read file
+  ../glib/glib/gvariant-core.h.
+
+2024-08-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/pm/DocsParser.pm: Suppress an unjustified warning
+
+  If the last parameter in a C function is an error parameter,
+  it may be deliberately omitted in the documentation.
+
+2024-08-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.82.0
+
+2024-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::Converter::convert(const Glib::RefPtr<const Glib::Bytes>&)
+
+  * configure.ac:
+  * meson.build: Require glib >= 2.81.0.
+  * gio/src/converter.hg: Add convert(const Glib::RefPtr<const Glib::Bytes>&).
+  * gio/src/file.hg:
+  * gio/src/settings.hg: Add some _IGNORE() directives.
+
+2024-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.82.0.
+
+2024-07-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::DBus::Connection: Add register_object() with slots.
+
+  * examples/Makefile.am: Distribute session_bus_client.sh.
+  * examples/dbus/session_bus_client.sh: New file for testing session_bus_service.
+  * examples/dbus/session_bus_service.cc: Use Connection:register_object()
+  with slots instead of the one with an InterfaceVTable.
+  * gio/src/dbusconnection.[ccg|hg]: Add register_object(object_path,
+  interface_info, slot_method_call, slot_get_property, slot_set_property).
+  Small improvements of documentation of other methods.
+  
+  Fixes #42
+
+2024-07-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::DBus::InterfaceVTable, SubtreeVTable: Improve code snippets in docs
+
+  * gio/src/dbusinterfacevtable.hg:
+  * gio/src/dbussubtreevtable.hg: Reformat code snippets in the documentation.
+  * gio/src/dbussubtreevtable.ccg: Check if node == nullptr in
+  DBusSubtreeVTable_Introspect_giomm_callback().
+
+2024-07-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::DBus::own_name(connection, .....)
+
+  * gio/src/dbusownname.[ccg|hg]: Add own_name(connection, .....).
+  * gio/src/dbuswatchname.[ccg|hg]: Fix some typos in the comments.
+
+2024-07-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't try to get removed PACKAGE_TARNAME
+
+  from pkg_conf_data when glibmm is a subproject.
+  
+  dependency().get_variable(pkgconfig: 'xxx', internal: 'xxx') ->
+  dependency().get_variable('xxx'). Possible when meson version >= 0.51.
+
+2024-07-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson: Remove the can_add_dist_script variable
+
+  It's unnecessary when the meson version >= 0.58.
+
+2024-07-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson: Re-introduce previous requirements in the .pc files
+
+  The modules that have previously been listed as 'Requires' in the
+  .pc files must remain there when the .pc files are generated by
+  pkgconfig.generate(). Otherwise some apps can't be linked without
+  adding requirements in the apps. (That would be the right thing to do
+  in the long run, but to avoid problems in apps, removal of requirements
+  from glibmm's .pc files is best done only in connection with the next
+  ABI break.) E.g. some of the test programs of libxmlplusplus-4
+  can't be linked without this commit.
+
+2024-07-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson: Some fixes in the pkg-config files
+
+  * gio/giomm/meson.build: Move glibmm-2.68 from Requires.private to Requires.
+  * gio/meson.build: Fix the lists of input/output data.
+  * glib/meson.build: Fix the lists of input/output data.
+  GLIBMM_MODULE_NAME = glibmm_pcname.
+  * meson.build: Really require python3 >= 3.7. Require meson >= 0.62.
+  Let meson provide the value of datadir.
+
+2024-07-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Don't link to removed parts of gnome.org
+
+  Don't link to library.gnome.org or developer.gnome.org.
+  Require python3 >= 3.7. That's what Meson requires.
+
+2024-07-03  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  meson: Drop some unused items
+
+  Since we are using Meson's pkg-config module to generate pkg-config
+  files, drop items that are no longer relevant.
+
+2024-07-03  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  Meson: Generate pkg-config files
+
+  ...instead of using the *.pc.in templates, so that things are a bit
+  cleaner, and more flexible.
+  
+  This will help us to generate relocatable pkg-config files as well.
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: meson install -> meson install --quiet
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::MainContext, etc.: Fix some comments
+
+  * glib/glibmm/dispatcher.h: Remove "@ingroup Threads". That group does not
+  exist now.
+  * glib/glibmm/main.h: MainContext::query(): Remove documentation of
+  non-existent return value.
+  * glib/glibmm/timer.h: Fix some @newin commands.
+  * glib/src/date.hg: Date::order(): Remove documentation of
+  non-existent return value.
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc: Improve documentation of enum and enum class
+
+  * tools/pm/DocsParser.pm:
+  * tools/pm/Output.pm:
+  * tools/pm/WrapParser.pm:
+  Scoped enum class must be documented differently than plain enum.
+  Otherwise Doxygen may omit the enum docs and/or the enum value docs
+  from the generated html files. Different versions of Doxygen can behave
+  differently. Doxygen has problems with enum class. There are several
+  relevant open Doxygen issues.
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove obsolete entries
+
+2024-06-06  Jan Burgmeier  <jan.burgmeier@gmx.de>
+
+  Fix memory leak in DBus::generate_guid()
+
+  Docu states that caller must free the memory see:
+  https://docs.gtk.org/gio/func.dbus_generate_guid.html
+
+2024-05-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/pm/DocsParser.pm: Don't link to developer-old.gnome.org
+
+  Fix a comment that refers to the gtk-doc manual.
+  Fixes #120
+
+2024-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/defs_gen/h2def.py: Avoid syntax warnings from Python 3.12
+
+  Python 3.12 issues "SyntaxWarning: invalid escape sequence"
+  for expressions like '\s+'. Change to raw strings: r'\s+'.
+
+2024-04-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc: Convert [enum@Module.Type.ENUMERATOR] in documentation
+
+  * tools/defs_gen/docextract.py: Accept underscores in property names
+    and signal names.
+  * tools/pm/DocsParser.pm: Accept underscores in property names and in
+    signal names with gi-docgen syntax.
+    Convert enumerator names with gi-docgen syntax.
+
+2024-04-12  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  glibmmconfig.h.[meson|in]: Pre-define GLIBMM_SIZEOF_* for MSVC
+
+  One still might want to try to build or use glibmm built with NMake, so define
+  these as appropriate for Visual Studio, in case glibmmconfig.h is not
+  processed with Meson.
+
+2024-04-12  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  generate_wrap_init_pl.in: Also consider clang-cl
+
+  clang-cl also defines _MSC_VER like Visual Studio, but uses GCC-style
+  directives for silencing warnings for inconsistent dllimport directives
+  (that is outside of glibmm's control), so we update the previous commit
+  to now first check for __GNUC__ and __clang__, and then _MSC_VER.
+  
+  Silences warnings for inconsistent dllimport directives for clang-cl as
+  well, in addition to GCC-style CLang.
+
+2024-04-12  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  glibmm_value.h: Drop unneeded GLIBMM_API decoration
+
+  It's a templatized in-header implementation, so we can just leave out
+  the GLIBMM_API decoration. Silences a warning from CLang/clang-cl.
+
+2024-04-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::ActionGroup, Gio::DBus::MethodInvocation: Remove unnecessary code
+
+  Remove unnecessary forward class declarations.
+  Clang 18 on Windows does not like them.
+
+2024-04-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests/glibmm_interface_implementation: NULL -> nullptr
+
+  Clang 18 does not consider NULL good enough in calls to g_object_get().
+
+2024-04-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  generate_wrap_in.pl.in: Ignore -Winconsistent-dllimport from clang
+
+  The clang compiler on Windows warns like MSVC, when declarations
+  in wrap_init.cc lacks __declspec(dllimport).
+  Compare https://gitlab.gnome.org/GNOME/glibmm/-/commit/d661472529852c358f2ff441dcc396db3027075a
+  Fixes #119
+
+2024-03-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.80.0
+
+2024-03-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::content_type_guess(): Remove most of an unneccesary overload
+
+  clang 19.0.0 does not like the overload that takes a
+  const std::basic_string<guchar>&. This overload should have been removed
+  16 years ago by commit 84135b93a20e6c9fe652849959d3ff90474c99bb.
+  It can't be removed completely now, because that would break ABI.
+  Remove as much as possible.
+  Fixes #118
+
+2024-03-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install python3-packaging, required by subprocess glib
+
+2024-03-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Add new API from glib 2.80.0
+
+  * configure.ac:
+  * meson.build: Require glib-2.0 >= 2.79.2.
+  * gio/src/application.hg: Add get/set/property_version().
+  * gio/src/applicationcommandline.[ccg|hg]: Add done().
+  Use g_application_command_line_print/printerr_literal() in print/printerr().
+  * gio/src/dbusmessage.hg: Add get_arg0_path().
+  * gio/src/socket.hg: Add receive_bytes() and receive_bytes_from().
+  * glib/glibmm/utility.h: Add convert_const_gchar_ptr_to_dbus_object_path_string().
+  * glib/src/datetime.hg: Add create_from_local_usec(), create_from_utc_usec()
+  and to_unix_usec().
+  * tools/m4/convert_glib.m4: Add conversion for Glib::DBusObjectPathString.
+
+2024-03-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.80.0.
+
+2024-03-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Glib::wide_from_utf8() and wide_to_utf8()
+
+  * glib/src/convert.[ccg|hg]: Add wide_from_utf8() and wide_to_utf8().
+  * tests/glibmm_ustring_make_valid/main.cc: Test the new functions.
+  
+  Based on Chris Vine's patch in issue 9.
+  
+  Fixes #9
+
+2024-02-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.78.1
+
+2024-01-17  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  README.win32.md: Mention about Visual Studio with libsigc++-3.6.x
+
+  Make a note to users that Visual Studio 2019 or later is recommended if
+  building against libsigc++-3.6.x or later as warnings are being
+  generated as C++-17 support is not that well done in 2017 when building
+  against libsigc++-3.6.x or later.
+
+2024-01-17  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake Makefiles: Make dep paths configurable
+
+  This way, one may opt to pass in a base include|libpath|tools_path, plus
+  conrresponding paths to GLib and libsigc++ as needed to assist NMake in
+  finding the headers, .lib's and tools from the dependencies as needed so
+  that building things with NMake is made easier with more flexibility.
+
+2024-01-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Update htmlrefpub
+
+2023-12-15  Daniel Boles  <dboles.src@gmail.com>
+
+  ustring: TODO to avoid copies from operator string
+
+  Our conversion operator to std::string always returns a copy but that is
+  wasteful when it could be a const& reference or moved-out from an rvalue
+  – especially bad since conversions can occur silently & harm performance
+  without users realising. We can split to const&/&& overloads at next ABI
+
+2023-12-15  Daniel Boles  <dboles.src@gmail.com>
+
+  ustring: Add TODOs for C++20 move from outstreams
+
+  C++20 adds `ostream.str() &&` for rvalue `this`, which will move out the
+  stream's owned string. We can use that once we are on C++20 to avoid the
+  extra copy of the string (although we do then copy that AGAIN via GLib!)
+
+2023-12-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Don't fail if warning_level=everything
+
+2023-11-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Dispatcher: Allow destroy during emit
+
+  If a signal handler deletes a Dispatcher, a DispatchNotifier
+  can be deleted while its pipe_io_handler() method is executing.
+  Stop its execution if this happens.
+  
+  Fixes #116
+
+2023-10-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/defs_gen/h2def.py: Make return types that are unsigned work
+
+  GdkDmabufTextureBuilder contains functions that return unsigned int.
+
+2023-09-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.78.0
+
+2023-09-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.78.0.
+
+2023-08-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::ustring: Add a std::hash<> specialization
+
+  So people can use it as a key for std::unordered_map and
+  std::unordered_set. Originally proposed by Murray Cumming.
+  Add tests/glibmm_ustring_hash.
+  Fixes #16
+
+2023-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::VariantType docs: Update a link
+
+  and change Gtk::Bin to Gtk::Widget. Gtk::Bin does not exist in gtkmm4.
+
+2023-07-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.77.0
+
+2023-07-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Add new API from glib 2.77.0
+
+  * configure.ac:
+  * meson.build: Require glib-2.0 >= 2.77.0.
+  * gio/src/actionmap.hg: _IGNORE(g_action_map_remove_action_entries).
+  * gio/src/resolver.hg: Add set/get/property_timeout().
+  * glib/glibmm/ustring.[cc|h]: Add ustring::truncate_middle().
+
+2023-07-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.77.0.
+
+2023-07-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove AUTHORS and README.SUN; add info to README.md
+
+  See gtkmm#140
+
+2023-07-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update glibmm.doap
+
+2023-06-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md: Generate a link to README.win32.md
+
+2023-06-27  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  README.win32: Convert to MarkDown
+
+  Convert the README.win32 file into MarkDown format so that it is easier on the
+  eye for formatting, and convert it to UNIX line endings.  Also update the info
+  that is in there to reflect the current situation on Visual Studio better.
+
+2023-06-19  Daniel Boles  <dboles.src@gmail.com>
+
+  Gio::File: Fix various spelling errors in .hg docs
+
+2023-06-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/enum.pl, tools/defs_gen/enumextract.py: Accept XXX = YYY + 1
+
+  Accept "+" in GTK_ALIGN_BASELINE = GTK_ALIGN_CENTER + 1,
+
+2023-06-01  Jeremy Bicha  <jeremy.bicha@canonical.com>
+
+  tests: Test for /etc/passwd instead of /etc/fstab
+
+  /etc/fstab is not guaranteed to exist on modern Linux distros
+
+2023-05-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib: Add DBusHandle and Variant<DBusHandle>
+
+  Fixes #113
+
+2023-05-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Autotools build: Don't include config.h in ustring.cc
+
+  Include GLIBMM_SIZEOF_WHAR_T in glibmmconfig.h, as in a Meson build.
+
+2023-05-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Variant: Provide Variant<long long> whenever possible
+
+  If all of the types short, int, long, long long have size 2, 4 or 8 bytes,
+  provide Variant specializations for all of them and for the corresponding
+  unsigned types.
+  Fixes #111
+
+2023-05-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Variant docs: Small fixes
+
+  create_variant(): Add a missing ::create.
+  VariantBase::get_dynamic(): Recommend Variant<T>::get() when possible.
+  See #109 and #110
+
+2023-05-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::VariantContainerBase: Add a const version of get_child()
+
+  and deprecate the non-const version.
+  Both get_child() versions return a non-const VariantBase, usually
+  with the same GVariant as *this, just with an added reference.
+  It's reasonable to have a const version, because GVariant is immutable.
+  Fixes #112
+
+2023-05-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Glib::VariantBase::get_dynamic()
+
+  and use it in tests/glibmm_variant/main.cc.
+  Fixes #110
+
+2023-05-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Glib::create_variant()
+
+  and use it in tests/glibmm_variant/main.cc.
+  Fixes #109
+
+2023-05-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete entries
+
+  and add a comment in tools/m4/class_shared.m4.
+
+2023-04-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/defs_gen/h2def.py: Recognize Graphene type names
+
+  A typical type name is not GraphenePoint, but graphene_point_t.
+
+2023-04-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  giomm.pc.in, glibmm.pc.in: Update htmlrefpub
+
+2023-04-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::Subprocess, SubprocessLauncher and examples/subprocess
+
+  Fixes #106
+
+2023-04-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc: Generate callback functions with C linkage
+
+  * tools/m4/signal.m4: Add an optional parameter to _SIGNAL_PH.
+  * tools/m4/vfunc.m4: Add an optional parameter to _VFUNC_PH.
+  * tools/pm/Output.pm:
+  output_wrap_vfunc_h(): Add $objCDefsFunc->args_names_only()
+  in call to _VFUNC_PH.
+  output_wrap_default_signal_handler_h(): Add $objCDefsFunc->args_names_only()
+  in call to _SIGNAL_PH.
+  Part of issue #1
+
+2023-04-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib:NodeTree: Add GLIBMM_API on new callback functions
+
+2023-04-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib: NodeTree etc.: Use callback functions with C linkage
+
+  * glib/glibmm/class.cc: Use glibmm_custom_[get|set]_property_callback().
+  * glib/glibmm/object.[cc|h]: Add set_data_with_c_callback().
+  Don't call g_object_set_qdata_full() with a function with C++ linkage, if
+  GLIBMM_CAN_ASSIGN_NON_EXTERN_C_FUNCTIONS_TO_EXTERN_C_CALLBACKS is defined.
+  * glib/glibmm/property.[cc|h]: Declare some local functions extern "C".
+  Add glibmm_custom_[get|set]_property_callback().
+  * glib/src/nodetree.[ccg|hg]:
+  Add glibmm_NodeTree_c_callback_[traverse|foreach]() and
+  struct NodeTreeCallback[Traverse|Foreach]Data.
+  Part of issue #1
+
+2023-03-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib: value_custom: Use callback functions with C linkage
+
+  * glib/glibmm/value_custom.[cc|h]: Add custom_boxed_type_cpp_register().
+  * tests/glibmm_value/main.cc: Add test of copying custom Value.
+  Part of issue #1
+
+2023-03-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::giomm_SignalProxy_async_callback() with C linkage
+
+  and use it instead of SignalProxy_async_callback().
+  Part of issue #1
+
+2023-03-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib: Use callback functions with C linkage
+
+  * gio/src/cancellable.ccg: Add TODO comment.
+  * glib/glibmm/class.cc: Call custom_class_base_finalize_function() and
+  custom_class_init_function() via local functions with C linkage.
+  * glib/glibmm/extraclassinit.h: Point out in the class documentation that
+  the class init and instance init functions shall have C linkage.
+  * glib/glibmm/main.[cc|h]: Call prepare_vfunc(), check_vfunc() and
+  dispatch_vfunc() via local functions with C linkage.
+  * glib/glibmm/objectbase.cc: Call destroy_notify_callback()
+  via a local function with C linkage.
+  * glib/glibmm/propertyproxy_base.cc: Call PropertyProxyConnectionNode::
+  callback() and destroy_notify_handler() via local functions with C linkage.
+  * glib/glibmm/signalproxy.cc: Call SignalProxyNormal::slot0_void_callback()
+  and SignalProxyConnectionNode::destroy_notify_handler() via local functions
+  with C linkage.
+  * glib/src/binding.ccg: Add extern "C".
+  * glib/src/bytearray.ccg: Add a TODO comment.
+  * glib/src/markup.ccg: Call functions in the vfunc table via local
+  functions with C linkage.
+  * glib/src/optioncontext.ccg: Add extern "C".
+  * glib/src/optiongroup.ccg: Call post_parse_callback() and
+  option_arg_callback() via local functions with C linkage.
+  
+  Part of issue #1
+
+2023-03-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio: Use callback functions with C linkage
+
+  * gio/giomm/socketsource.cc: Add extern "C".
+  * gio/src/application.[ccg|hg]: Call Application_Class::open_callback()
+  via a local function with C linkage.
+  * gio/src/asyncinitable.[ccg|hg]: Call
+  AsyncInitable_Class::init_async_vfunc_callback() and
+  init_finish_vfunc_callback() via local functions with C linkage.
+  * gio/src/dbusobjectmanagerclient.ccg: Use a local function with C linkage
+  instead of Glib::destroy_notify_delete<SlotProxyType>.
+  * gio/src/file.ccg: Add extern "C".
+  * gio/src/liststore.ccg: Add a TODO comment.
+  * gio/src/memoryinputstream.ccg: Add extern "C".
+  * gio/src/settings.ccg: Add extern "C".
+  * gio/src/socketcontrolmessage.[ccg|hg]: Call
+  SocketControlMessage_Class::deserialize_async_vfunc_callback()
+  via a local function with C linkage.
+  
+  Code that mixes up C linkage and C++ linkage has undefined behavior.
+  Most compilers make no difference between C and C++ linkage, so it
+  has not been an issue so far. Part of issue #1
+
+2023-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.76.0
+
+2023-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::Settings: Add an #include
+
+2023-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.76.0.
+
+2023-03-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::ListModel: Add get_typed_object()
+
+  Inspired by gtkmm#132.
+  A test case has been added at gtkmm/tests/filedialog.
+  It's difficult to make a meaningful test case without involving gtkmm.
+  A good test case shall contain a GListModel with objects of a class
+  which has no corresponding C++ class, and implements an interface
+  which is wrapped in a C++ class.
+
+2023-02-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Dispatcher: Add const versions of emit() and operator()()
+
+  and deprecate the non-const versions.
+  Fixes #103
+
+2023-02-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Dispatcher: Remove a g_warning()
+
+  Don't warn when a Dispatcher is deleted while messages are pending.
+  Fixes #108
+
+2023-02-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Don't hide undocumented classes
+
+  Might make the inheritance diagrams less incomplete when Doxygen's
+  tag files are not perfect.
+
+2023-02-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md, CI: meson -> meson setup
+
+2023-01-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.75.0
+
+2023-01-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using glib files from glib 2.75.2. Update gio_docs_override.xml.
+
+2023-01-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::Settings: Add bind() overloads and unbind()
+
+  Add the bind() overloads with mapping functions.
+
+2023-01-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add the GLIBMM_CHECK_VERSION() preprocessor macro
+
+2023-01-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Binding: Fix a bind_property() overload
+
+  The bind_property() overload with two transformation functions
+  has been wrong since commit 4ed3ff9cad836dc7b24282a112d66847292a9baa.
+
+2023-01-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install all dependencies with apt
+
+  Ubuntu 22.10 contains libsigc++-3.0-dev.
+
+2023-01-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify if-file-exists test
+
+2023-01-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  liststore.hg: Rename a local variable
+
+  In the templatized implementation of
+  std::pair<bool, unsigned int> ListStore<T_item>::find, replace 'result' with
+  'find_result' for what g_list_store_find_with_equal_func_full() returns, to
+  avoid a compiler warning when building the giomm_listmodel test program when
+  '-Dwarnings=max' is specified, for Visual Studio builds, as we are using a
+  variable 'result' in a rather global scrope there[1].
+  
+  This will help fix 'meson dist' on Visual Studio builds.
+  
+  [1]: https://learn.microsoft.com/en-us/cpp/error-messages/compiler-warnings/compiler-warning-level-4-c4459
+
+2023-01-09  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  generate_wrap_init.pl.in: Disable warning C4273
+
+  ... for Visual Studio builds, as GLib 2.75.x and later applied
+  __declspec(dllimport) via macros to DLL builds of the GLib libraries,
+  meaning that when we put the GQuark and GType function prototypes into
+  wrap_init.cc warning C4273 will be raised as the prototypes in
+  wrap_init.cc does not have any dllimport decorations (and would not have
+  otherwise mattered).
+  
+  This allows builds with '-Dwarnings=fatal' to proceed with Visual Studio
+  builds.
+
+2023-01-05  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  Fix giomm_simple test on Windows
+
+  One normally cannot attempt to remove (delete) a file on Windows if it
+  is still open, so we must close the resources that are tied to the file
+  before attempting to delete it.
+  
+  Without doing so, the test program will fail on Windows as an exception
+  is caught as the file->remove() call failed since the associated
+  iostream is still open.
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify lookup of python command
+
+  See libsigcplusplus PR#83
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Fix the evaluation of is_git_build on Windows
+
+  See gtkmm#131
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't copy files with configure_file()
+
+  It's deprecated from Meson 0.64. The replacement, fs.copyfile(),
+  is not useful here. It only copies from the source directory to
+  the build directory.
+
+2022-12-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Binding::unbind(): Fix documentation
+
+  Should have been done in commit dc92d02f4d50851a1af59e5fbe2a753dcfd2e9df.
+
+2022-12-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Module: Deprecate build_path()
+
+  and update the constructor's documentation.
+
+2022-12-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::BytesIcon
+
+  * gio/giomm.h:
+  * gio/giomm/meson.build:
+  * gio/src/filelist.am: Add BytesIcon.
+  * glib/src/bytes.[ccg|hg]: Add Glib::Value specialization.
+  Required by _WRAP_PROPERTY in bytesicon.hg.
+  * tools/extra_defs_gen/generate_defs_gio.cc: Add G_TYPE_BYTES_ICON.
+  * gio/src/gio_signals.defs: Add BytesIcon property.
+  * gio/src/bytesicon.[ccg|hg]: New files.
+  
+  Fixes #107
+
+2022-12-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::AppInfo: Add get_[recommended|fallback]_for_type()
+
+  Fixes #105
+
+2022-11-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::NetworkMonitor::get_default(): Add refreturn
+
+  Fixes #104
+
+2022-10-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::RefPtr: Put the documentation in a Doxygen group
+
+  A group (but not a 'using' alias) gets its own html file,
+  which can be referred to from outside glibmm.
+
+2022-10-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Allow more graph nodes
+
+  Required for Glib::Object's inheritance diagram.
+
+2022-09-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Detect if we build from a git subtree
+
+  See gtkmm!72 (William Roy)
+
+2022-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.74.0
+
+2022-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  glib/glibmm.h: Update the link to the gtkmm tutorial
+
+2022-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml files
+
+  using gtk files from glib 2.74.0.
+
+2022-09-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Convert README to README.md
+
+2022-09-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Return to using ubuntu:rolling (22.04)
+
+2022-09-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::File docs: Add @throws
+
+  and other minor documentation fixes.
+
+2022-09-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::File: Add create_tmp()
+
+  * gio/src/file.[ccg|hg]: Add create_tmp().
+  Document create_for_parse_name().
+  * tests/giomm_simple/main.cc: Test File::create_tmp().
+
+2022-09-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::ListStore::find() docs: Small changes
+
+2022-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::ListStore: Add find()
+
+  * gio/src/liststore.[ccg|hg]: Add two ListStoreBase::find() and
+  two ListStore::find().
+  * tests/giomm_listmodel/main.cc: Test ListStore::find().
+
+2022-08-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Skip building with Autotools if glib is too old
+
+2022-08-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.73.2
+
+2022-08-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use ubuntu:devel (22.10)
+
+  Test with only one gcc version.
+  Don't use warning_level and werror. They are applied to subprojects.
+
+2022-08-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio: Add some methods for glibmm 2.74
+
+  * configure.ac:
+  * meson.build: Require glib-2.0 >= 2.73.2.
+  * gio/src/appinfo.hg: Add get_default_for_type_async/finish(),
+  get_default_for_uri_scheme_async/finish().
+  * gio/src/file.hg: Add make_symbolic_link_async/finish().
+  * gio/src/liststore.hg: Add property_n_items().
+  * gio/src/resolver.hg: Add enum Resolver::NameLookupFlags,
+  lookup_by_name_with_flags(), lookup_by_name_with_flags_async/finish().
+  * gio/src/gio_docs_override.xml:
+  * tools/m4/convert_gio.m4: Add conversions for Resolver::NameLookupFlags.
+
+2022-08-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using gtk files from glib 2.73.3.
+
+2022-08-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete entry
+
+2022-08-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Glib::ustring::release()
+
+  Fixes #101
+
+2022-07-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::DBus::Proxy: Add some refreturn
+
+  get_connection() and get_interface_info() must add a reference.
+  The error in get_connection() was noticed by 우정모 (kr.woaini).
+  Fixes #102
+
+2022-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc: Make h2def.py recognize G_DEFINE_AUTOPTR_CLEANUP_FUNC
+
+2022-07-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc, DocsParser.pm: Improve the handling of gi-docgen syntax, part 3
+
+2022-06-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::ListStore: Don't derive a gtkmm__GListStore GType
+
+  GListStore is declared G_DECLARE_FINAL_TYPE.
+
+2022-06-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc: Improved handling of final types
+
+  Some GObject-derived classes shall not be derived from.
+  
+  * glib/glibmm/class.cc:
+  * glib/glibmm/interface.cc: Don't derive or add interfaces to a class
+  if G_TYPE_IS_FINAL(gtype) is true.
+  * tools/m4/class_shared.m4: Fix gtype_ when _DO_NOT_DERIVE_GTYPE is used.
+  Add _ABI_AS_WITH_DERIVED_GTYPE, making it possible to
+  add _DO_NOT_DERIVE_GTYPE without breaking ABI.
+
+2022-06-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::Action: Improve the documentation
+
+  See issue #100
+
+2022-06-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::RefPtr: Improve the documentation
+
+  See issue gtkmm#119
+
+2022-06-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update tools/test_scripts/testheaders.sh
+
+2022-05-27  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Ensure g[lib|io]mm[config.h|.rc] are created
+
+  ...before attempting the build.  This will ensure that they are available
+  during the build and that we do not accidentally refer to an old copy that
+  exists on the system.
+  
+  Should fix issue #99.
+
+2022-05-27  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Remove rules on build directory creation
+
+  Instead, create them using plain 'md' commands if they don't exist prior to
+  compiling the sources, if applicable.
+  
+  Should speed up builds a bit.
+
+2022-05-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson/MSVC: Add more warnings to ignore
+
+  We can actually silence more warnings here, since the issues that they cover
+  can normally be fished out by the unit tests.
+
+2022-05-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Re-organize MSVC compiler warnings-related items
+
+  Add a short description of each of the current compiler flags we are using for
+  this purpose, and only apply '/wd4267' for 64-bit builds since that flag
+  normally applies for 64-bit builds only.
+
+2022-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Avoid configuration warnings
+
+2022-05-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.72.1
+
+2022-05-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Accept warnings from clang++
+
+2022-05-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Revert "ustring_Iterator: Declare the copy constructor =default"
+
+  This reverts commit 7b811a0be824675f31a422d40a75bbb5d10e32ad.
+  It broke ABI. See #98
+
+2022-04-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.72.0
+
+2022-04-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::TlsCertificate: Fix the create*() methods
+
+  Don't call constructors that don't work because the g_tls_certificate_new_*()
+  functions do more than just call g_object_new().
+
+2022-04-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Don't test subprojects
+
+2022-04-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Add some methods for glibmm 2.72
+
+  * configure.ac:
+  * meson.build: Require glib-2.0 >= 2.71.2.
+  * gio/src/dbusproxy.hg: signal_signal() accepts a signal name.
+  * gio/src/file.[ccg|hg]: Add move_async() and move_finish().
+  * gio/src/socketclient.hg: Deprecate set/get/property_tls_validation_flags().
+  * gio/src/tlscertificate.hg: Add properties private_key, private_key_pem,
+  pkcs11_uri, private_key_pkcs11_uri.
+  * gio/src/tlsclientconnection.hg: Deprecate set/get/property_validation_flags().
+  * glib/glibmm/main.[cc|h]: Add create(MainContextFlags flags).
+  * glib/src/enums.hg: Add enum Glib::MainContextFlags.
+
+2022-04-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using gtk files from glib 2.72.0.
+  And update gio/src/gio_signals.defs.patch.
+
+2022-03-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use artifacts to transfer data between stages
+
+2022-02-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Don't build everything with warnings=fatal
+
+  Build only glibmm with warnings=fatal.
+  Select latest released version of libsigc++3.
+
+2022-02-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gio::AppInfoMonitor
+
+  Fixes #97
+
+2022-02-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  ustring_Iterator: Declare the copy constructor =default
+
+  Avoid warnings from the clang++ compiler.
+  
+  It's deprecated to implicitly declare a copy constructor, if there
+  is a user-defined copy assignment operator.
+
+2022-02-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove HACKING
+
+2022-02-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Specify 'check' option in run_command()
+
+  The default value will be changed in future Meson releases.
+  
+  Don't use deprecated python3.path() and execute(..., gui_app: ...).
+
+2021-11-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio: Use _WRAP_METHOD(..., ignore_deprecations)
+
+2021-11-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gmmproc: Add "ignore_deprecations" argument in _WRAP_METHOD()
+
+  Makes it easier to suppress deprecation warnings when a C method has been
+  deprecated, but the corresponding C++ method shall not (yet) be deprecated.
+
+2021-11-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gio::SocketClient, TlsClientConnection: Ignore some deprecations
+
+  g_socket_client_[set,get]_tls_validation_flags() and
+  g_tls_client_connection_[set,get]_validation_flags() are deprecated in
+  glib 2.72. They can't be deprecated in glibmm 2.70. Ignore the deprecations,
+  so it will still be possible to compile with warnings=fatal.
+
+2021-11-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Build: Support VS2022 builds
+
+  Make these builds distinct from the Visual Studio 2019 builds.
+
+2021-10-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  2.70.0
+
+2021-10-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib::Binding: Fix return type from dup_source() and dup_target()
+
+  Change from Glib::RefPtr<Glib::Object> to Glib::RefPtr<Glib::ObjectBase>.
+
+2021-10-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Add some methods for glibmm 2.70
+
+  * configure.ac:
+  * meson.build: Require glib-2.0 >= 2.69.1.
+  * glib/src/binding.[ccg|hg]: Add dup_source(), dup_target(),
+  Deprecate get_source(), get_target().
+  * glib/src/spawn.[ccg|hg]: Change parameter name, exit_status to wait_status.
+  * glib/src/timezone.[ccg|hg]: Add operator bool(), create_identifier().
+  Deprecate create().
+  * gio/src/fileinfo.hg: Add get/set_access_date(), get/set_creation_date().
+  * gio/src/notification.hg: Add set_category().
+  * gio/src/tlscertificate.hg: Add property/get_not_valid_before(),
+  property/get_not_valid_after(), property/get_subject_name(),
+  property/get_issuer_name().
+  * gio/src/tlsconnection.hg: Add enum Gio::TlsProtocolVersion,
+  property/get_protocol_version(), property/get_ciphersuite_name().
+  * tools/m4/convert_gio.m4: Add conversion for enum TlsProtocolVersion.
+
+2021-10-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Glib, Gio: Regenerate docs.xml and .defs files
+
+  using gtk files from glib 2.70.0.
+  And update gio_docs_override.xml and glib_extra_objects.defs.
+
+2021-10-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Build with g++-11 instead of g++-9
+
+  g++-9 is not available in debian:testing any more.
+
+2021-10-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Switching to debian:testing
+
+  See pangomm#13 and pangomm!23.
+

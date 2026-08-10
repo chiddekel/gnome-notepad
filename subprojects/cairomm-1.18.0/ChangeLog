@@ -1,0 +1,1352 @@
+2023-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  1.18.0
+
+2023-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/*.sh: Improve comments
+
+2023-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson_options.txt: boost-shared defaults to true
+
+  The shared Boost libraries can be a safer choice.
+  The static libraries have caused problems building the test programs.
+
+2023-07-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  1.17.1
+
+2023-07-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove AUTHORS and MAINTAINERS and add info to README.md
+
+2023-06-29  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  Update Visual Studio build docs
+
+  * Convert MSVC_NMake/README to MarkDown, to make the formatting easier
+    on the eye, and use UNIX line endings.
+  * Update the info there, mentioning that cairo-1.17.x is recommended,
+    and give a better outline on how the build is carried out with NMake
+    and Meson.
+
+2023-06-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete entries
+
+2023-06-15  Daniel Boles  <dboles.src@gmail.com>
+
+  context: Fix typos of "teh" to "the" + missing "a"
+
+2023-03-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Use callback functins with C linkage
+
+  * cairomm/script.cc:
+  * cairomm/surface.cc: Use local 'extern "C"' callback functions.
+  Code that mixes up C linkage and C++ linkage has undefined behavior.
+  Most compilers make no difference between C and C++ linkage, so it
+  has not been an issue so far. But see issue glibmm#1.
+
+2023-03-14  Vitaly Dyachkov  <obyknovenius@me.com>
+
+  Implement get_text_extents() and get_glyph_extents() of ScaledFont
+
+  ScaledFont::get_text_extents() and ScaledFont::get_glyph_extents()
+  were declared in the header but their implementations were missing.
+  Fixes #30
+
+2023-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md: meson -> meson setup
+
+2023-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify if-file-exists test
+
+2023-03-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install all dependencies with apt, meson -> meson setup
+
+  Ubuntu 22.10 contains libsigc++-3.0-dev.
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Simplify lookup of python command
+
+  See libsigcplusplus PR#83
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Fix the evaluation of is_git_build on Windows
+
+  See gtkmm#131
+
+2023-01-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't copy files with configure_file()
+
+  It's deprecated from Meson 0.64. The replacement, fs.copyfile(),
+  is not useful here. It only copies from the source directory to
+  the build directory.
+
+2022-09-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Detect if we build from a git subtree
+
+  See https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/72 (William Roy)
+
+2022-09-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  NEWS: Prepare for next cairomm release
+
+  and require cairo >= 1.14.0
+
+2022-09-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Convert README to README.md
+
+2022-08-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Autotools build: Add --disable-deprecated-api
+
+  Make it possible to exclude deprecated API from the build.
+  See #29
+
+2022-05-24  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Re-organize warnings-related compiler flags for MSVC
+
+  Add a short description for the warning-related compiler flags for Visual
+  Studio.
+  
+  Also, use the `/wd4267` compiler flag only when building a 64-bit build, since
+  warning C4267 only applies for 64-bit builds.
+
+2022-05-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson/MSVC: Compensate for the lack of msvc_recommended_pragmas.h
+
+  Since cairomm does not hard-depend on GLib, it may be the case that
+  msvc_recommended_pragmas.h is not available during the build.  If it is not,
+  disable warnings C4244 and C4101, which are part of the warnings that it
+  disables.
+
+2022-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Avoid configuration warnings
+
+2022-03-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Use artifacts to transfer data between stages
+
+2022-02-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Specify 'check' option in run_command()
+
+  The default value will be changed in future Meson releases.
+  
+  Don't use deprecated python3.path() and execute(..., gui_app: ...).
+  Don't distribute .gitlab-ci.yml.
+
+2022-02-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Surface docs: Use cairomm names where possible
+
+  such as Cairo::ScaledFont::create() instead of cairo_scaled_font_create().
+
+2022-02-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Surface::set_device_scale() docs: Refer to Context::scale()
+
+  The reference to cairo_translate() in the cairo_surface_set_device_scale()
+  documentation must be wrong. See !22
+  
+  Add @newin to set/get_device_scale()
+
+2022-01-18  Thomas Holder  <thomas@thomas-holder.de>
+
+  Surface device scale convenience overloads
+
+2022-01-18  Thomas Holder  <thomas@thomas-holder.de>
+
+  Wrapping surface device scale functions
+
+2021-11-10  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Support Visual Studio 2022
+
+  Make these builds distinct from the Visual Studio 2019 builds.
+
+2021-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Add .gitlab-ci.yml
+
+2021-08-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Check if Perl is required for building documentation
+
+  New versions of mm-common use the Python scripts doc_postprocess.py
+  and doc_install.py instead of the Perl scripts doc-postprocess.pl and
+  doc-install.pl when documentation is built.
+
+2021-06-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update examples/README
+
+2021-06-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Surface::Type: Really deprecate WIN32 with CAIROMM_DISABLE_DEPRECATED
+
+2021-06-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update SaveGuard
+
+  and add a test in tests/test-context.cc. Fixes #9
+
+2021-06-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Add the @newin alias and CAIROMM_API=
+
+2021-06-08  Jason Rhinelander  <jason@imaginary.ca>
+
+  Add Cairo::SaveGuard save/restore object
+
+  See #9
+
+2021-05-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  1.16.1
+
+2021-05-18  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add dependencies to Doxygen tag files in subprojects
+
+  Doxygen in a main project shall not be called before tag files have been
+  created or updated in subprojects.
+
+2021-05-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix build as subproject without building documentation
+
+  * meson.build: If mm-common-get is not found in maintainer-mode
+  with 'required: false', try with 'required: true'.
+  Don't try to use tag_file, if documentation is not built.
+  * docs/reference/meson.build: Don't use variables from modules
+  that don't define doxytagfile. These are subprojects that don't build
+  their documentation.
+
+2021-05-11  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Reorganize warnings on Visual Studio builds
+
+  We can now drop the ignores for warnings C4251, C4273 and C4275 along with
+  C4530, since our code and compiler flags should now make us free of them,
+  since we use /EHsc to build our code and we are clean of classes that we
+  export as a whole that derives from std::xxx classes.
+  
+  Ignore warning C4800, and warning C4127 in the examples, since these warnings
+  are really spurious and safe to ignore as a whole.
+
+2021-05-11  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  MSVC_NMake/config-msvc.mak: Clean up compiler flags
+
+  Since we eliminated the C4251, C4273 and C4275 warnings, don't ignore them
+  along with C4530, since we are now using /EHsc.  This will make the compiler
+  flags a bit cleaner
+
+2021-05-11  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  cairomm/exception.h: Export Cairo::logic_error selectively
+
+  Since this class derives std::logic_error, don't export the class as a whole
+  but instead export its member methods as necessary on Windows.  This will make
+  the compiled DLL to not be locked in a single compiler/STL version, and will
+  remove the compiler warnings C4251, C4273 and C4275 on Visual Studio.
+  
+  Also remove the workaround for Visual Studio 2013 since Visual Studio 2017 or
+  later is required for cairomm master.
+
+2021-05-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Subprojects can use meson.add_dist_script() if meson.version() >= 0.58.0
+
+  * meson.build:
+  * docs/reference/meson.build:
+  Call add_dist_script() in a subproject, if meson.version() >= 0.58.0.
+
+2021-04-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: No implicit_include_directories
+
+2021-03-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: No implicit_include_directories
+
+  It shall not be possible to find a cairomm header file
+  with #include <xxx.h> instead of #include <cairomm/xxx.h>.
+
+2021-03-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Make it possible to use cairomm as a subproject
+
+  cairo and sigc++ can be subprojects of cairomm.
+
+2021-03-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  cairommconfig.h.*: Don't dllimport on MinGW
+
+  This will fix warnings when building items using cairomm with MinGW/GCC.
+  
+  Please see: https://gitlab.gnome.org/GNOME/gtkmm/-/issues/90
+
+2021-02-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Surface::Type: Deprecate WIN32, add WIN32_SURFACE
+
+  WIN32 can be a preprocessor macro. Fixes #26
+
+2021-02-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove obsolete entries
+
+2021-02-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/release-publish.sh: Add comments
+
+  Add commented-out commands for signing the tarball,
+  and uploading the detached signature file. See #25
+
+2020-10-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/doc-publish.sh, release-publish.sh: Exit on error
+
+2020-09-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add tools/doc-publish.sh and release-publish.sh
+
+  Scripts that simplify releasing new versions of cairomm.
+
+2020-09-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  1.16.0
+
+2020-09-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Fix versioning on macOS
+
+  See https://github.com/libsigcplusplus/libsigcplusplus/pull/65
+
+2020-09-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Require cairo >= 1.12.0
+
+  Has been a requirement for a long time, but configure.ac
+  and meson.build had not been updated.
+
+2020-09-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Autotools builds: Create only .tar.xz tarballs
+
+  This is what Meson does. Cairo does it when built with Autotools.
+
+2020-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove RefPtrDeleter()
+
+  It's right for C++ classes wrapping GObject subclasses in glibmm and
+  gtkmm, but it is not right for wrappers in cairomm.
+  
+  Fixes #23
+
+2020-08-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests: Fix tests in Autotools builds
+
+  * build/ax_boost_base.m4:
+  * build/ax_boost_unit_test_framework.m4: Newer versions have been fetched
+  from www.gnu.org/software/autoconf-archive
+
+2020-08-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests: Don't include deprecated Boost header files
+
+2020-08-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Context::get_source_for_surface()
+
+  Fixes #5
+
+2020-07-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Update .gitignore
+
+  We don't need to track generated files that are in under MSVC_NMake/
+
+2020-07-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use Meson-style DLL and .lib naming if requested
+
+  To make things more consistent and less prone to confusion, if 'USE_MESON_LIBS'
+  is specified in the NMake command line, build the DLLs and .lib's that are
+  named like the Meson counterparts.  Binaries built with Meson+Visual Studio
+  and the ones that are built via NMake using 'USE_MESON_LIBS' are
+  interchangeable, provided that they are built with the same Visual Studio
+  version.
+
+2020-07-23  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Fix builds from release tarballs
+
+  This avoids needlessly enerating cairommconfig.h and cairomm.rc, and when we do
+  need to generate these files, we ensure that they always have the right version
+  info in them.
+  
+  Also streamline the build process that this file generating is done in the
+  'all' target, so that one does not need to use the -prep-git-build' target
+  beforehand.
+
+2020-07-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Look for headers in $(PREFIX)\include also
+
+  The needed headers can be in $(PREFIX)\include as well, so we ought to look for
+  them there
+
+2020-07-09  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Support ARM64 Windows builds
+
+  This will make the NMake Makefiles capable of building ARM64 binaries of
+  cairomm, which can be used on Windows 10 on ARM systems.
+
+2020-06-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/: Update for Doxygen >= 1.8.16
+
+  * docs/reference/meson.build: Doxygen 1.8.16 and later does not store
+  tag file names in the html files. This requires changes in meson.build
+  and in doc-install.pl (in mm-common). Otherwise references to other modules
+  won't be updated in the html files when they are installed.
+  * docs/reference/Doxyfile.in: Remove PERL_PATH and MSCGEN_PATH.
+  Doxygen since version 1.8.0 does not use them.
+
+2020-06-25  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson/Visual Studio builds: Include toolset version by default
+
+  This makes the built DLL and .lib's contain the toolset version if
+  the build is carried out using Visual Studio 2017 or later, unless
+  the 'msvc14x-parallel-installable' option is set to be false during
+  configuration.
+  
+  The reasoning behind this change is that there may be subtle problems
+  when, for instance, one tries to link to a Visual Studio 2017-built
+  cairomm with Visual Studio 2019.  This is unfortunate as Microsoft
+  did try hard to make interoperating between binaries built with Visual
+  Studio 2017 and 2019 as easy as possible in terms of ABI and API, but
+  unfortunately this may hit the corner cases where this compatibility
+  does not work.
+  
+  As the name suggests, this attempts to make Visual Studio 2017
+  and 2019 builds share a single set of underlying C DLLs easier,
+  while avoiding possible breakages caused by such subtle differences.
+
+2020-06-16  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use toolset version in DLL/.lib filenames
+
+  We now use the toolset version ('vc141' for Visual Studio 2017 and 'vc142' for
+  Visual Studio 2019) in the DLL anbd .lib filenames by default, to be consistent
+  with what is now being done in the 'cairo-1-14' branch.
+  
+  If using the old naming convention is desired, a command line option
+  'USE_COMPAT_LIBS' is added to facilitate such builds
+
+2020-06-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README: Update with instructions for building cairomm
+
+2020-05-05  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Drop gendef from the sources
+
+  We are no longer using it, so just drop it from the source tree.
+
+2020-05-05  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Don't use gendef on Visual Studio
+
+  Instead, we use the newly-added CAIROMM_API which is defined to be
+  __declspec(dllexport) to export the symbols directly.
+  
+  This will also allow some cleanup in the Meson build files, as we do not
+  need to differentiate how the cairomm library is built on different
+  compilers.
+
+2020-05-05  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Stop using gendef.exe by
+
+  Define CAIROMM_API as __declspec(dllexport) (when building) or
+  __declspec(dllimport) (when using).
+  
+  This will enable us to reduce the size of the built cairomm DLL and
+  .lib.
+
+2020-05-05  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  cairomm/*.h: Decorate public symbols with CAIROMM_API
+
+  This include the public class definitions and function prototypes, so
+  that we can use compiler directives to export these items.  By doing so
+  we will no longer need to use gendef.exe to export symbols for Visual
+  Studio DLL builds.
+
+2020-05-05  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  cairommconfig.h.[in|meson]: Add CAIROMM_API
+
+  This macro can be used to decorate public class and API prototypes, so
+  that we can use it to export symbols with compiler directives, such as
+  __declspec(dllexport) in the case of Visual Studio-style builds.
+  
+  We can even decide to not use it by keeping CAIROMM_API empty, such as
+  in the case of building static libraries or when using GCC's
+  autoexporting mechanism.
+
+2020-05-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  configure.ac: Substitute CAIROMM_EXTRA_LIBS during configuration
+
+  CAIROMM_EXTRA_LIBS has been added to data/cairomm.pc.in. It's used only
+  in Meson builds. During an Autotools build it must be replaced by an
+  empty string.
+
+2020-04-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Replace NULL by nullptr
+
+  * cairomm/surface.cc:
+  * tests/test-font-face.cc:
+  * tests/test-scaled-font.cc: Replace NULL by nullptr
+  * cairomm/surface.h: Remove the "#ifdef nil" section. It's not necessary.
+  Cairomm-1.16 depends on libsigc++-3.0. Only libsigc++-2.0 defines nil.
+
+2020-04-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Don't use zero as null pointer
+
+  Turn on the -Wzero-as-null-pointer-constant warning when -Dwarnings=max
+  or fatal. Replace 0 by nullptr where appropriate.
+
+2020-04-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests/test-scaled-font.cc: Remove an extra semicolon
+
+  With -Dwarnings=fatal g++ reacts to such trifles.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Allow linking to shared Boost::Test
+
+  This adds an option to the Meson builds so that we can choose to use a
+  shared build of Boost::Test if needed.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake: Fix building tests
+
+  This will make the tests build and link with Visual Studio + Boost DLL
+  builds...
+  
+  However, some more work is required to make the tests recognized by the
+  Boost test framework, which will be in the next commit.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  tests: Use Boost's automatic test registration
+
+  This makes it easier for all if we are going to choose between building
+  static or dynamic builds of Boost, which will be covered in the next
+  commit.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  tests: Fix building tests with FreeType but no FontConfig
+
+  Cairo could have been built with FreeType support but has no FontConfig
+  support, so we need to check for that too.
+  
+  Also allow building the tests on Windows even if FontConfig is not
+  found, as a result.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  test-font-face.cc: Fix build on Windows
+
+  The code must be updated for the Windows bits as well, as per commit 715d9dd9
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Speed up builds
+
+  Just use 'md' to create the intermediate build directories, instead of calling
+  nmake on the NMake Makefile to create these directories.  This makes things
+  faster by reducing the frequency that we need to create and read the file lists
+  
+  Fixes #22
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Add rule to generate versioned files
+
+  This will make building directly from a GIT checkout easier, by using PERL to
+  read the configure.ac file to acquire the version info, and using this info to
+  generate the full cairommconfig.h and cairomm.rc files that we need for our
+  Visual Studio builds.
+  
+  This will also enable us to build from a Meson-generated source tarball,
+  as we may well need to generate these files ourselves.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Split outdir by toolset version
+
+  This reduces the likelihood of accidently mixing binaries linked against
+  different CRT versions.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Support Meson-built libsigc++
+
+  This allows one to link to the correct .lib that is produced by the
+  Meson builds of libsigc++ in an easier way, by using USE_MESON_LIBS.
+
+2020-04-29  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  NMake Makefiles: Use /utf-8 and /EHsc for the builds
+
+  This makes builds more efficient and prevents warnings that are caused when
+  attempting to build on an East Asian locale of Windows (which can indicate
+  broken builds)
+
+2020-04-25  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Improve installing pkg-config files
+
+  We need to search for the headers and/or functions manually if the pkg-config
+  files for Cairo are not found.
+
+2020-04-25  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Improve cairomm pkg-config file
+
+  We only put Cairo as a required package if Cairo was found via pkg-config, but
+  if Cairo was found manually, we make the pkg-config file link to the cairo
+  library directly (-lcairo).
+
+2020-04-25  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Meson: Define _USE_MATH_DEFINES on Windows
+
+  Visual Studio and some MinGW versions require defining this to use M_PI
+
+2020-04-25  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  meson: Improve Cairo check
+
+  The Visual Studio build files for Cairo do not generate pkg-config files for
+  us, so we need to look for the cairo library and the header files.  Since we
+  are doing this for Visual Studio builds only, we want to look for both cairo.h
+  and cairo-win32.h.
+
+2020-04-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add support for building cairomm with Meson
+
+  cairomm can be built with either Autotools or Meson.
+  
+  Fixes #20
+
+2020-04-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests: Update the source code
+
+2020-04-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  data/: Rename the .pc.in files
+
+  * configure.ac: Update the call to AC_CONFIG_FILES() with the new file names.
+  * data/*.pc.in: Don't include the API version (1.16) in the file names.
+  This makes it easier to change the API name in the future. This is how .pc.in
+  files are named in libsigc++, glibmm, etc.
+  The API version is still included in the names of the generated .pc files.
+
+2020-04-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Sources: Remove #define _USE_MATH_DEFINES
+
+  We now pass in /D_USE_MATH_DEFINES in our NMake compiler flags, so
+  there is no need to define them in the sources.  This will silence
+  C4005 warnings (macro redefinition) in Visual Studio builds.
+  
+  Fixes #7
+
+2020-04-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Remove the Visual Studio projects
+
+  We now use the NMake Makefiles to build cairomm, so we can now remove
+  the Visual Studio projects.
+
+2020-04-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Add NMake Makefiles for MSVC builds
+
+  This adds a set of NMake Makefiles to build cairomm, and its example
+  programs and its test programs (the test programs are not buildable
+  in their current state).  Visual Studio 2017 is still the minimum
+  required version of Visual Studio required, with verion 15.8.0 or
+  later recommended.
+  
+  The NMake Makefiles will consume cairomm/filelist.am, so that additions
+  and removal of sources will only need to be done there, which will
+  reduce the likelyhood of the MSVC build files getting out-of-date.
+  
+  Dist only the NMake Makefiles, and also dist the gendef,
+  cairommconfig.h and cairomm.rc(.in) as we did before.  The Visual
+  Studio projects will be dropped in the next commit.
+
+2020-04-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  build: Rename MSVC_Net2017 to MSVC_NMake
+
+  This is to prepare for the transition of the Visual Studio build files
+  into NMake Makefiles rather than the Visual Studio project files, to
+  ease future maintenance.
+
+2020-04-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Build: Fix silent builds
+
+  * configure.ac: Pass yes to AM_SILENT_RULES, thus enabling silent builds.
+  * docs/reference/Doxyfile.in: Set QUIET=YES.
+  Update for doxygen 1.8.11 (not necessary for silent builds).
+
+2018-04-22  Ting-Wei Lan  <lantw@src.gnome.org>
+
+  configure.ac: Require C++17.
+
+  Because the lastest (unstable) libsigc++-3.0 release requires C++17.
+  
+  See
+  https://bugs.freedesktop.org/show_bug.cgi?id=106172
+
+2017-08-25  Murray Cumming  <murrayc@murrayc.com>
+
+  1.15.5
+
+2017-05-02  John Ralls  <jralls@ceridwen.us>
+
+  enums.h: Guard the FT-specific include and the enum with an ifdef.
+
+  To fix the build if there is no cairo-ft present. Bug #100894.
+
+2017-04-30  John Ralls  <jralls@ceridwen.us>
+
+  configure.ac: Require C++14, because libsigc++-3.0 does.
+
+  Bug 100884 - Configure requires C++11 with no extensions...
+  
+  but clang detects C++14 features in libsigc++ headers.
+
+2017-04-26  Murray Cumming  <murrayc@murrayc.com>
+
+  1.15.4
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::RegionOverlap enum to Cairo::Region::Overlap.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::PatternType enum to Cairo::Pattern::Type.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::FontWeight enum to Cairo::ToyFontFace::Weight.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::FontSlant enum to Cairo::ToyFontFace::Slant.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::SurfaceType enum to Cairo::Surface::Type.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::HintMetrics enum to Cairo::FontOptions::HintMetrics.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::HintStyle enum to Cairo::FontOptions::HintStyle.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::Filter enum to Cairo::SurfacePattern::Filter.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::Extend enum to Cairo::Pattern::Extend.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::Format enum to Cairo::Surface::Format.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::DeviceType enum to Cairo::Device::DeviceType.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::LineJoin enum to Cairo::Context::LineJoin.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::LineCap enum to Cairo::Context::LineCap.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::FillRule enum to Cairo::Context::FillRule.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-04-19  Murray Cumming  <murrayc@murrayc.com>
+
+  Change Cairo::Operator enum to Cairo::Context::Operator.
+
+  And change this from an old-style enum to a C++11 enum class.
+
+2017-03-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Visual Studio builds: Require Visual Studio 2017
+
+  cairomm 1.16 requires libsigc++-3.0, which requires C++-14 features that
+  are supported with Visual Studio 2017 or later, so update the projects
+  and README files accordingly.  Also update the DLL version as the ABI
+  version was updated for 1.16.
+  
+  Also, use the property sheets to define the version of libsigc++ so that
+  it is easier to update it in case we need to in the future.
+  
+  Bug 100210
+
+2017-03-22  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Win32: Remove leftovers from removing deprecated Win32::create()
+
+  The removal of this member function missed out the implementation in
+  win32_surface.cc, causing builds to break on Visual Studio at least.
+  
+  Bug 100210.
+
+2016-12-13  Murray Cumming  <murrayc@murrayc.com>
+
+  1.15.3
+
+2016-12-09  Kalev Lember  <klember@redhat.com>
+
+  Fix the build with MinGW headers
+
+  Guard _USE_MATH_DEFINES with _WIN32 instead of _MSC_VER as it is needed
+  for MinGW builds as well. While at this, also remove a duplicate version
+  of the exact same define a few lines below.
+  
+  https://bugs.freedesktop.org/show_bug.cgi?id=92112
+
+2016-12-07  Murray Cumming  <murrayc@murrayc.com>
+
+  RefPtr: Make this an alias for shared_ptr<> instead.
+
+  Specifying a Deleter in make_refptr_for_instance().
+
+2016-12-07  Murray Cumming  <murrayc@murrayc.com>
+
+  Add and use make_refptr_for_instance().
+
+2016-12-07  Murray Cumming  <murrayc@murrayc.com>
+
+  Context: Remove unnecessary const casts.
+
+2016-12-07  Murray Cumming  <murrayc@murrayc.com>
+
+  1.15.2
+
+2016-12-02  Murray Cumming  <murrayc@murrayc.com>
+
+  Remove deprecated API.
+
+2016-12-02  Murray Cumming  <murrayc@murrayc.com>
+
+  Remove old API that takes cairo_matrix_t*.
+
+2016-11-15  Murray Cumming  <murrayc@murrayc.com>
+
+  1.15.1
+
+2016-11-15  Murray Cumming  <murrayc@murrayc.com>
+
+  NEWS entry for 1.31.1 (from cairomm-1-14 branch)
+
+2016-11-15  Murray Cumming  <murrayc@murrayc.com>
+
+  NEWS entyr for 1.12.2 (from cairomm-1-12 branch)
+
+2016-11-15  Murray Cumming  <murrayc@murrayc.com>
+
+  NEWS entry for 1.12.1 (from cairomm-1-12 branch)
+
+2016-11-15  Murray Cumming  <murrayc@murrayc.com>
+
+  Make the ABI cairomm-1.16 instead of cairomm-1.14
+
+  So we can have one more stable release cycle to get a little new API
+  out before the (parallel-installing) ABI break.
+
+2016-11-11  Murray Cumming  <murrayc@murrayc.com>
+
+  Use libsigc++-3.0 instead of libsigc++-2.0
+
+2016-11-11  Murray Cumming  <murrayc@murrayc.com>
+
+  Change ABI from cairomm-1.0 to cairomm-1.14
+
+2016-04-10  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: RefPtr: Make operator bool explicit.
+
+  See https://bugzilla.gnome.org/show_bug.cgi?id=626858#c4
+
+2016-04-10  Murray Cumming  <murrayc@murrayc.com>
+
+  RecordingSurface: Correct some whitespace.
+
+2016-04-10  Jason Rhinelander  <jason@imaginary.ca>
+
+  Added C++ wrapper around cairo_recording_surface
+
+  Bug #121359
+
+2016-02-09  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: Use override keyword on destructors.
+
+2015-11-23  Murray Cumming  <murrayc@murrayc.com>
+
+  RefPtr: Use nullptr instead of 0.
+
+2015-09-21  Murray Cumming  <murrayc@murrayc.com>
+
+  1.12.0
+
+2015-09-21  Murray Cumming  <murrayc@murrayc.com>
+
+  RefPtr: Use noexcept, as in Glib::RefPtr.
+
+2015-09-10  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  cairomm/exception.h: Allow Build on Visual Studio 2013
+
+  Visual Studio 2013 has one catch for its C++-11 support: It does
+  not support noexcept, but has its own _NOEXCEPT for the same purpose.
+  Add a define for it, while defining the _ALLOW_KEYWORD_MACROS as newer
+  Visual Studio Versions do not allow one to define known keywords, even if
+  it is not supported, by default.
+
+2015-09-10  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  MSVC Builds: Support Visual Studio 2013 (and later) Only
+
+  This removes the Visual Studio 2005 and 2008 projects, and updates
+  the Visual Studio 2010 projects to become 2013 projects, as only
+  Visual Studio 2013 and later support enough of C++-11 to build
+  cairomm in its current state.
+  
+  Also update the README in MSVC_Net2013/ to reflect on this situation.
+
+2015-08-21  Murray Cumming  <murrayc@murrayc.com>
+
+  MSVC_Net2010/filelist.am: Correct the .props filenames
+
+2015-08-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Overhaul The Visual Studio 2010 Projects
+
+  Like the Visual Studio 2008 Projects, give the Visual Studio 2010 Projects
+  an overhaul by using property sheets to consolidate commonly-used items,
+  and moving all the projects to MSVC_Net2010, so that they can be more easily
+  maintained.
+  
+  https://bugs.freedesktop.org/show_bug.cgi?id=84030
+
+2015-08-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  Update and Overhaul the Visual Studio 2008 Projects
+
+  Move all the projects to MSVC_Net2008/, and add property sheets for the
+  projects so that commonly-used items can be consolidated and referred from
+  the projects, which will help simplify future maintenance.  Also remove
+  items from the projects that aren't really needed, as they add quite a bit
+  of clutter.  Add the newly-added source files to the cairomm project as
+  well, as the cairomm project has bit rotted a little.
+  
+  https://bugs.freedesktop.org/show_bug.cgi?id=84030
+
+2015-08-20  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  fontface/fontoption: Check for CAIRO_HAS_FC_FONT
+
+  This updates the fontface and fontoptions sources so that they will check
+  for whether Cairo was built with FontConfig (in addition to FreeType) so
+  that cairomm would still build when we have Cairo built with FreeType but
+  without FontConfig, which for example may well be the case on Windows
+  builds.
+  
+  https://bugs.freedesktop.org/show_bug.cgi?id=84033
+
+2015-08-20  Murray Cumming  <murrayc@murrayc.com>
+
+  Add TODO about using std::shared_ptr<> instead.
+
+2015-08-20  Murray Cumming  <murrayc@murrayc.com>
+
+  RefPtr: Add move constructors and move operator=().
+
+  Roughly based on the same changes in Glib::RefPtr<>.
+
+2015-08-12  Murray Cumming  <murrayc@murrayc.com>
+
+  1.11.4
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: Use = delete instead of private constructors.
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: Use of nullptr.
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: Use auto.
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: Use the override keyword.
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  C++11: Use noexcept instead of throw().
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  configure.ac: Add some more warnings for --enable-warnings=fatal.
+
+  Not using -Wshadow because that breaks the build:
+  matrix.cc:28:80: error: declaration of 'y0' shadows a member of 'this' [-Werror=shadow]
+   Matrix::Matrix(double xx, double yx, double xy, double yy, double x0, double y0)
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  configure.ac: Avoid deprecated libsigc++ API.
+
+  No code changes were necessary.
+
+2015-07-31  Murray Cumming  <murrayc@murrayc.com>
+
+  Use (and require) C++11.
+
+  And use the latest version of libsigc++, which also requires C++11.
+
+2014-04-09  David Weiß  <david.weiss@ptvgroup.com>
+
+  Update MSVC.Net 2010 project files.
+
+  https://bugs.freedesktop.org/show_bug.cgi?id=76820
+
+2014-02-21  Povilas Kanapickas  <povilas@radix.lt>
+
+  Wrap cairo script device and script surface APIs
+
+2014-02-21  Povilas Kanapickas  <povilas@radix.lt>
+
+  Wrap FtFontFace::{get,set,unset}_synthesize
+
+2014-02-21  Povilas Kanapickas  <povilas@radix.lt>
+
+  Remove no longer useful .cvsignore files
+
+2014-02-11  Murray Cumming  <murrayc@murrayc.com>
+
+  Updating version to odd number for git.
+
+2014-02-11  Murray Cumming  <murrayc@murrayc.com>
+
+  1.11.2, because we use even micros for releases.
+
+2014-02-11  Murray Cumming  <murrayc@murrayc.com>
+
+  1.11.1
+
+2014-02-11  Murray Cumming  <murrayc@murrayc.com>
+
+  Autogenerate the ChangeLog
+
+2014-01-28  Murray Cumming  <murrayc@murrayc.com>
+
+  Improve some deprecation comments.
+
+2014-01-28  Povilas Kanapickas  <povilas@radix.lt>
+
+  Add Pattern::{set_extend,get_extend}
+
+  * cairomm/pattern.{cc,h}: set_extend and get_extend functions apply not
+    only to surface patterns, but to linear and radial gradients too.
+    Bug #73775
+
+2014-01-28  Anton Bachin  <antonbachin@yahoo.com>
+
+  Allow use from Objective-C instead of just allowing building.
+
+  * cairomm/fontface.h: Surround the include line in surface.h with
+    some directives that undefine nil and then redefine it.
+  * cairomm/surface.h: This aso undefined nil but this appears to be
+    unnecessary.
+  
+    Bug #66328
+
+2014-01-28  Murray Cumming  <murrayc@murrayc.com>
+
+  Avoid dereferencing empty std::vector<>s.
+
+  * cairomm/context.cc: Check with empty() before using [0] on
+    a vector. Apparently gcc allows this, but MSVC (probably correctly)
+    does not. This fixes a crash on MS Windows.
+    Bug #36020 (Robert Kurjata)
+
+2014-01-28  Murray Cumming  <murrayc@murrayc.com>
+
+  ScaledFont: Add the missing get_extents() method implementation.
+
+  Bug #53981 (cheshirekow)
+
+2012-03-12  Mark Vender  <markv743@yahoo.co.uk>
+
+  Use GNOME style in the documentation
+
+2012-03-12  Murray Cumming  <murrayc@murrayc.com>
+
+  Fix linker problem with the examples.
+
+  * examples/Makefile.am: Add CAIROMM_LIBS.
+  This is needed now to a change in behaviour of the linker
+  in recent distro versions.
+
+2012-03-12  Mark Vender  <markv743@yahoo.co.uk>
+
+  Update the documentation
+
+2011-05-09  Murray Cumming  <murrayc@murrayc.com>
+
+  1.10.0
+
+2010-12-31  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Ignore some more msvc build files
+
+2010-12-31  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Bump micro version after release
+
+2010-12-31  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Disable fatal warnings on distcheck for now
+
+  cairo.h has an extra comma at the end of an enumeration, which causes a warning,
+  so making warnings fatal in distcheck makes it impossible to release.
+
+2010-12-31  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Update NEWS for 1.9.8 release, bump version
+
+  Also require a newer cairo (1.10.0)
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Wrap cairo_surface_create_for_rectangle()
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Add PDF versioning API
+
+  New PdfSurface functions:
+    get_versions()
+    restrict_to_version()
+    version_to_string()
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Add Device documentation
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Add Device::Lock for acquiring devices safely
+
+  To aid in acquiring devices in an exception-safe manner, a convenience class
+  Device::Lock was added that acquires the specified device for the duration of
+  the object.
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Wrap cairo_device_acquire|release()
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Wrap cairo_surface_get_device()
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Add Region documentation
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Wrap cairo_region_xor_*
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Wrap cairo_region_create_rectangles()
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Wrap Region::copy()
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Provide static factory functions for Region
+
+  Since Region objects are ref-counted, don't allow them to be instantiated
+  manually, but provide static create() functions for automatically managing them
+  with RefPtrs.  Also, remember to check the error status when creating them.
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Fix Region api to throw exception rather than return status
+
+  All other API throws exceptions instead of returning error statuses, so make
+  this be consistent as well. (the only possible error for these operations is
+  NO_MEMORY)
+
+2010-12-30  Jonathon Jongsma  <jjongsma@gnome.org>
+
+  Add new surface type enums
+
+  These are not really used in cairomm, but it's nice to have them defined in any
+  case.
+
+2010-11-03  Murray Cumming  <murrayc@murrayc.com>
+
+  A NEWS entry for a future release.
+
+2010-11-03  Murray Cumming  <murrayc@murrayc.com>
+
+  Context::arc(): Correct the documentation, as in the C documentation.
+
+  * cairomm/context.h: arc(): Update the documentation based on the latest
+  version of the cairo_arc() documentation, which was apparently fixed since
+  we last wrote the C++ documentation based on it.
+  This fixes bug #31345 (Christopher Head) about bad math in arc()
+  documentation.
+
+2010-10-26  Murray Cumming  <murrayc@murrayc.com>
+
+  Post-release version increment
+
+2010-10-26  Armin Burgmeier  <armin@arbur.net>
+
+  Fix the build with MSVC (really)
+
+  The previous commit only included the ChangeLog for some reason.
+  
+  2009-10-26  Armin Burgmeier  <armin@arbur.net>
+  
+  	* MSVC_Net2005/cairomm/cairomm.rc.in:
+  	* MSVC_Net2008/cairomm/cairomm.rc.in: Replaced GENERIC_MAJOR_VERSION
+  	et al. by CAIROMM_MAJOR_VERSION, so that they are properly replaced
+  	during configure.
+  
+  	* MSVC_Net2005/examples/image-surface/image-surface.vcproj:
+  	* MSVC_Net2005/examples/pdf-surface/pdf-surface.vcproj:
+  	* MSVC_Net2005/examples/ps-surface/ps-surface.vcproj:
+  	* MSVC_Net2005/examples/svg-surface/svg-surface.vcproj:
+  	* MSVC_Net2005/examples/text-rotate/text-rotate.vcproj:
+  	* MSVC_Net2005/examples/toy-text/toy-text.vcproj:
+  	* MSVC_Net2005/examples/user-font/user-font.vcproj:
+  	* MSVC_Net2008/examples/image-surface/image-surface.vcproj:
+  	* MSVC_Net2008/examples/pdf-surface/pdf-surface.vcproj:
+  	* MSVC_Net2008/examples/ps-surface/ps-surface.vcproj:
+  	* MSVC_Net2008/examples/svg-surface/svg-surface.vcproj:
+  	* MSVC_Net2008/examples/text-rotate/text-rotate.vcproj:
+  	* MSVC_Net2008/examples/toy-text/toy-text.vcproj:
+  	* MSVC_Net2008/examples/user-font/user-font.vcproj: Added
+  	$(SolutionDir)/cairomm to the include search paths, so that
+  	cairommconfig.h is found even if configure did not run.
+  
+  	* cairomm/fontface.cc: MSVC does not allow to reinterpret_cast a bool
+  	to void*, so use an int instead.
+  
+  	* examples/surfaces/image-surface.cc:
+  	* examples/surfaces/pdf-surface.cc:
+  	* examples/surfaces/ps-surface.cc:
+  	* examples/surfaces/svg-surface.cc:
+  	* examples/text/text-rotate.cc: Define _USE_MATH_DEFINES before
+  	including anything, to make sure we get the defines even if math.h
+  	is included indirectly via another header.
+  
+  	* cairomm/context.cc: In set_dash(std::valarray<double>), copy the
+  	valarray into a vector and then call set_dash(std::vector<double>).
+  	The reason is that there is no guarantee that the memory in a
+  	std::valarray is contiguous, and also that in MSVC's STL (and also in
+  	the C++ standard) std::valarray<T>::operator[](size_t) const returns
+  	a T, not a const T&, so &dashes[0] is a compiler error if dashes is a
+  	const std::valarray<double>&.
+

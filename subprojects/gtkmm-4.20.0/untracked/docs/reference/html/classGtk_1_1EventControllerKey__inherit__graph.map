@@ -1,0 +1,13 @@
+<map id="Gtk::EventControllerKey" name="Gtk::EventControllerKey">
+<area shape="rect" id="Node000001" title="Event controller for key events." alt="" coords="5,372,184,397"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1EventController.html" title="Self&#45;contained handler of series of events." alt="" coords="17,299,172,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,338,97,372,92,372,92,338"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="45,225,144,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,264,97,299,92,299,92,264"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="29,152,160,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="97,191,97,225,92,225,92,191"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="37,79,153,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="97,118,97,152,92,152,92,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="36,5,153,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="97,44,97,79,92,79,92,44"/>
+</map>

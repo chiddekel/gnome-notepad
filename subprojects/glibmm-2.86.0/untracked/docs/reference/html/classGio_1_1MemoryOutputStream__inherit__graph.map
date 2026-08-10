@@ -1,0 +1,21 @@
+<map id="Gio::MemoryOutputStream" name="Gio::MemoryOutputStream">
+<area shape="rect" id="Node000001" title="Streaming output operations on memory chunks." alt="" coords="129,372,326,397"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1OutputStream.html" title="Base class for implementing streaming output." alt="" coords="5,299,148,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,327,204,369,202,374,112,332"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="38,225,137,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,265,81,299,76,298,81,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="87,152,218,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,189,100,227,96,223,131,186"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1Interface.html" title=" " alt="" coords="170,225,285,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="176,185,217,223,213,227,173,189"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="95,79,211,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="155,118,155,152,150,152,150,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="94,5,211,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="155,44,155,79,150,79,150,44"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1Seekable.html" title="Stream seeking interface." alt="" coords="172,299,283,324"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="230,338,230,372,225,372,225,338"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="230,264,230,299,225,299,225,264"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1PollableOutputStream.html" title="PollableOutputStream &#45; Interface for pollable output streams." alt="" coords="307,299,502,324"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="270,253,377,296,375,301,268,258"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="364,332,257,374,255,369,362,327"/>
+</map>

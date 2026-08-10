@@ -1,0 +1,15 @@
+<map id="Gio::LoadableIcon" name="Gio::LoadableIcon">
+<area shape="rect" id="Node000001" title="Extends the Icon interface and adds the ability to load icons from streams." alt="" coords="61,299,199,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1BytesIcon.html" title="An icon stored in memory as a Glib::Bytes." alt="" coords="5,372,121,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="111,336,76,374,72,370,108,333"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1FileIcon.html" title="FileIcon specifies an icon by pointing to an image file to be used as icon." alt="" coords="145,372,248,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="152,333,188,370,184,374,149,336"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="73,225,187,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,264,133,299,127,299,127,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="65,152,195,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,191,133,225,127,225,127,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="72,79,188,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,118,133,152,127,152,127,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="71,5,189,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="133,44,133,79,127,79,127,44"/>
+</map>

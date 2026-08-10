@@ -1,0 +1,5 @@
+<map id="sigc::signal&lt; T_return(T_arg...)&gt;" name="sigc::signal&lt; T_return(T_arg...)&gt;">
+<area shape="rect" id="node1" title="signal can be used to connect() slots that are invoked during subsequent calls to emit()." alt="" coords="33,169,197,211"/>
+<area shape="rect" id="node2" href="$classsigc_1_1signal__with__accumulator.html" title=" " alt="" coords="5,80,224,121"/>
+<area shape="rect" id="node3" href="$structsigc_1_1signal__base.html" title="Base class for the sigc::signal template." alt="" coords="48,5,181,32"/>
+</map>

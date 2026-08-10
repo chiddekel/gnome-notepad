@@ -1,0 +1,16 @@
+<map id="Gio::Emblem" name="Gio::Emblem">
+<area shape="rect" id="Node000001" title="An object for emblems." alt="" coords="57,372,164,397"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,299,104,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,333,104,370,100,374,70,337"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="45,152,176,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,191,62,299,57,297,99,190"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="105,225,220,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="129,187,156,224,152,227,125,190"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="53,79,169,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,118,113,152,108,152,108,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="52,5,169,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,44,113,79,108,79,108,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Icon.html" title="This is a very minimal interface for icons." alt="" coords="129,299,207,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="152,336,122,374,118,370,148,333"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="167,264,170,298,164,299,162,265"/>
+</map>

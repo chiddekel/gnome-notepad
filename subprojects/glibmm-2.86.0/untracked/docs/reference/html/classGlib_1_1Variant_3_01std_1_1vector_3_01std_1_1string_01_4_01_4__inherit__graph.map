@@ -1,0 +1,7 @@
+<map id="Glib::Variant&lt; std::vector&lt; std::string &gt; &gt;" name="Glib::Variant&lt; std::vector&lt; std::string &gt; &gt;">
+<area shape="rect" id="Node000001" title="Specialization of Variant containing an array of non&#45;UTF&#45;8 strings (byte string arrays)." alt="" coords="13,152,195,192"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1VariantContainerBase.html" title="The base class for multiple&#45;item Variants, such as Variants containing tuples or arrays,..." alt="" coords="5,79,203,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,118,107,152,101,152,101,118"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1VariantBase.html" title="This is the base class for all Variant types." alt="" coords="37,5,171,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,44,107,79,101,79,101,44"/>
+</map>

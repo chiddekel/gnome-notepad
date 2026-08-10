@@ -1,0 +1,19 @@
+<map id="Gio::BytesIcon" name="Gio::BytesIcon">
+<area shape="rect" id="Node000001" title="An icon stored in memory as a Glib::Bytes." alt="" coords="74,372,190,397"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,225,104,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,264,70,293,82,323,101,349,121,370,117,374,97,352,78,325,65,295,57,265"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,189,67,227,63,223,98,186"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="128,225,243,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="142,186,177,223,173,227,138,189"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Icon.html" title="This is a very minimal interface for icons." alt="" coords="93,299,171,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="135,338,135,372,129,372,129,338"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="171,263,143,300,139,297,166,260"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1LoadableIcon.html" title="Extends the Icon interface and adds the ability to load icons from streams." alt="" coords="196,299,335,324"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="210,258,254,296,250,300,206,262"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="233,333,155,374,153,369,231,328"/>
+</map>

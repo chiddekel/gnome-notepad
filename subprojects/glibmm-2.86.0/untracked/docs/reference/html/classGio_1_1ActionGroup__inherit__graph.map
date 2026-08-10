@@ -1,0 +1,17 @@
+<map id="Gio::ActionGroup" name="Gio::ActionGroup">
+<area shape="rect" id="Node000001" title="ActionGroup &#45; a group of actions." alt="" coords="177,299,309,324"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Application.html" title="Application &#45; Core application class." alt="" coords="5,372,131,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="203,332,98,374,96,369,201,327"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1DBus_1_1ActionGroup.html" title="ActionGroup &#45; A D&#45;Bus Gio::ActionGroup implementation." alt="" coords="155,372,330,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="245,338,245,372,240,372,240,338"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1SimpleActionGroup.html" title="SimpleActionGroup &#45; A simple ActionGroup implementation." alt="" coords="354,372,531,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="289,326,411,369,409,374,287,331"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Interface.html" title=" " alt="" coords="185,225,300,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,264,245,299,240,299,240,264"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="177,152,308,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,191,245,225,240,225,240,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="185,79,301,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,118,245,152,240,152,240,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="184,5,301,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="245,44,245,79,240,79,240,44"/>
+</map>

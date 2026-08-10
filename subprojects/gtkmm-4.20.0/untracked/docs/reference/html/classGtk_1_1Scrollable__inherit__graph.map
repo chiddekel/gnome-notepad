@@ -1,0 +1,29 @@
+<map id="Gtk::Scrollable" name="Gtk::Scrollable">
+<area shape="rect" id="Node000001" title="This interface is implemented by widgets with native scrolling ability." alt="" coords="363,299,481,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ColumnView.html" title="A widget for displaying lists in multiple columns." alt="" coords="5,372,140,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="353,329,130,375,129,369,352,324"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1IconView.html" title="The IconView provides an alternative view of a list model." alt="" coords="165,372,277,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="377,331,254,374,253,369,376,326"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1ListBase.html" title=" " alt="" coords="301,372,409,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="403,336,368,374,364,370,400,333"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1TextView.html" title="Multi&#45;line text editing widget." alt="" coords="434,372,546,397"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="444,332,481,370,477,374,441,336"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it." alt="" coords="570,372,682,397"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="468,326,594,369,592,374,467,331"/>
+<area shape="rect" id="Node000014" href="$classGtk_1_1Viewport.html" title="An adapter which makes widgets scrollable." alt="" coords="707,372,817,397"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="490,324,707,369,706,375,489,329"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="365,225,479,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,264,425,299,419,299,419,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="357,152,487,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,191,425,225,419,225,419,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="364,79,480,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,118,425,152,419,152,419,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="363,5,481,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="425,44,425,79,419,79,419,44"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1GridView.html" title="A widget for displaying grids." alt="" coords="227,445,339,471"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="335,409,297,447,293,443,332,405"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1ListView.html" title="A widget for displaying lists." alt="" coords="364,445,472,471"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="377,406,410,443,406,447,373,409"/>
+<area shape="rect" id="Node000013" href="$classGtk_1_1ListViewText.html" title="A simple listbox which presents some lines of information in columns and lets the user select some of..." alt="" coords="559,445,693,471"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="629,411,629,445,623,445,623,411"/>
+</map>

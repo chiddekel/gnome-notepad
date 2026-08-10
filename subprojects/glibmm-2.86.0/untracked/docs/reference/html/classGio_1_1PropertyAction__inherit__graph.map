@@ -1,0 +1,16 @@
+<map id="Gio::PropertyAction" name="Gio::PropertyAction">
+<area shape="rect" id="Node000001" title="An Action reflecting a Glib::Object property." alt="" coords="41,372,189,397"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Object.html" title=" " alt="" coords="5,299,104,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,333,107,370,103,374,71,336"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="48,152,179,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,192,62,299,57,297,101,189"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Interface.html" title=" " alt="" coords="111,225,225,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="133,187,161,224,157,227,129,190"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="55,79,171,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,118,116,152,111,152,111,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="55,5,172,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="116,44,116,79,111,79,111,44"/>
+<area shape="rect" id="Node000006" href="$classGio_1_1Action.html" title="Action &#45; An action interface." alt="" coords="128,299,221,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="158,336,126,374,122,370,154,333"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="173,264,176,298,171,299,168,265"/>
+</map>

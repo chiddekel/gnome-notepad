@@ -1,0 +1,1760 @@
+2025-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.20.0
+
+2025-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gsk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.20.1.
+  The .defs files are identical to the ones in gtkmm 4.19.1,
+  using gtk files from gtk 4.19.4.
+  Remove documentation of enumerators in gdk_docs_override.xml and
+  gtk_docs_override.xml. They are now included in the docs.xml files.
+
+2025-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Use SPDX expression for license
+
+  This is the recommended format.
+  See https://gitlab.freedesktop.org/cairo/cairomm/-/merge_requests/33
+
+2025-09-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gsk/gskmm/meson.build: dummy_header.h depends on all built .h files
+
+  not just the used ones. Even the unused ones shall be built before
+  the used ones are compiled. Used ones may #include unused ones.
+  Should have been done in the previous commit.
+
+2025-09-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk: Deprecate PixbufAnimation and PixbufAnimationIter
+
+  GdkPixbufAnimation and GdkPixbufAnimationIter are deprecated
+  since gdk-pixbuf 2.44.
+  
+  * demos/gtk-demo/example_images.cc: Don't use Gdk::PixbufAnimation
+  and PixbufAnimationIter when gtkmm is built without deprecated API.
+  * gdk/gdkmm/meson.build: Move pixbufanimation and pixbufanimationiter
+  to gdkmm_deprecated_hg_ccg_basenames. Let dummy_header.h depend on
+  all built .h files, not just the used ones.
+  * gdk/gdkmm/wrap_init.h: Ignore deprecation of gdk_*_get_type()
+  in Gdk::wrap_init.cc.
+  * gdk/src/filelist.am: Move pixbufanimation.hg and pixbufanimationiter.hg
+  to gdkmm_files_deprecated_hg.
+  * gdk/src/pixbufanimation.[ccg|hg]:
+  * gdk/src/pixbufanimationiter.[ccg|hg]: Deprecate.
+  * gdk/src/pixbufloader.hg: Deprecate get_animation().
+  * gtk/gtkmm/meson.build: Let dummy_header.h depend on all built .h
+  files, not just the used ones.
+
+2025-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.19.1
+
+2025-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gsk, Gtk: Add new API from gtk 4.19.4
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.19.4
+  * gdk/src/event.hg: Add get_relative_direction() and
+  enum ScrollRelativeDirection.
+  * gsk/src/transform.[ccg|hg]: Add matrix_2d().
+  * gtk/src/application.hg: Deprecate property_register_session().
+  * gtk/src/cssprovider.hg: Add property_prefers_color_scheme()
+  and property_prefers_contrast().
+  * gtk/src/entry.hg: Add set/get_menu_entry_icon_text(),
+  property_menu_entry_icon_primary_text() and
+  property_menu_entry_icon_secondary_text().
+  * gtk/src/enums.hg: Add enum InterfaceColorScheme and InterfaceContrast.
+  * gtk/src/filterlistmodel.hg: Add get/set/property_watch_items().
+  * gtk/src/settings.hg: Add property_gtk_interface_color_scheme()
+  and property_gtk_interface_contrast().
+  * tools/m4/convert_gdk.m4: Add conversions for enum ScrollRelativeDirection.
+  * tools/m4/convert_gtk.m4: Add conversions for enum InterfaceColorScheme
+  and InterfaceContrast.
+
+2025-08-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gsk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.19.4.
+  Update gdk_docs_override.docs and gtk_docs_override.xml.
+
+2025-07-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::DrawingArea, GLArea: Update the class descriptions
+
+2025-07-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add images used in documentation copied by gmmproc
+
+  * docs/reference/Doxyfile.in: Search for images in
+  docs/reference/images/gtkdoc/.
+  * docs/reference/images/gtkdoc/README: New file.
+  * docs/reference/images/gtkdoc/*.png: New files, copied from
+  the gdk-pixbuf and gtk modules.
+
+2025-07-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update the docs_override.xml files with enum documentation
+
+  * gdk/src/gdk_docs_override.xml:
+  * gtk/src/gtk_docs_override.xml: Add enum documentation that
+  glibmm/tools/defs_gen/docextract_to_xml.py has not been able to extract.
+
+2025-06-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.19.0
+
+2025-06-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.19.2
+
+  * gdk/src/colorstate.hg: Add equivalent().
+  * gdk/src/memorytexturebuilder.hg: Add get/set_stride_for_plane() and
+  get/set_offset().
+  * gdk/src/texturedownloader.hg: Add download_bytes_with_planes().
+  * gdk/src/toplevel.[ccg|hg]: Add enum TitlebarGesture,
+  enum Toplevel::Capabilities, titlebar_gesture(), get/property_capabilities(),
+  get/set/property_gravity().
+  * gtk/src/calendar.hg: Add set/property_date().
+  * gtk/src/urilauncher.hg: Add can_launch().
+  * gtk/src/window.hg: Add enum WindowGravity, get/set/property_gravity().
+  * tools/m4/convert_gdk.m4:
+  * tools/m4/convert_gtk.m4: Add conversions for new enums.
+
+2025-06-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gsk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.19.2, and update gtk_docs_override.xml.
+
+2025-06-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk::Pixbuf: Deprecate create_from_xpm_data()
+
+  gdk_pixbuf_new_from_xpm_data() is deprecated in gdk-pixbuf 2.44.
+
+2025-06-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Force callback for mm-common
+
+  to get the latest version from the git repo.
+
+2025-06-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Make it possible to use mm-common as a subproject
+
+  Useful if you want to use the latest version from the git repo,
+  for instance the latest doxygen-extra.css.
+  See #165 and mm-common#4
+
+2025-06-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::IconPaintable: Deprecate get_icon_name() etc.
+
+  Deprecate get/property_icon_name(), is_symbolic(), property_is_symbolic().
+
+2025-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Require gtk4 >= 4.19.2
+
+  where GtkIconPaintable has become a final type.
+
+2025-05-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::IconPaintable: Don't derive a GType
+
+  GtkIconPaintable is a final type.
+
+2025-05-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Deprecate some pixbuf methods
+
+  * demos/Makefile.am:
+  * demos/gtk-demo/demo.gresource.xml: gtk-logo-rgb.gif -> gtk-logo-rgb.png
+  * demos/gtk-demo/example_images.cc:
+  * demos/gtk-demo/example_textview.cc:
+  Don't use Gdk::Texture::create_for_pixbuf().
+  * demos/gtk-demo/example_pixbufs.cc: Don't use
+  Gdk::Cairo::set_source_pixbuf() when gtkmm is built without deprecated API.
+  This demo can't be shown without deprecated API.
+  * demos/gtk-demo/gtk-logo-rgb.gif: Replaced by gtk-logo-rgb.png.
+  * demos/gtk-demo/gtk-logo-rgb.png: New file.
+  * gdk/gdkmm/general.[cc|h]: Deprecate Gdk::Cairo::set_source_pixbuf().
+  * gdk/src/texture.hg: Deprecate create_for_pixbuf().
+  * gtk/src/filefilter.hg: Deprecate add_pixbuf_formats().
+  The corresponding gtk functions have been deprecated.
+
+2025-05-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gtk/src/treepath.hg, license text: Change ", )" to ";"
+
+2025-04-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove obsolete FSF (Free Software Foundation) address
+
+  See https://github.com/libxmlplusplus/libxmlplusplus/pull/72
+
+2025-04-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gsk::Transform: Use _IS_REFCOUNTED_BOXEDTYPE
+
+  to generate a Glib::Value specialization, needed for use in _WRAP_PROPERTY.
+
+2025-04-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Calendar: Deprecate select_day(), property_year/month/day()
+
+  They are deprecated in gtk.
+  set/property_date() will be added when the .defs files have been regenerated.
+  Update the class description.
+
+2025-04-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  generate_defs_gsk.cc: Change license, Lesser GPL 2.1 to GPL 2
+
+  as generate_defs_gdk.cc and generate_defs_gtk.cc.
+
+2025-04-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Add FixedLayout and FixedLayoutChild
+
+  * gsk/src/transform.[ccg,hg]: Add Glib::Value<Glib::RefPtr<Gsk::Transform>>
+  specialization.
+  * gtk/gtkmm.h:
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add fixedlayout and fixedlayoutchild.
+  * gtk/src/gtk_signals.defs: Regenerate, including
+  GtkFixedLayoutyChild property.
+  * tools/extra_defs_gen/generate_defs_gtk.cc: Add
+  get_defs(GTK_TYPE_FIXED_LAYOUT_CHILD)
+  * tools/m4/convert_gsk.m4: Add more conversions for GskTransform.
+  * gtk/src/fixedlayout.[ccg,hg):
+  * gtk/src/fixedlayoutchild.[ccg,hg]: New files.
+  
+  Fixes #164
+
+2025-04-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gtk::Fixed::set/get_child_transform()
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake builds: Update build info
+
+  Mention gskmmconfig.h as well, by shorthand, with g[d|s|t]kmmconfig.h.
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake builds: Support generating wrap_init.cc for gskmm
+
+  That rule was forgotten.  Add it accordingly
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake builds: Also "install" the gskmm headers
+
+  Make sure the gskmm headers are copied as appropriate.
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake builds: Add build rules to build gskmm
+
+  This ensures that the bits for gskmm are built and linked in when
+  building the final gtkmm DLL.
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake builds: Update include directories
+
+  We need to include the headers from gskmm, so update the build files
+  accordingly so that these headers are indeed found by the build.
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  NMake Makefiles: Generate gskmm build config files
+
+  This adds rules in the NMake builds to generate the build config files
+  for the newly-addded gskmm componenent, so that the build directories
+  and gskmmconfig.h are generated with the needed info in them
+
+2025-04-07  Chun-wei Fan  <fanc999@yahoo.com.tw>
+
+  meson: Disable warning C4201 on Visual Studio
+
+  The GSK headers are using nameless unions/structs that are trigerring
+  this warning on C++, which we can just disregard.
+
+2025-04-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gsk: Add RoundedRect, Transform and some enums
+
+  This is the first API in the Gsk namespace.
+  The MSVC_NMake directory is not fully updated.
+
+2025-04-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  doc: Don't show specializations of glibmm template classes
+
+  Doxygen shall not document specializations of Glib::Value and
+  Glib::Container_Helpers::TypeTraits.
+
+2025-04-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Update some comments
+
+2025-03-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.18.0
+
+2025-03-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.18.1
+
+  * configure.ac: Require gtk4 >= 4.17.5
+  * meson.build: Require gtk4 >= 4.17.5, use the Python installation
+  that Meson uses. See glibmm!68.
+  * gdk/src/device.hg: Add get/property_active_layout_index(),
+  get/property_layout_names().
+  * gdk/src/surface.hg: Add translate_coordinates(),
+  deprecate create_cairo_context().
+  * gtk/src/accessible.hg: Add update_platform_state().
+  * gtk/src/headerbar.hg:
+  * gtk/src/windowcontrols.hg: Add get/set/property_use_native_controls().
+  * gtk/src/widget.hg: Add get/set/property_limit_events().
+
+2025-03-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.18.1.
+
+2025-03-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk::CairoContext: Deprecate cairo_create()
+
+  Because gdk_cairo_context_cairo_create() is deprecated.
+
+2025-03-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Remove the install_gdkmmconfigdir variable
+
+  It's identical to install_gtkmmconfigdir.
+
+2025-02-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  doc: Add Gdk::Pixbuf class description
+
+  * gdk/src/pixbuf.hg:
+  * gdk/src/pixbufformat.hg: Add class description.
+  * gdk/src/pixbufloader.hg: Add class description. Remove duplicate
+  signal descriptions.
+
+2025-02-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  doc: Update aboutdialog1.png
+
+  * docs/reference/images/widgets/aboutdialog1.png: Update to gtkmm4 look.
+  The old image showed the obsolete web address gtkmm.org.
+  * docs/reference/images/widgets/arrow1.png and 18 other .png files:
+  Removed. They are not used.
+  * gtk/src/constraintlayout.hg: Add a link to the description of
+  GtkConstraintLayout.
+
+2025-02-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Add install_tag keyword argument
+
+2025-02-07  Daniel Boles  <dboles.src@gmail.com>
+
+  SignalListItemFactory: Remove links, tweak wording
+
+  Stop the _obj() mentions linking to something unrelated in libstdc++, or
+  anything else unintended, as seen on my system. Also reword it a little.
+
+2025-02-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Publish the generated gtkmm-4.0.tag file
+
+  and use libsigc++'s, glibmm's, cairomm's and pangomm's published
+  tag files. The *-doc modules don't install the tag files.
+
+2025-01-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.17.0
+
+2025-01-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.17.3
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.17.3
+  * gdk/src/colorstate.hg: Add get_oklab() and get_oklch().
+  * gdk/src/contentformats.hg: Add is_empty().
+  * gtk/src/filedialog.[ccg|hg]: Add open_text_file(), open_text_file_finish(),
+    open_multiple_text_files(), open_multiple_text_files_finish(),
+    save_text_file(), save_text_file_finish().
+  * gtk/src/listbox.hg: Add set/get/property_tab_behavior().
+  * gtk/src/stringlist.hg: Add find().
+  * gtk/src/textview.[ccg|hg]: Add get_visible_offset().
+  * tests/filedialog/main.cc: Test open_multiple_text_files_finish()
+    instead of open_multiple_finish().
+
+2025-01-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.17.3.
+  
+  * tools/gen_scripts/gdk_generate_methods.sh:
+    Exclude gtk/gdk/gdkcolordefs.h.
+
+2025-01-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Update for the new release-service component
+
+  * citemplates/release-service is necessary when making a release.
+    See https://handbook.gnome.org/maintainers/making-a-release.html
+  * Don't install libsigc++-3.0-doc and and other -doc modules.
+    They make no difference. They don't install Doxygen's tag files.
+
+2025-01-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson: Build tarball without running test programs
+
+  If GTKMM_NO_DIST_TESTS is defined, 'meson dist' does not run test programs.
+  Useful when doing it in a CI job.
+  
+  Don't distribute gtkmm.doap.
+
+2025-01-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Deprecate Gtk::ShortcutsWindow
+
+  * demos/gtk-demo/example_shortcuts.cc: Don't try to use ShortcutsWindow
+  when gtkmm is built without deprecated API.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Move deprecated files to the appropriate lists.
+  Also move SearchEntry. It should have been done when SearchEntry2 was created.
+  * gtk/src/applicationwindow.[ccg|hg]: Deprecate unset/set/get_help_overlay().
+  * gtk/src/shortcutlabel.hg:
+  * gtk/src/shortcutsgroup.hg:
+  * gtk/src/shortcutssection.hg:
+  * gtk/src/shortcutsshortcut.hg:
+  * gtk/src/shortcutswindow.hg: Deprecate. The corresponding classes in
+  gtk have been deprecated.
+
+2024-12-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Replace gtkmm.org by gtkmm.gnome.org
+
+2024-11-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gtk::Snapshot::render_background()
+
+  render_backgrount() is misspelt. Add a correctly spelt method,
+  although gtk_snapshot_render_background() is deprecated since 4.10.
+  Typo noticed by Ezike Ebuka in !91.
+
+2024-11-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove unsupported entries
+
+2024-10-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add more signal_activate() methods
+
+  Add signal_activate() in Gtk::ColorDialogButton, DropDown, Expander,
+  FontDialogButton, MenuButton, PasswordEntry, Text.
+
+2024-10-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gtk::SearchEntry2::signal_activate()
+
+  It's okay to handle "activate" signals in applications, according to
+  https://discourse.gnome.org/t/how-shall-action-signals-be-handled-in-language-bindings/19585
+  
+  Fixes #161
+
+2024-10-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gtk_docs_override.xml: Remove obsolete entries
+
+2024-09-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs: Remove "Since 2.x"
+
+  and other minor documentation fixes.
+  Some "Since 2.x" remain. They come from gdk-pixbuf documentation.
+  GTK4 has long ago removed both "Since 2.x" and "Since 3.x".
+
+2024-09-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build, configure.ac: Require glibmm >= 2.75.0
+
+  Necessary because of _WRAP_PROPERTY("bytes", Glib::RefPtr<Glib::Bytes>)
+  in Gdk::MemoryTextureBuilder. The template specialization
+  Glib::Value<Glib::RefPtr<Glib::Bytes>> is new in glibmm 2.75.0.
+  
+  Should have been updated when MemoryTextureBuilder was added in gtkmm 4.15.0.
+  https://discourse.gnome.org/t/gtkmm-4-16-0-fails-to-compile-error-static-assertion-failed/23485
+
+2024-09-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.16.0
+
+2024-09-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gtk/gtkmm.h: Add eventcontrollerlegacy.h
+
+2024-09-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.16.0.
+
+2024-08-30  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.15.1
+
+2024-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::TextBuffer: Add add/remove_commit_notify()
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.15.5.
+  * gtk/src/textbuffer.[ccg|hg]: Add enum TextBuffer::NotifyFlags and
+  add/remove_commit_notify().
+  * tools/m4/convert_gtk.m4: Add conversions for TextBuffer::NotifyFlags.
+
+2024-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.15.6.
+
+2024-08-29  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk::Cursor: Rename create(const SlotGetTexture& slot, .....)
+
+  Call it create_from_slot(). Some create() calls are ambiguous otherwise.
+  
+  Fixes #159
+
+2024-08-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gtk::Window::set_interactive_debugging()
+
+  See https://discourse.gnome.org/t/how-to-set-interactive-debugging-for-window-using-gtkmm-c-library/22714
+
+2024-08-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk::DrawContext, Surface: Deprecations
+
+  * gdk/src/drawcontext.hg: Deprecate begin_frame(), end_frame(),
+  is_in_frame(), get_frame_region().
+  * gdk/src/surface.hg: Deprecate set_opaque_region().
+
+2024-08-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.15.0
+
+2024-08-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.15.4
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.15.4
+  * gdk/gdkmm.h:
+  * gdk/src/filelist.am:
+  * gdk/gdkmm/meson.build: Add CicpParams, ColorState, MemoryTextureBuilder.
+  * gdk/src/cicpparams.[ccg|hg]:
+  * gdk/src/colorstate.[ccg|hg]:
+  * gdk/src/memorytexturebuilder.[ccg|hg]: New files.
+  * gdk/src/dmabuftexturebuilder.[ccg|hg]: Add get/set/property_color_state().
+  * gdk/src/gltexturebuilder.[ccg|hg]: Add get/set/property_color_state().
+  * gdk/src/texture.[ccg|hg]: Add get/property_color_state().
+  * gdk/src/texturedownloader.[ccg|hg]: Add get/set_color_state().
+  * gtk/src/csssection.hg: Add create(file, bytes, start, end), get_bytes().
+  * tools/m4/convert_gdk.m4: Add conversions for GdkCicpRange, GdkCicpParams
+  and GdkColorState.
+
+2024-08-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.15.4.
+  Update gdk_docs_override.xml, gdk_extra_objects.defs and
+  tools/extra_defs_gen/generate_defs_gdk.cc.
+
+2024-07-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Shortcut, Snapshot: Deprecations
+
+  * gtk/src/shortcut.hg: Add set_action(), deprecate the misnamed
+  set_trigger(const Glib::RefPtr<const ShortcutAction>& action).
+  * gtk/src/snapshot.hg: Deprecate gl_shader_pop_texture().
+
+2024-07-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Don't try to get removed PACKAGE_TARNAME
+
+  from pkg_conf_data when gtkmm is a subproject.
+  
+  dependency().get_variable(pkgconfig: 'xxx', internal: 'xxx') ->
+  dependency().get_variable('xxx'). Possible when meson version >= 0.51.
+
+2024-07-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Use strings in pkgconfig.generate(requires:)
+
+  The output of dependency() can't be used when the dependency is a subproject.
+
+2024-07-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Meson build: Use Meson's pkgconfig module
+
+  instead of using the *.pc.in templates.
+  Require meson >= 0.62. Remove the can_add_dist_script variable.
+  It's unnecessary when the meson version >= 0.58.
+
+2024-07-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Don't link to library.gnome.org
+
+  Require python3 >= 3.7. That's what Meson requires.
+
+2024-06-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Dialog demo: Add some comments
+
+  and don't call other signal handlers on Dialog_Interactive after
+  it has been deleted.
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Don't build gtk4 examples, demos, tests
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Dialog demo: Fix a memory leak
+
+  https://discourse.gnome.org/t/memory-leak-in-gtkmm-demos-gtk-demo-example-dialog-cc/21802
+
+2024-06-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  docs/reference/Doxyfile.in: Remove obsolete entries
+
+2024-06-04  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  enum Gtk::License: Undefine preprocessor macro BSD
+
+  * gtk/src/aboutdialog.hg: Gtk::License::BSD is an enum constant.
+  BSD can be a preprocessor macro in MacOS. Use the same trick as in
+  gdk/src/event.hg, i.e. replace the macro by an enum constant.
+  Also, make some minor fixes in AboutDialog's class documentation.
+  Fixes #157
+
+2024-05-18  Andre Klapper  <a9016009@gmx.de>
+
+  Correct 404 GNOME HIG URI
+
+2024-04-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  configure.ac, meson.build: Require gtk4 >= 4.15.0
+
+2024-04-27  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::FileDialog: Add a nullptr test
+
+  * gtk/src/filedialog.ccg: gtk_file_dialog_open_multiple_finish()
+  and gtk_file_dialog_select_multiple_folders_finish() return a nullptr
+  if the user has not selected anything.
+
+2024-04-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.15.0
+
+  * gdk/src/cursor.[ccg|hg]: Improve the class documentation.
+    Add create(const SlotGetTexture& slot, const Glib::RefPtr<Cursor>& fallback).
+  * gtk/src/enums.hg: Add FontRendering.
+  * gtk/src/graphicsoffload.hg: Add set/get/property_black_background().
+  * gtk/src/settings.hg: Improve the class documentation.
+    Add property_gtk_font_rendering().
+  * tools/m4/convert_gtk.m4: Add converions for enum FontRendering.
+
+2024-04-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.15.0. Update gtk_docs_override.xml.
+
+2024-04-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Paned: Add unset_start_child() and unset_end_child()
+
+  Fixes #156
+
+2024-04-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Widget: Deprecate set/unset/get_font_options()
+
+  They are deprecated in gtk.
+
+2024-04-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk::Graphene: Add TODO comments
+
+  * gdk/src/graphene_*.hg:
+  * gdk/src/rgba.hg:
+  * gtk/src/border.hg: Add TODO comments.
+  These classes will be more efficient if they contain the underlying
+  C structs instead of pointers to the C structs.
+  See #155
+
+2024-03-17  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.14.0
+
+2024-03-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.14.0
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.14.0.
+  * gdk/src/display.hg: Add supports_shadow_width(), property_shadow_width().
+  * gdk/src/dmabufformats.hg: Add equal().
+  * gdk/src/monitor.hg: Add get/property_scale().
+  * gtk/gtkmm.h:
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add accessibletext.
+  * gtk/src/accessibletext.[ccg|hg]: New files.
+  * gtk/src/accessible.hg: Add announce().
+  * gtk/src/calendar.hg: Add set/get_day(), set/get_month(), set/get_year().
+  * gtk/src/inscription.hg:
+  * gtk/src/label.hg:
+  * gtk/src/text.hg:
+  * gtk/src/textview.hg: Add a TODO comment.
+  * gtk/src/scalebutton.hg: Add set/get/property_has_frame().
+  * gtk/src/searchentry.hg: Add _IGNORE() and _IGNORE_PROPERTY() directives.
+  * gtk/src/searchentry2.hg: Add set/get/property_input_purpose(),
+  set/get/property_input_hints().
+  * tools/m4/convert_gdk.m4: Add conversion for DmabufFormats.
+  * tools/m4/convert_gtk.m4: Add converions for AccessibleAnnouncementPriority,
+  AccessibleTextContentChange, AccessibleTextGranularity enums.
+
+2024-03-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.14.0. Update gtk_vfuncs.defs.
+
+2024-02-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::SpinButton: Add signal_activate()
+
+  https://discourse.gnome.org/t/how-shall-action-signals-be-handled-in-language-bindings/19585
+
+2024-02-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Demos: Fix the TextView demo, ClickMe button
+
+  Fix the window which is opened when the button is clicked.
+
+2024-02-01  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.13.3
+
+2024-01-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Add new API from gtk 4.13.6
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.13.6.
+  * gtk/src/aboutdialog.hg: GTK_LICENSE_0BSD is called BSD_0.
+  * gtk/src/filelauncher.hg: Add get/set/property_writable().
+  * gtk/src/settings.hg: Add property_gtk_show_status_shapes().
+  * gtk/src/spinbutton.hg: Add get/set/property_activates_default().
+
+2024-01-31  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.13.6.
+  Update gdk_docs_override.xml and gtk_docs_override.xml.
+
+2024-01-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Add glslc as a build dependency
+
+2024-01-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Update htmlrefpub
+
+2023-12-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::ScrolledWindow: Update the class description
+
+  Make it similar to the description of GtkScrolledWindow.
+
+2023-12-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Make enum operators constexpr
+
+  * tools/m4/enum.m4: New file. Basically a copy of glibmm's
+  corresponding file. It adds constexpr to operator|(), operator&(),
+  operator^() and operator~() for enums of flag type.
+  * tools/extra_defs_gen/meson.build:
+  * tools/m4/filelist.am: Add enum.m4.
+  
+  Fixes #153
+
+2023-11-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gtk/gtkmm.h: Add graphicsoffload.h
+
+2023-11-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.13.2
+
+2023-11-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gtk::GraphicsOffload
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.13.3.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add graphicsoffload.
+  * gtk/src/enums.hg: Add enum GraphicsOffloadEnabled.
+  * gtk/src/graphicsoffload.[ccg|hg]: New files.
+  * gtk/src/video.hg: Add get/set/property_graphics_offload().
+  * tools/m4/convert_gtk.m4: Add conversions for GraphicsOffloadEnabled.
+
+2023-11-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.13.3. Update gtk_docs_override.xml
+  and tools/extra_defs_gen/generate_defs_gtk.cc.
+
+2023-11-16  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Window: Get an extra reference, if not managed
+
+  From the documentation of gtk_window_new():
+    Due to GTK keeping a reference to the window internally,
+    gtk_window_new() does not return a reference to the caller.
+  
+  GtkWindow acts approximately like a method marked (transfer none).
+  The Gtk::Window constructors shall take a reference in order to avoid
+  premature deletion of the GtkWindow, if it's destroyed, e.g. when
+  it's closed.
+  
+  Fixes #151
+
+2023-11-14  Daniel Boles  <dboles.src@gmail.com>
+
+  NEWS: Update for recent changes
+
+2023-11-13  Daniel Boles  <dboles.src@gmail.com>
+
+  TreeIter: Document pitfall @ `&row = *m->append()`
+
+  https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/88#note_1908596 &c
+
+2023-11-10  Daniel Boles  <dboles.src@gmail.com>
+
+  TreeIter: Add various missing fn docs & intro para
+
+2023-11-10  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tests/tree_model_iterator: Copy a model row instead of referencing it
+
+  See !88
+
+2023-11-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::RecentInfo: Fix refcount of Glib::Datetime
+
+  get_added(), get_modified(), get_visited() and get_application_info()
+  return a Glib::DateTime. GtkRecentInfo returns the GDateTime with
+  (transfer none). The RecentInfo methods must add their own reference.
+  Fixes #150
+
+2023-11-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  meson.build: Improve the test for warning_level
+
+  Make it more immune to possible future added values.
+  
+  See !87
+
+2023-11-04  Daniel Boles  <dboles.src@gmail.com>
+
+  tests/tree_model_iterator: Fix CRITICALs as !model
+
+  Kjell noticed at line 118 and the others creating paths from iterators:
+  
+  > Gtk-CRITICAL **: 10:21:51.432: gtk_tree_model_get_path:
+  >   assertion 'GTK_IS_TREE_MODEL (tree_model)' failed
+  
+  These criticals were because the paths were created from iterators not
+  associated with a model. Make them use the same 'dummy' model as others.
+  
+  https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/88#note_1907963
+
+2023-11-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: SearchEntry keeps deriving GType gtkmm__GtkSearchEntry
+
+  instead of SearchEntry2. SearchEntry2 does not need a derived GType.
+
+2023-11-03  Daniel Boles  <dboles.src@gmail.com>
+
+  tests/tree_model_iterator: Fix/add const+non tests
+
+  * Rename test_const_conversion() to _comparison() as that's what it does
+  
+  * Rename test_assignment_from_const() to _to_const(), ditto - & fix that
+    not actually comparing the 2 different constness types, by using auto!
+  
+  * Make latter actually test assignment; it was only trying construction…
+  
+  * Make latter test that operator=() returns *this, per my recent bugfix!
+  
+  * Add real _from_const(), which static_asserts !constructible/assignable
+  
+  * Add test_operator_bool()
+  
+  * Add a basic model so we can check bool/equality after construction and
+    assignment when we have a model, not only for empty/invalid iterators,
+    since checking we are STILL empty doesnʼt confirm the operation worked
+
+2023-11-02  Daniel Boles  <dboles.src@gmail.com>
+
+  meson.build—Donʼt fail if warning_level=everything
+
+  We assume the meson configure variable warning_level can always be
+  converted to int, but nowadays there is a standard 'everything' option,
+  which if used was causing `ninja` builds to fail. While that level is
+  not very useful due to all the dodgy C stuff we are built on top of, it
+  should still work in case anyone wants to test particular files under it
+  – so this fixes it, by changing 'everything' to the arbitrarily high 99.
+
+2023-11-02  Daniel Boles  <dboles.src@gmail.com>
+
+  NEWS: Update to mention additions coming in 4.13.2
+
+2023-11-02  Daniel Boles  <dboles.src@gmail.com>
+
+  TreeIter: Fix operator=() missing return statement
+
+  This is of course wrong and was causing crashes in the Inkscape GTK/mm4
+  porting effort, luckily now worked around by refactoring relevant code.
+
+2023-11-02  Daniel Boles  <dboles.src@gmail.com>
+
+  Widget: Add [[nodiscard]] on get_children() and...
+
+  ...drop some more redundant Gtk:: namespace qualifications there, and
+  avoid introducing a template typename ambiguously also called Widget.
+  
+  https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/85
+
+2023-11-02  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Add SearchEntry2, deprecate SearchEntry
+
+  SearchEntry wrongly inherits from Entry. GtkSearchEntry does not
+  inherit from GtkEntry in gtk4. SearchEntry can't be fixed without
+  breaking ABI.
+  
+  * demos/gtk-demo/example_iconbrowser.cc: Use SearchEntry2.
+  * demos/gtk-demo/main.cc: Call Application::wrap_in_search_entry2().
+  * gtk/gtkmm.h:
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add searchentry2.
+  * gtk/src/application.[ccg|hg]: Add wrap_in_search_entry2().
+  * gtk/src/searchentry.hg: Deprecate in favor of SearchEntry2.
+  * gtk/src/searchentry2.[ccg|hg]: New files.
+  
+  Fixes #148
+
+2023-10-31  Daniel Boles  <dboles.src@gmail.com>
+
+  Widget: Add measure+get_preferred_size() → structs
+
+  Add overloads returning structs with named members – as opposed to the
+  ‘raw’ C output parameters, and to returning only tuples which in their
+  anonymity are error-prone & not as user-friendly as named members are.
+  
+  This makes it far easier/nicer to write the very-frequent code that
+  currently must declare redundant/uninit'd variables, pass out args, etc…
+  
+  ```cpp
+  int minimum, natural, minimum_baseline, natural_baseline;
+  widget.measure(Orientation::HORIZONTAL, -1, minimum, natural,
+                 minimum_baseline, natural_baseline);
+  do_something(natural);
+  ```
+  
+  can become:
+  
+  `do_something(widget.measure(Orientation::HORIZONTAL).sizes.natural)`
+  
+  #38 (comment 1903091)
+  
+  https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/83#note_1904930
+
+2023-10-31  Daniel Boles  <dboles.src@gmail.com>
+
+  Widget: Fix outdated, wrong destructor doc comment
+
+  https://gitlab.gnome.org/GNOME/gtkmm/-/merge_requests/84#note_1904193
+  
+  ```none
+  commit 449249a8098cacdb1a6410472366527201e2cc77 (origin/dboles/Widget-doc-cosmetics, dboles/Widget-doc-cosmetics)
+  Author: Daniel Boles <dboles.src@gmail.com>
+  Date:   Mon Oct 30 16:31:45 2023 +0000
+  
+      Widget: Fix outdated, wrong destructor doc comment
+      
+      Now destroying a widget will not remove it from a parent if it has one,
+      as GTK4 removed GtkContainer and hence any uniform way to remove() etc.
+      
+      https://gitlab.gnome.org/GNOME/gtkmm/-/issues/138#note_1775964
+  
+  commit 92caa8a2fa882339479e33faf25750c1e2d8a843
+  Author: Daniel Boles <dboles.src@gmail.com>
+  Date:   Mon Oct 30 16:28:24 2023 +0000
+  
+      Widget: Add some 'section heading' comments
+  
+  commit 88128a723d8987b7c65883ca009e683a6beef26b
+  Author: Daniel Boles <dboles.src@gmail.com>
+  Date:   Mon Oct 30 15:45:26 2023 +0000
+  
+      Widget: Sort includes
+  
+  commit 246ae7696665ae158a29e3f9dcfda1390dc31f76
+  Author: Daniel Boles <dboles.src@gmail.com>
+  Date:   Mon Oct 30 15:38:22 2023 +0000
+  
+      Widget—Remove redundant Gtk:: namespace qualifiers
+  ```
+
+2023-10-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk::DmabufTexture: GDK_GL_TEXTURE -> GDK_DMABUF_TEXTURE
+
+2023-10-25  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.13.1
+
+2023-10-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk: Add DmabufFormats, DmabufTexture, DmabufTextureBuilder
+
+  * gdk/gdkmm.h: Add dmabuf*.h.
+  * gdk/gdkmm/meson.build:
+  * gdk/src/filelist.am: Add dmabuf*.
+  * gdk/src/contentformats.hg: Fix a comment.
+  * gdk/src/display.[hg|ccg: Add get_dmabuf_formats().
+  * gdk/src/dmabufformats.[hg|ccg]:
+  * gdk/src/dmabuftexture.[hg|ccg]:
+  * gdk/src/dmabuftexturebuilder.[hg|ccg]: New files.
+  * tools/extra_defs_gen/generate_defs_gdk.cc:
+  Add GDK_TYPE_DMABUF_TEXTURE_BUILDER.
+  * tools/m4/convert_gdk.m4: Add conversions for DmabufFormats.
+
+2023-10-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Add PrintDialog and PrintSetup
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.13.2
+  * gtk/gtkmm.h: Add printdialog.h.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add printdialog and printsetup.
+  * gtk/src/printdialog.[hg|ccg]:
+  * gtk/src/printsetup.[hg|ccg]: New files.
+  * tools/extra_defs_gen/generate_defs_gtk.cc: Add GTK_TYPE_PRINT_DIALOG.
+  * tools/m4/convert_gtk.m4: Add conversions for PrintSetup.
+
+2023-10-24  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.13.2. Update gdk_extra_objects.defs.
+
+2023-10-11  Daniel Boles  <dboles.src@gmail.com>
+
+  Widget: Document unwrapp(ed|able) vfuncs in header
+
+  We have missed these (perhaps because GTK4 added them after 4.0; I
+  havenʼt checked) and now cannot add them while we must preserve ABI, but
+  we can at least document that weʼre aware of the shortcoming and have a
+  comment to jog someoneʼs memory if theyʼre ever updating this for gtkmm5
+  
+  https://gitlab.gnome.org/GNOME/gtkmm/-/issues/147#note_1863895
+
+2023-10-11  Daniel Boles  <dboles.src@gmail.com>
+
+  gtk_vfuncs.defs + missing vfuncs on GtkWidgetClass
+
+  This brings the file up-to-date with current GTK4.13.2 online docs – and
+  it would mean that if gmmproc diagnosed unwrapped vfuncs weʼd see these!
+  
+  https://gitlab.gnome.org/GNOME/gtkmm/-/issues/147#note_1863895
+
+2023-10-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Window: Deprecate present(guint32 timestamp)
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.13.0
+  * gtk/src/colordialogbutton.hg:
+  * gtk/src/fontdialogbutton.hg: _IGNORE_SIGNAL("activate")
+  * gtk/src/window.hg: Deprecate present(guint32 timestamp)
+
+2023-10-05  Daniel Boles  <dboles.src@gmail.com>
+
+  PopoverMenu: Wrap new property :flags + [gs]etters
+
+  I have changed this from a ctor param only to a property in GTK4 `main`.
+  
+  https://gitlab.gnome.org/GNOME/gtk/-/merge_requests/6298
+
+2023-10-05  Daniel Boles  <dboles.src@gmail.com>
+
+  Shortcuts: Wrap new add_*() methods to populate
+
+  https://gitlab.gnome.org/GNOME/gtk/-/merge_requests/6249
+
+2023-10-04  Daniel Boles  <dboles.src@gmail.com>
+
+  Widget: +/restore get_children() → vector<Widget*>
+
+  Add get_children() methods with the same API/sense as the previously
+  automatically wrapped gtk_container_get_children(). This will reduce
+  porting headaches from gtkmm3 and is cheaper than observe_children().
+  
+  https://gitlab.gnome.org/GNOME/gtkmm/-/issues/143
+
+2023-10-04  Daniel Boles  <dboles.src@gmail.com>
+
+  Regenerate (gdk|gtk)_(docs|enums|methods|signals)*
+
+2023-10-04  Daniel Boles  <dboles.src@gmail.com>
+
+  TreePath + missing ctor/assign from const_iterator
+
+  Add a constructor and assignment operator each taking const_iterator, so
+  TreePaths can be created/assigned from read-only iterators, not only
+  writable ones. The restriction to only ::iterator does not make sense
+  and is inconvenient (e.g. Inkscape migrating to GTK4 must drop to C API)
+  
+  Fix https://gitlab.gnome.org/GNOME/gtkmm/-/issues/145
+
+2023-08-15  Daniel Boles  <dboles.src@gmail.com>
+
+  SignalListItemFactory: Add signals taking GObjects
+
+  so that the factory is usable if it's producing instances of a type
+  other than Gtk::ListItem, e.g if it is a ListView::header-factory.
+  
+  Rather than going to the lengths of defeating the default documentation,
+  I just prepend notes on the meaning of the two sets of signals, to the
+  generated documentation.
+
+2023-08-12  Daniel Boles  <dboles.src@gmail.com>
+
+  ListViews|ViewPort: Default empty Flags+ScrollInfo
+
+  to avoid users having to explicitly pass empty arguments if they simply
+  want the default behaviour, which GTK does by taking a NULL ScrollInfo*
+  and having special handling for it in some ScrollInfo instance methods;
+  & per func names, default Flags to NONE to only scroll, no focus/select
+  & for ColumnView, default to no column to scroll to (i.e. only the row)
+  
+  fixes https://gitlab.gnome.org/GNOME/gtkmm/-/issues/141
+
+2023-08-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.12.0
+
+2023-08-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Add new API from gtk 4.12.0
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.12.0.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add ScrollInfo.
+  * gtk/src/columnview.hg:
+  * gtk/src/gridview.hg:
+  * gtk/src/listview.hg:
+  * gtk/src/viewport.hg: Add scroll_to().
+  * gtk/src/columnviewrow.hg:
+  * gtk/src/listitem.hg: Add set/get/property_accessible_description()
+  and set/get/property_accessible_label().
+  * gtk/src/dropdown.hg: Add set/get/property_header_factory()
+  and set/get/property_search_match_mode().
+  * gtk/src/enums.hg: Add enum ListScrollFlags.
+  * gtk/src/filelauncher.hg: Add set/get/property_always_ask().
+  * gtk/src/scrollinfo.[ccg|hg]: New files.
+  * gtk/src/window.hg: Add is_suspended() and property_suspened().
+  * tools/m4/convert_gtk.m4: Add conversions for ListScrollFlags
+  and ScrollInfo.
+
+2023-08-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.12.0.
+
+2023-07-20  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Widget docs: Describe managed and non-managed widgets
+
+  A short description and a link to the gtkmm tutorial.
+  Also update some links in other class descriptions.
+  Fixes #138
+
+2023-07-19  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gtk::SymbolicPaintable
+
+  * gtk/gtkmm.h:
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add SymbolicPaintable.
+  * gtk/src/gtk_vfuncs.defs: Add snapshot_symbolic_vfunc.
+  * gtk/src/iconpaintable.hg: Add a TODO comment.
+  * gtk/src/symbolicpaintable.[ccg|hg]: New files.
+
+2023-07-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Remove AUTHORS, HACKING, README.SUN; add info to README.md
+
+  Fixes #140
+
+2023-07-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update gtkmm.doap
+
+2023-07-03  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  recentinfo.hg: Fix Visual Studio build (error C2375)
+
+  Nowadays, gtk has its visibility macros generated and make use of
+  __declspec(dllimport) in addition to __declspec(dllexport), so we must decorate
+  the `void gtk_recent_info_unref(GtkRecentInfo* info);` prototype with
+  `GDK_AVAILABLE_IN_ALL`, so that we don't end up with warnings and errors when
+  we include the GDK headers when building this code.
+  
+  So, just include gtk/gtk.h and drop the extern "C" portion here, since
+  it is covered by including gtk/gtk.h.
+
+2023-06-28  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  README.win32: Convert to MarkDown
+
+  Make it easier on the eyes in terms of formatting, and update some info in
+  particular for Visual Studio builds, where things went out of date as time went
+  on.
+
+2023-06-23  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix build with build-deprecated-api=false
+
+  Put #ifndef G[DT]KMM_DISABLE_DEPRECATED around these method:
+  * gdk/src/gltexture.ccg: GLTexture_destroy_callback().
+  * gtk/src/aboutdialog.ccg: AboutDialog(bool use_header_bar) constructor.
+  * gtk/src/snapshot.ccg: gdk_rect_to_graphene_rect().
+
+2023-06-20  Daniel Boles  <dboles.src@gmail.com>
+
+  AboutDlg: Deprecate ctor w/ removed use_header_bar
+
+  In GTK4, AboutDialog does not inherit from Dialog, and it does not add a
+  :use-header-bar property of its own, so the only effect is this warning:
+  
+  ```none
+  ** (process:12100): WARNING **: 21:37:20.103:
+  Glib::ConstructParams::ConstructParams(): object class
+  "gtkmm__GtkAboutDialog" has no property named "use-header-bar"
+  ```
+  
+  Mark this constructor as deprecated to match.
+
+2023-06-14  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  tools/gen_scripts/gtk_generate_*.sh: Read files in gtk/gtk/print
+
+  gtk/print is a new subdir of GTK.
+
+2023-06-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.11.3
+
+2023-06-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Add new API from gtk 4.11.3
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.11.3.
+  * gtk/src/columnview.hg: Add set/get/property_header_factory().
+  * gtk/src/cssprovider.[ccg|hg]: Deprecate load_from_data().
+  Add load_from_string() and load_from_bytes().
+
+2023-06-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.11.3. Update gtk_docs_override.xml.
+
+2023-06-06  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Small documentation fixes
+
+2023-06-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk docs: Group some classes in the new ListView group
+
+  and note that all classes in the TreeView group are deprecated.
+
+2023-05-28  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Deprecate some Pixbuf API
+
+  * demos/gtk-demo/example_images.cc: Don't use Gtk::Picture::set_pixbuf().
+  * gdk/src/pixbuf.[ccg|hg]: Deprecate the create() method taking
+  a Cairo::Surface.
+  * gtk/gtkmm/selectionlistmodelimpl.h: Make Notebook a friend class.
+  * gtk/src/cssprovider.[ccg|hg]: Add commented lines that deprecate
+  load_from_data() and add load_from_string() and load_from_bytes().
+  * gtk/src/image.[ccg|hg]: Deprecate the set() method taking a Pixbuf.
+  * gtk/src/notebook.[ccg|hg]: get_pages() now returns an object that
+  implements both GListModel and GtkSelectionModel (like Stack::get_pages()).
+  Wrap it in a SelectionListModelImpl.
+  * gtk/src/picture.[ccg|hg]: Deprecate set_pixbuf().
+
+2023-05-22  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Snapshot: Add some #includes
+
+  Necessary when GTKMM_DISABLE_DEPRECATED is defined.
+  Fixes #137
+
+2023-05-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.11.2
+
+2023-05-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.11.2
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.11.2.
+  * gdk/gdkmm.h: Add gltexturebuilder.h.
+  * gdk/gdkmm/meson.build:
+  * gdk/src/filelist.am: Add GLTextureBuilder.
+  * gdk/src/gltexture.hg: Deprecate create().
+  * gdk/src/gltexturebuilder.[ccg|hg]: New files.
+  * gtk/gtkmm.h: Add listheader.h and sectionmodel.h.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add ListHeader and SectionModel.
+  * gtk/src/box.hg:
+  * gtk/src/boxlayout.hg: Add set/get/property_baseline_child().
+  * gtk/src/button.hg: Add set/get/property_can_shrink().
+  * gtk/src/centerbox.hg:
+  * gtk/src/centerlayout.hg: Add set/get/property_shrink_center_last().
+  * gtk/src/columnview.hg: Remove a _CONVERSION().
+  * gtk/src/filterlistmodel.hg:
+  * gtk/src/flattenlistmodel.hg: Add a TODO comment.
+  * gtk/src/glarea.hg: Deprecate set/get/property_use_es().
+  Add set/get/property_allowed_apis(), get/property_api().
+  * gtk/src/gridview.hg: Remove a _CONVERSION().
+  * gtk/src/listheader.[ccg|hg]: New files.
+  * gtk/src/listview.hg: Remove a _CONVERSION().
+  Add set/get/property_header_factory().
+  * gtk/src/menubutton.hg: Add set/get/property_can_shrink().
+  * gtk/src/multiselection.hg:
+  * gtk/src/noselection.hg: Add a TODO comment.
+  * gtk/src/sectionmodel.[ccg|hg]: New files.
+  * gtk/src/singleselection.hg: Add a TODO comment.
+  * gtk/src/sortlistmodel.hg: Add a TODO comment.
+  Add set/get/property_section_sorter().
+  * gtk/src/widget.[ccg|hg]: Deprecate get_allocation(),
+  get_allocated_width/height/baseline(). Add get_baseline().
+  * tools/m4/class_shared.m4: Add a comment.
+
+2023-05-15  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.11.2.
+  Update gdk_docs_override.xml, gdk_extra_objects.defs,
+  gtk_docs_override.xml, gtk_extra_objects.defs, gtk_vfuncs.defs,
+  generate_defs_gdk.cc, generate_defs_gtk.cc.
+
+2023-05-08  Chun-wei Fan  <fanchunwei@src.gnome.org>
+
+  entry.hg: Mark GTKMM_API for the Entry class
+
+  It is now needed that we mark this class with GTKMM_API, since the API
+  deprecations.
+
+2023-05-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.11.1
+
+2023-05-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.11.1
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.11.1.
+  * gdk/gdkmm/meson.build:
+  * gdk/src/filelist.am: Add DragSurfaceSize.
+  * gdk/src/dragsurface.[ccg|hg]: Add signal_compute_size().
+  * gdk/src/dragsurfacesize.[ccg|hg]: New files.
+  * gdk/src/surface.hg: Add get/property_scale().
+  Deprecate create_similar_surface().
+  * gtk/gtkmm.h: Add columnviewcell.h and columnviewrow.h.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Add ColumnViewCell and ColumnViewRow.
+  * gtk/src/columnview.hg: Add set/get/property_tab_behavior() and
+  set/get/property_row_factory().
+  * gtk/src/columnviewcell.[ccg|hg]:
+  * gtk/src/columnviewrow.[ccg|hg]: New files.
+  * gtk/src/enums.hg: Add enum ListTabBehavior.
+  * gtk/src/flowbox.hg:
+  * gtk/src/listbox.hg: Add remove_all().
+  * gtk/src/gridview.hg: Add set/get/property_tab_behavior().
+  * gtk/src/listitem.hg: Add set/get/property_focusable().
+  Mark _DO_NOT_DERIVE_GTYPE. GtkListItem has become an internal type.
+  * gtk/src/listview.hg: Add set/get/property_tab_behavior().
+  * tools/m4/convert_gtk.m4: Add conversions for enum GtkListTabBehavior.
+
+2023-05-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.11.1. Update gdk_signals.defs.patch,
+  gtk_docs_override.xml, gtk_extra_objects.defs,
+  generate_defs_gdk.cc, generate_defs_gtk.cc.
+
+2023-05-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Remove obsolete entries
+
+2023-04-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Snapshot, Widget: Add some methods with Graphene parameters
+
+  * gtk/src/snapshot.[hg|ccg]: Add push_repeat(), push_clip(), append_cairo(),
+  append_texture(), append_color() with Gdk::Graphene::Rect.
+  Deprecate other push_clip(), push_clip(), append_cairo(), append_texture(),
+  append_color() overloads. Add translate().
+  * gtk/src/widget.[hg|ccg]: Add compute_bounds() and compute_point().
+  Deprecate translate_coordinates().
+
+2023-04-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add namespace Gdk::Graphene
+
+  with the Point, Rect and Size classes.
+  Add the gdk_graphene test case.
+
+2023-04-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk: Generate docs.xml and .defs files for Graphene API
+
+2023-04-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  gtkmm.pc.in: Update htmlrefpub
+
+2023-04-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Expression, FlowBox, ListBox: Use callback functions with C linkage
+
+2023-04-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::TreeView, ComboBox: Use callback functions with C linkage
+
+2023-04-12  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add Gdk::gdkmm_SignalProxy_async_callback() with C linkage
+
+  and use it instead of Gio::SignalProxy_async_callback().
+
+2023-04-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Editable, Range: Update handcoded _SIGNAL_PH and _VFUNC_PH
+
+  gmmproc can now generate callback functions with C linkage.
+  It requires a parameter with C argument names in the calls
+  to _SIGNAL_PH and _VFUNC_PH.
+
+2023-04-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk: Use callback functions with C linkage
+
+  * gtk/src/assistant.ccg: Add extern "C".
+  * gtk/src/buildable.[ccg|hg]:
+  Call Buildable_Class::custom_tag_[start|end]_vfunc_callback()
+  via local functions with C linkage.
+  * gtk/src/builderscope.[ccg|hg]:
+  Call BuilderScope_Class::get_type_from_name_vfunc_callback()
+  via a local function with C linkage.
+  * gtk/src/cellarea.ccg:
+  * gtk/src/celllayout.ccg:
+  * gtk/src/cssprovider.ccg: Add extern "C".
+  * gtk/src/drawingarea.ccg: Add extern "C". Use a local function with
+  C linkage instead of Glib::destroy_notify_delete<SlotDraw>.
+  * gtk/src/entrycompletion.ccg:
+  * gtk/src/iconview.ccg: Add extern "C".
+  * gtk/src/menubutton.ccg: Add extern "C". Use a local function with
+  C linkage instead of Glib::destroy_notify_delete<SlotCreatePopup>.
+  * gtk/src/printer.ccg: Add extern "C".
+  * gtk/src/printjob.ccg: Add extern "C". Use a local function with
+  C linkage instead of Glib::destroy_notify_delete<SlotPrintJobComplete>.
+  * gtk/src/printoperation.ccg:
+  * gtk/src/printsettings.ccg: Add extern "C".
+  * gtk/src/scale.ccg: Add extern "C". Use a local function with
+  C linkage instead of Glib::destroy_notify_delete<SlotFormatValue>.
+  * gtk/src/shortcutaction.ccg: Add extern "C". Use a local function with
+  C linkage instead of Glib::destroy_notify_delete<SlotShortcut>.
+  * gtk/src/textiter.ccg:
+  * gtk/src/texttagtable.ccg: Add extern "C".
+  * gtk/src/treelistmodel.ccg: Add extern "C". Use a local function with
+  C linkage instead of Glib::destroy_notify_delete<SlotCreateModel>.
+  * gtk/src/treemodel.[ccg|hg]:
+  Call TreeModel_Class::iter_next_vfunc_callback() and 5 other vfuncs
+  via local functions with C linkage.
+  * gtk/src/treemodelfilter.ccg:
+  * gtk/src/treeselection.ccg:
+  * gtk/src/treesortable.ccg: Add extern "C".
+  * gtk/src/widget.[ccg|hg]: Add extern "C".
+  Call Widget_Class::dispose_vfunc_callback() via a local function
+  with C linkage. Use a local function with C linkage instead of
+  Glib::destroy_notify_delete<SlotTick>.
+  * gtk/src/window.[ccg|hg]: Call Window_Class::dispose_vfunc_callback()
+  via a local function with C linkage.
+
+2023-04-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk: Use callback functions with C linkage
+
+  * gdk/src/gltexture.ccg:
+  * gdk/src/pixbuf.ccg:
+  * gdk/src/toplevel.ccg: Add extern "C".
+  
+  Code that mixes up C linkage and C++ linkage has undefined behavior.
+  Most compilers make no difference between C and C++ linkage, so it
+  has not been an issue so far. But see issue glibmm#1.
+
+2023-04-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: warnings=max, accept deprecated gtk functions
+
+2023-03-09  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.10.0
+
+2023-03-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.10.0
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.10.0.
+  * gdk/src/enums.hg: Add MemoryFormat, identical to MemoryTexture::Format,
+  which is hard to use in Texture.
+  * gdk/gdkmm.h:
+  * gdk/gdkmm/meson.build:
+  * gdk/src/filelist.am: Add TextureDownloader.
+  * gdk/src/texturedownloader.[ccg|hg]: New files.
+  * gdk/src/memorytexture.hg: Add comments to enum Format.
+  * gdk/src/texture.hg: Add get_format().
+  * tools/m4/convert_gdk.m4: Add some conversions.
+  * gtk/src/accessible.hg: Add set_accessible_parent() and
+  update_next_accessible_sibling().
+  * gtk/src/menubutton.hg: Add set/get/property_active().
+  * gtk/src/scalebutton.hg: Add get/property_active().
+  * gtk/src/searchentry.hg: Add set/get_placeholder_text().
+
+2023-03-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.10.0. Update gdk_extra_objects.defs.
+
+2023-03-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Fix deprecation in tests/filedialog
+
+  The whole FileChooser and FileChooserDialog are deprecated,
+  not just FileChooser::get_files().
+
+2023-03-07  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Add tests/filedialog
+
+2023-03-03  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::FileDialog, FileChooser: Fix some methods that return Gio::File
+
+  Gtk::FileChooser::get_files(), get_shortcut_folders(),
+  Gtk::FileDialog::open_multiple_finish(), select_multiple_folders_finish()
+  return a Gio::ListModel whose elements are objects that implement the
+  Gio::File interface.
+  
+  The returned C objects may be instances of a private glib/gtk class,
+  such as GLocalFile. This class is not wrapped in C++ code.
+  Gio::ListModel::get_object() fails to find a suitable C++ wrapper,
+  and returns an empty RefPtr.
+  
+  * gtk/src/filechooser.[ccg|hg]: Deprecate get_files() and
+  get/property_shortcut_folders(). Add get_files2() and
+  get_shortcut_folders2(), returning std::vector<Glib::RefPtr<Gio::File>>.
+  * gtk/src/filedialog.[ccg|hg]: Change the return value of
+  open_multiple_finish() and select_multiple_folders_finish() to
+  std::vector<Glib::RefPtr<Gio::File>>. Make open[_finish](),
+  select_folder[_finish](), save[_finish](), open_multiple[_finish](),
+  select_multiple_folders[_finish]() non-const. The *_finish() methods
+  return non-const Gio::File.
+  * gtk/src/fontdialog.hg: Make choose_family[_finish]() and
+  choose_face[_finish]() non-const.
+  
+  Fixes #132
+
+2023-02-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  README.md, CI: meson -> meson setup
+
+2023-02-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Demos: Small updates
+
+  * demos/gtk-demo/example_dropdown.cc: Use some lambda expressions.
+  * demos/gtk-demo/example_listview_columnview.cc:
+  * demos/gtk-demo/example_listview_editable_cells.cc:
+  * demos/gtk-demo/example_listview_liststore.cc:
+  * demos/gtk-demo/example_listview_treelist.cc: Add add_css_class("data-table").
+
+2023-02-26  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Deprecate Gtk::ProgressBar::property_ellipsize()
+
+  * gtk/src/progressbar.hg: property_ellipsize() has the wrong type.
+  It can't easily be fixed without breaking API/ABI.
+  * gtk/src/dialog.hg:
+  * gtk/src/volumebutton.hg: Update the class documentation.
+
+2023-02-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  CI: Install lib*mm documentation
+
+2023-02-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Doxyfile.in: Don't hide undocumented classes
+
+  Might make the inheritance diagrams less incomplete when Doxygen's
+  tag files are not perfect.
+
+2023-02-13  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Deprecate Gtk::VolumeButton
+
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: VolumeButton is a deprecated class.
+  * gtk/src/scalebutton.hg: Add and comment out get/property_active().
+  * gtk/src/searchentry.hg: Add and comment out set/get_placeholder_text().
+  * gtk/src/volumebutton.hg: Deprecated.
+
+2023-02-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.9.3
+
+2023-02-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Add new API from gtk 4.9.3
+
+  * configure.ac:
+  * meson.build: Require gtk4 >= 4.9.3.
+  * gdk/src/monitor.hg: Add get/property_description().
+  * gtk/src/accessible.[ccg|hg]: Add enum Accessible::PlatformState.
+  Add get_at_context(), get_platform_state(), get_accessible_parent(),
+  get_first_accessible_child(), get_next_accessible_sibling(), get_bounds().
+  * gtk/src/editable.hg: _IGNORE(gtk_editable_get_accessible_platform_state).
+  * gtk/src/filedialog.hg: Move some method declarations.
+  * gtk/src/filelauncher.hg: Update the class description.
+  * tools/m4/convert_gtk.m4: Add Accessible and ATContext conversions.
+  * gtk/gtkmm.h:
+  * gtk/src/filelist.am:
+  * gtk/gtkmm/meson.build: Add ATContext and UriLauncher.
+  * gtk/src/atcontext.[ccg|hg]:
+  * gtk/src/urilauncher.[ccg|hg]: New files.
+
+2023-02-08  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gdk, Gtk: Regenerate docs.xml and .defs files
+
+  using gtk files from gtk 4.9.3.
+  Update tools/extra_defs_gen/generate_defs_gtk.cc.
+
+2023-02-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Build: Disable more deprecated API
+
+  * configure.ac:
+  * meson.build: Define GIOMM_DISABLE_DEPRECATED when warnings=fatal
+  * demos/gtk-demo/meson.build: Define GLIBMM_DISABLE_DEPRECATED,
+  GIOMM_DISABLE_DEPRECATED, GDKMM_DISABLE_DEPRECATED and
+  DGTKMM_DISABLE_DEPRECATED, as in demos/Makefile.am.
+
+2023-02-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Deprecate Gtk::Assistant and other API
+
+  * demos/gtk-demo/example_appwindow.cc: Don't use deprecated Statusbar.
+  * gdk/src/display.hg: Deprecate get_startup_notification_id().
+  * gdk/src/monitor.hg: Add some comments.
+  * gtk/gtkmm/meson.build:
+  * gtk/src/filelist.am: Assistant, AssistantPage, LockButton, Statusbar
+  are deprecated classes.
+  * gtk/src/assistant.hg:
+  * gtk/src/assistantpage.hg:
+  * gtk/src/lockbutton.hg:
+  * gtk/src/statusbar.hg: Deprecated classes.
+  * gtk/src/gesture.hg: Deprecate set_sequence_state().
+
+2023-02-05  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::StringList, StringObject: Update the class documentation
+
+2023-01-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Gtk::Image, Picture: Update the class documentation
+
+2023-01-21  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Update Grid View and Images demos
+
+  * demos/gtk-demo/example_gridview.cc: Large icons.
+  * demos/gtk-demo/example_images.cc: Reasonable default size.
+  The WidgetPaintable is expandable.
+
+2023-01-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  4.9.2
+
+2023-01-11  Kjell Ahlstedt  <kjellahlstedt@gmail.com>
+
+  Deprecate Gdk::Display::put_event()
+

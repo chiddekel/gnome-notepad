@@ -1,0 +1,51 @@
+<map id="Gtk::Dialog" name="Gtk::Dialog">
+<area shape="rect" id="Node000001" title="Create popup windows." alt="" coords="1249,229,1344,255"/>
+<area shape="rect" id="Node000016" href="$classGtk_1_1AppChooserDialog.html" title="An application chooser dialog." alt="" coords="1402,81,1575,107"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="1308,216,1341,165,1364,139,1391,117,1416,104,1418,109,1393,122,1368,143,1345,169,1313,219"/>
+<area shape="rect" id="Node000017" href="$classGtk_1_1ColorChooserDialog.html" title="This dialog is for choosing a color." alt="" coords="1397,131,1580,156"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="1319,218,1352,191,1391,166,1424,154,1426,159,1393,171,1355,195,1323,222"/>
+<area shape="rect" id="Node000018" href="$classGtk_1_1FileChooserDialog.html" title="Convenient file chooser window." alt="" coords="1403,180,1574,205"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="1357,224,1438,203,1439,208,1358,229"/>
+<area shape="rect" id="Node000019" href="$classGtk_1_1FontChooserDialog.html" title="A dialog box for selecting fonts." alt="" coords="1401,229,1577,255"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="1358,239,1400,239,1400,245,1358,245"/>
+<area shape="rect" id="Node000020" href="$classGtk_1_1MessageDialog.html" title="Convenient message window." alt="" coords="1412,279,1565,304"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="1358,256,1393,265,1437,276,1436,281,1391,270,1357,261"/>
+<area shape="rect" id="Node000021" href="$classGtk_1_1PageSetupUnixDialog.html" title="PageSetupUnixDialog implements a page setup dialog for platforms which don&#39;t provide a native page se..." alt="" coords="1392,328,1585,353"/>
+<area shape="poly" id="edge26_Node000001_Node000021" title=" " alt="" coords="1322,263,1355,290,1393,314,1422,325,1420,330,1391,319,1351,294,1319,267"/>
+<area shape="rect" id="Node000022" href="$classGtk_1_1PrintUnixDialog.html" title="PrintUnixDialog implements a print dialog for platforms which don&#39;t provide a native print dialog,..." alt="" coords="1411,377,1566,403"/>
+<area shape="poly" id="edge27_Node000001_Node000022" title=" " alt="" coords="1312,265,1345,316,1367,342,1393,364,1416,375,1413,380,1391,368,1363,346,1340,319,1308,268"/>
+<area shape="rect" id="Node000002" href="$classGtk_1_1Window.html" title="Toplevel Window." alt="" coords="1096,229,1201,255"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1215,239,1249,239,1249,245,1215,245"/>
+<area shape="rect" id="Node000003" href="$classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets)" alt="" coords="917,104,1015,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="998,135,1131,227,1128,231,995,139"/>
+<area shape="rect" id="Node000004" href="$classGtk_1_1Object.html" title="Gtk::Object is the base class for all widgets, and for a few non&#45;widget objects such as Gtk::CellRend..." alt="" coords="709,5,803,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="817,32,837,40,898,71,947,102,944,106,896,76,835,44,816,37"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="521,55,620,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="631,49,708,28,709,33,633,54"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="335,129,465,155"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="442,121,540,78,542,82,444,126"/>
+<area shape="rect" id="Node000010" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="513,153,628,179"/>
+<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="479,150,513,155,513,161,479,156"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="171,129,287,155"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="301,139,335,139,335,145,301,145"/>
+<area shape="rect" id="Node000008" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="5,129,123,155"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="137,139,170,139,170,145,137,145"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1Accessible.html" title="Accessible interface." alt="" coords="695,55,817,80"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="824,81,917,103,916,108,823,86"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="596,142,632,115,675,89,703,78,705,83,677,94,635,119,599,146"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1Buildable.html" title="A base class for objects that can be built by Gtk::Builder." alt="" coords="699,104,813,129"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="631,147,706,127,708,132,633,152"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1ConstraintTarget.html" title="Helper interface for Gtk::Constraint." alt="" coords="676,153,836,179"/>
+<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="642,163,676,163,676,169,642,169"/>
+<area shape="rect" id="Node000013" href="$classGtk_1_1Native.html" title="Interface for widgets having surfaces." alt="" coords="918,204,1014,229"/>
+<area shape="poly" id="edge16_Node000013_Node000010" title=" " alt="" coords="631,179,676,189,807,205,918,212,918,217,807,210,676,194,630,185"/>
+<area shape="rect" id="Node000014" href="$classGtk_1_1ShortcutManager.html" title="Interface for managing shortcuts." alt="" coords="884,255,1048,280"/>
+<area shape="poly" id="edge18_Node000014_Node000010" title=" " alt="" coords="608,183,677,211,784,238,884,255,883,261,783,244,675,217,606,187"/>
+<area shape="rect" id="Node000015" href="$classGtk_1_1Root.html" title="Interface for root widgets." alt="" coords="925,304,1007,329"/>
+<area shape="poly" id="edge20_Node000015_Node000010" title=" " alt="" coords="595,187,631,221,677,252,742,277,810,295,873,306,925,311,924,317,872,311,809,300,741,282,675,256,628,225,591,191"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="827,114,917,114,917,119,827,119"/>
+<area shape="poly" id="edge13_Node000003_Node000012" title=" " alt="" coords="823,148,916,126,917,131,824,153"/>
+<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="1028,222,1096,232,1095,237,1027,228"/>
+<area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="1061,251,1095,247,1096,252,1062,257"/>
+<area shape="poly" id="edge19_Node000002_Node000015" title=" " alt="" coords="1020,300,1047,290,1124,252,1126,257,1049,295,1022,305"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Glib::PropertyBase" name="Glib::PropertyBase">
+<area shape="rect" id="Node000001" title="This is the base class for Glib::Object properties." alt="" coords="217,5,359,31"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Property.html" title="A Glib::Object property." alt="" coords="5,79,155,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,38,115,81,113,76,241,33"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Property__ReadOnly.html" title="See Property." alt="" coords="179,79,397,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="291,44,291,79,285,79,285,44"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1Property__WriteOnly.html" title="See Property." alt="" coords="421,79,643,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="341,32,493,76,492,81,339,37"/>
+</map>

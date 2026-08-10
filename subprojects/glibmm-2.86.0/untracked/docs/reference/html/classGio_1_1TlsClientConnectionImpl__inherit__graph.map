@@ -1,0 +1,20 @@
+<map id="Gio::TlsClientConnectionImpl" name="Gio::TlsClientConnectionImpl">
+<area shape="rect" id="Node000001" title="Gio::TlsClientConnectionImpl is a Gio::TlsConnection that implements the Gio::TlsClientConnection int..." alt="" coords="85,445,295,471"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1TlsClientConnection.html" title="TLS client&#45;side connection." alt="" coords="5,372,188,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,403,176,443,173,447,121,408"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Interface.html" title=" " alt="" coords="82,225,197,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,265,103,373,98,371,129,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="139,152,270,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,189,152,227,148,223,183,186"/>
+<area shape="rect" id="Node000009" href="$classGlib_1_1Object.html" title=" " alt="" coords="227,225,326,251"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="228,185,267,223,263,227,225,189"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="147,79,263,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="207,118,207,152,202,152,202,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="146,5,263,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="207,44,207,79,202,79,202,44"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1TlsConnection.html" title="TLS connection type." alt="" coords="213,372,357,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="260,408,207,447,204,443,257,403"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1IOStream.html" title="IOStream &#45; Base class for implementing read/write streams." alt="" coords="224,299,337,324"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="285,338,287,372,281,372,279,338"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="281,264,283,298,277,299,275,265"/>
+</map>

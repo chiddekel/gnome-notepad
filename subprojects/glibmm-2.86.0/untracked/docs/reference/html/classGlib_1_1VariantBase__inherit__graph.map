@@ -1,0 +1,59 @@
+<map id="Glib::VariantBase" name="Glib::VariantBase">
+<area shape="rect" id="Node000001" title="This is the base class for all Variant types." alt="" coords="5,351,140,376"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes." alt="" coords="224,5,364,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,337,79,276,97,196,112,153,131,112,156,73,186,40,204,28,223,21,225,26,206,33,190,44,160,77,136,114,117,155,102,197,85,277,78,337"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Variant_3_01DBusHandle_01_4.html" title="Specialization of Glib::Variant containing a DBusHandle type." alt="" coords="188,55,400,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="75,336,84,284,104,217,119,182,137,148,159,117,186,89,204,78,207,82,190,93,163,120,142,151,124,184,109,219,90,285,80,337"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1Variant_3_01bool_01_4.html" title="Specialization of Glib::Variant containing a bool type." alt="" coords="214,104,374,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="77,336,90,293,111,239,143,185,163,160,186,138,213,124,215,129,190,143,167,164,147,188,116,241,95,294,82,338"/>
+<area shape="rect" id="Node000005" href="$classGlib_1_1Variant_3_01double_01_4.html" title="Specialization of Glib::Variant containing a double type." alt="" coords="206,153,382,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="81,337,96,303,119,262,149,222,186,188,208,176,211,181,190,192,153,225,124,265,101,305,86,339"/>
+<area shape="rect" id="Node000006" href="$classGlib_1_1Variant_3_01gint16_01_4.html" title="Specialization of Glib::Variant containing a gint16 type." alt="" coords="207,203,381,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="87,337,128,286,156,259,187,237,212,226,215,230,189,242,159,264,132,290,92,341"/>
+<area shape="rect" id="Node000007" href="$classGlib_1_1Variant_3_01gint32_01_4.html" title="Specialization of Glib::Variant containing a gint32 type." alt="" coords="207,252,381,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="99,340,139,312,187,286,220,275,222,280,189,291,142,316,102,344"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1Variant_3_01guint16_01_4.html" title="Specialization of Glib::Variant containing a guint16 type." alt="" coords="203,301,385,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="143,345,236,324,237,329,144,350"/>
+<area shape="rect" id="Node000009" href="$classGlib_1_1Variant_3_01guint32_01_4.html" title="Specialization of Glib::Variant containing a guint32 type." alt="" coords="203,351,385,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="154,361,203,361,203,366,154,366"/>
+<area shape="rect" id="Node000010" href="$classGlib_1_1Variant_3_01long_01_4.html" title="Specialization of Glib::Variant containing a long type." alt="" coords="214,400,374,425"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="144,376,237,397,236,403,143,382"/>
+<area shape="rect" id="Node000011" href="$classGlib_1_1Variant_3_01long_01long_01_4.html" title="Specialization of Glib::Variant containing a long long type." alt="" coords="221,450,367,490"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="104,382,143,409,189,434,222,448,220,453,187,439,141,413,101,387"/>
+<area shape="rect" id="Node000012" href="$classGlib_1_1Variant_3_01unsigned_01char_01_4.html" title="Specialization of Glib::Variant containing a unsigned char type." alt="" coords="206,514,382,554"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="90,386,130,444,158,474,189,500,211,511,209,516,187,504,154,478,126,447,86,390"/>
+<area shape="rect" id="Node000013" href="$classGlib_1_1Variant_3_01unsigned_01long_01_4.html" title="Specialization of Glib::Variant containing a unsigned long type." alt="" coords="206,578,382,618"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="84,388,98,427,120,475,151,523,190,564,208,576,205,580,186,568,146,526,116,477,93,430,79,390"/>
+<area shape="rect" id="Node000014" href="$classGlib_1_1Variant_3_01unsigned_01long_01long_01_4.html" title="Specialization of Glib::Variant containing a unsigned long long type." alt="" coords="206,642,382,682"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="80,389,91,440,111,504,143,571,165,601,190,628,207,640,204,645,186,632,160,605,139,573,106,506,86,441,75,390"/>
+<area shape="rect" id="Node000015" href="$classGlib_1_1VariantContainerBase.html" title="The base class for multiple&#45;item Variants, such as Variants containing tuples or arrays,..." alt="" coords="195,707,393,732"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="78,389,84,451,101,533,116,577,135,619,159,658,190,692,209,704,206,709,186,696,155,661,130,622,111,579,96,535,79,452,72,390"/>
+<area shape="rect" id="Node000025" href="$classGlib_1_1VariantStringBase.html" title="Base class from which string variant classes derive." alt="" coords="208,1071,380,1096"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="84,389,191,743,291,1070,286,1071,185,744,79,390"/>
+<area shape="rect" id="Node000016" href="$classGlib_1_1Variant_3_01Variant_3_01T_01_4_01_4.html" title="Specialization of Variant containing a Variant&lt;T&gt;." alt="" coords="472,421,635,461"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="393,697,398,692,417,666,425,639,425,612,422,584,419,556,419,528,427,499,446,471,470,453,473,458,450,475,432,502,424,529,424,556,427,584,431,612,430,640,422,668,402,696,396,701"/>
+<area shape="rect" id="Node000017" href="$classGlib_1_1Variant_3_01VariantBase_01_4.html" title="Specialization of Variant containing a VariantBase." alt="" coords="448,485,659,511"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="392,697,398,692,414,672,421,651,421,609,422,565,430,543,446,521,464,509,467,513,450,525,434,545,427,566,427,609,426,652,418,674,402,696,395,701"/>
+<area shape="rect" id="Node000018" href="$classGlib_1_1Variant_3_01std_1_1map_3_01K_00_01V_01_4_01_4.html" title="Specialization of Variant containing a dictionary (a map of (key, value) elements)." alt="" coords="485,535,622,575"/>
+<area shape="poly" id="edge17_Node000015_Node000018" title=" " alt="" coords="390,698,398,692,410,680,416,667,422,641,427,613,434,599,446,585,464,573,483,565,485,569,466,578,450,589,439,602,432,615,427,642,421,669,414,683,402,696,393,702"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="485,599,622,639"/>
+<area shape="poly" id="edge18_Node000015_Node000019" title=" " alt="" coords="380,700,399,692,413,682,422,671,432,660,447,649,483,633,485,638,449,654,435,664,426,675,416,686,401,696,382,705"/>
+<area shape="rect" id="Node000020" href="$classGlib_1_1Variant_3_01std_1_1tuple_3_01Types_8_8_8_01_4_01_4.html" title="Specialization of Variant containing a tuple." alt="" coords="475,663,632,703"/>
+<area shape="poly" id="edge19_Node000015_Node000020" title=" " alt="" coords="399,702,474,692,475,697,400,707"/>
+<area shape="rect" id="Node000021" href="$classGlib_1_1Variant_3_01std_1_1vector_3_01Glib_1_1DBusObjectPathString_01_4_01_4.html" title="Specialization of Variant containing an array of D&#45;Bus object paths." alt="" coords="455,728,651,783"/>
+<area shape="poly" id="edge20_Node000015_Node000021" title=" " alt="" coords="399,731,455,739,455,744,399,737"/>
+<area shape="rect" id="Node000022" href="$classGlib_1_1Variant_3_01std_1_1vector_3_01Glib_1_1ustring_01_4_01_4.html" title="Specialization of Variant containing an array of UTF&#45;8 capable strings." alt="" coords="456,807,651,847"/>
+<area shape="poly" id="edge21_Node000015_Node000022" title=" " alt="" coords="332,736,449,792,485,805,483,810,447,796,330,741"/>
+<area shape="rect" id="Node000023" href="$classGlib_1_1Variant_3_01std_1_1vector_3_01T_01_4_01_4.html" title="Specialization of Variant containing an array of items." alt="" coords="485,871,622,911"/>
+<area shape="poly" id="edge22_Node000015_Node000023" title=" " alt="" coords="316,741,372,799,409,830,449,857,485,873,483,878,447,862,406,834,369,803,313,744"/>
+<area shape="rect" id="Node000024" href="$classGlib_1_1Variant_3_01std_1_1vector_3_01std_1_1string_01_4_01_4.html" title="Specialization of Variant containing an array of non&#45;UTF&#45;8 strings (byte string arrays)." alt="" coords="463,935,644,975"/>
+<area shape="poly" id="edge23_Node000015_Node000024" title=" " alt="" coords="310,743,331,782,362,830,402,879,450,921,470,933,468,938,446,926,398,883,358,834,327,785,305,746"/>
+<area shape="rect" id="Node000026" href="$classGlib_1_1Variant_3_01Glib_1_1DBusObjectPathString_01_4.html" title="Specialization of Variant containing a Glib::DBusObjectPathString, for variants of type object path." alt="" coords="460,999,647,1039"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="359,1065,471,1037,472,1042,360,1070"/>
+<area shape="rect" id="Node000027" href="$classGlib_1_1Variant_3_01Glib_1_1DBusSignatureString_01_4.html" title="Specialization of Variant containing a Glib::DBusSignatureString, for variants of type signature." alt="" coords="464,1063,643,1103"/>
+<area shape="poly" id="edge26_Node000025_Node000027" title=" " alt="" coords="394,1081,464,1081,464,1086,394,1086"/>
+<area shape="rect" id="Node000028" href="$classGlib_1_1Variant_3_01Glib_1_1ustring_01_4.html" title="Specialization of Variant containing a Glib::ustring, for variants of type string,..." alt="" coords="482,1127,625,1167"/>
+<area shape="poly" id="edge27_Node000025_Node000028" title=" " alt="" coords="361,1097,482,1127,481,1132,359,1102"/>
+<area shape="rect" id="Node000029" href="$classGlib_1_1Variant_3_01std_1_1string_01_4.html" title="Specialization of Variant containing a std::string, for variants of type bytestring,..." alt="" coords="485,1191,622,1231"/>
+<area shape="poly" id="edge28_Node000025_Node000029" title=" " alt="" coords="325,1102,381,1140,449,1177,485,1191,483,1196,447,1182,378,1144,322,1106"/>
+</map>

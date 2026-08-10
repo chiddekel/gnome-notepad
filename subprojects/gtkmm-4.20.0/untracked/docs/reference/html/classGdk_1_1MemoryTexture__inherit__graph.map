@@ -1,0 +1,18 @@
+<map id="Gdk::MemoryTexture" name="Gdk::MemoryTexture">
+<area shape="rect" id="Node000001" title="A Gdk::Texture representing image data in memory." alt="" coords="41,445,199,471"/>
+<area shape="rect" id="Node000002" href="$classGdk_1_1Texture.html" title="Pixel data." alt="" coords="68,372,172,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,411,123,445,117,445,117,411"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,299,104,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="77,333,111,370,107,374,73,336"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="55,152,185,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,191,62,300,57,297,107,189"/>
+<area shape="rect" id="Node000008" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="120,225,235,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="140,186,170,224,166,227,136,190"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="62,79,178,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,118,123,152,117,152,117,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="61,5,179,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="123,44,123,79,117,79,117,44"/>
+<area shape="rect" id="Node000007" href="$classGdk_1_1Paintable.html" title="An interface for a paintable region." alt="" coords="129,299,245,324"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="168,336,133,374,129,370,164,333"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="183,264,188,298,183,299,178,265"/>
+</map>

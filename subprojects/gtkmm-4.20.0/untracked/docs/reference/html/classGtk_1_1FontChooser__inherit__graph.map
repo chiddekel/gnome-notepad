@@ -1,0 +1,17 @@
+<map id="Gtk::FontChooser" name="Gtk::FontChooser">
+<area shape="rect" id="Node000001" title="An interface implemented by widgets displaying fonts." alt="" coords="175,299,309,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1FontButton.html" title="A button to launch a font selection dialog." alt="" coords="5,372,129,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="202,332,97,374,95,369,200,327"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1FontChooserDialog.html" title="A dialog box for selecting fonts." alt="" coords="154,372,330,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="245,338,245,372,239,372,239,338"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1FontChooserWidget.html" title="A dialog box for selecting fonts." alt="" coords="355,372,535,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="288,326,413,369,411,374,286,331"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="185,225,299,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,264,245,299,239,299,239,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="177,152,307,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,191,245,225,239,225,239,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="184,79,300,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,118,245,152,239,152,239,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="183,5,301,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="245,44,245,79,239,79,239,44"/>
+</map>

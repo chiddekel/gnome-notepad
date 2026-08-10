@@ -1,0 +1,13 @@
+<map id="Gio::UnixFDMessage" name="Gio::UnixFDMessage">
+<area shape="rect" id="Node000001" title="UnixFDMessage — A GSocketControlMessage containing a GUnixFDList." alt="" coords="26,372,185,397"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1SocketControlMessage.html" title="A Socket control message." alt="" coords="5,299,205,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,338,108,372,103,372,103,338"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="56,225,155,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,264,108,299,103,299,103,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="40,152,171,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,191,108,225,103,225,103,191"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="47,79,163,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="108,118,108,152,103,152,103,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="47,5,164,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="108,44,108,79,103,79,103,44"/>
+</map>

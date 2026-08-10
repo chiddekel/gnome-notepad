@@ -1,0 +1,25 @@
+<map id="Gtk::Actionable" name="Gtk::Actionable">
+<area shape="rect" id="Node000001" title="An interface for widgets that can be associated with actions." alt="" coords="373,299,496,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1Button.html" title="A widget that creates a signal when clicked on." alt="" coords="168,372,264,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="387,331,252,374,251,369,386,326"/>
+<area shape="rect" id="Node000010" href="$classGtk_1_1CheckButton.html" title="Create widgets with a discrete toggle button." alt="" coords="288,372,424,397"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="414,335,371,374,367,370,410,331"/>
+<area shape="rect" id="Node000011" href="$classGtk_1_1ListBoxRow.html" title="See the description of ListBox." alt="" coords="449,372,578,397"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="459,331,502,370,499,374,456,335"/>
+<area shape="rect" id="Node000012" href="$classGtk_1_1Switch.html" title="A &quot;light switch&quot;&#45;style toggle." alt="" coords="603,372,699,397"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="483,326,617,369,615,374,482,331"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="377,225,492,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,264,437,299,432,299,432,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="369,152,500,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="437,191,437,225,432,225,432,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="377,79,493,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="437,118,437,152,432,152,432,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="376,5,493,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="437,44,437,79,432,79,432,44"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1LinkButton.html" title="Create buttons bound to a URL." alt="" coords="5,445,128,471"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="181,406,92,448,90,443,179,401"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1LockButton.html" title="A widget to unlock or lock privileged operations." alt="" coords="153,445,279,471"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="219,411,219,445,213,445,213,411"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1ToggleButton.html" title="Create buttons which retain their state." alt="" coords="304,445,443,471"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="255,401,349,443,347,448,253,405"/>
+</map>

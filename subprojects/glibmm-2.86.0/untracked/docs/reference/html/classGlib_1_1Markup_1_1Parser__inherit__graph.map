@@ -1,0 +1,7 @@
+<map id="Glib::Markup::Parser" name="Glib::Markup::Parser">
+<area shape="rect" id="Node000001" title="The abstract markup parser base class." alt="" coords="5,152,157,177"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="23,79,139,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,118,84,152,79,152,79,118"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="23,5,140,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,44,84,79,79,79,79,44"/>
+</map>

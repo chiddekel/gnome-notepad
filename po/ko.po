@@ -1,0 +1,413 @@
+# Korean translation for notepad.
+# Copyright (C) 2026 chiddekel
+# This file is distributed under the same license as the notepad package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: notepad 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 08:42+0200\n"
+"PO-Revision-Date: 2026-08-08 00:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/window.cpp:360
+msgid "Select Background Image"
+msgstr "배경 이미지 선택"
+
+#: src/window.cpp:364
+msgid "Image Files"
+msgstr "이미지 파일"
+
+#: src/window.cpp:408
+msgid "Background Opacity"
+msgstr "배경 불투명도"
+
+#: src/window.cpp:411 src/modules/commands.cpp:94 src/modules/dialog.cpp:197
+#: src/modules/dialog.cpp:291
+msgid "_Cancel"
+msgstr "취소(_C)"
+
+#: src/window.cpp:411 src/modules/dialog.cpp:291
+msgid "_Apply"
+msgstr "적용(_A)"
+
+#: src/window.cpp:459 src/modules/commands.cpp:87 src/modules/commands.cpp:210
+msgid "Untitled"
+msgstr "제목 없음"
+
+#: src/window.cpp:469
+msgid "Ln %1, Col %2"
+msgstr "%1행, %2열"
+
+#: src/modules/commands.cpp:90
+msgid "If you don't save, changes to “%1” will be lost."
+msgstr "저장하지 않으면 “%1”의 변경 사항이 손실됩니다."
+
+#: src/modules/commands.cpp:92
+msgid "Save changes?"
+msgstr "변경 사항을 저장하시겠습니까?"
+
+#: src/modules/commands.cpp:94
+msgid "_Discard"
+msgstr "저장 안 함(_D)"
+
+#: src/modules/commands.cpp:95 src/resources/ui/menus.ui:33
+msgid "_Save"
+msgstr "저장(_S)"
+
+#: src/modules/commands.cpp:130
+msgid "Open File"
+msgstr "파일 열기"
+
+#: src/modules/commands.cpp:134
+msgid "Text Documents"
+msgstr "텍스트 문서"
+
+#: src/modules/commands.cpp:138
+msgid "All Files"
+msgstr "모든 파일"
+
+#: src/modules/commands.cpp:177
+msgid "Save As"
+msgstr "다른 이름으로 저장"
+
+#: src/modules/commands.cpp:179
+msgid "Untitled.txt"
+msgstr "제목 없음.txt"
+
+#: src/modules/dialog.cpp:37 src/modules/dialog.cpp:74
+msgid "Replace with…"
+msgstr "바꿀 문자열…"
+
+#: src/modules/dialog.cpp:38 src/modules/dialog.cpp:72
+msgid "Replace"
+msgstr "바꾸기"
+
+#: src/modules/dialog.cpp:39 src/modules/dialog.cpp:73
+msgid "Replace All"
+msgstr "모두 바꾸기"
+
+#: src/modules/dialog.cpp:194
+msgid "Go to Line"
+msgstr "줄로 이동"
+
+#: src/modules/dialog.cpp:197
+msgid "_Go To"
+msgstr "이동(_G)"
+
+#: src/modules/dialog.cpp:218
+msgid "Choose Font"
+msgstr "글꼴 선택"
+
+#. GNOME convention: each po/<locale>.po supplies its own translation of
+#. the literal msgid "translator-credits" (name/email per line). gettext
+#. returns the msgid itself when there's no translation for the current
+#. locale, so that has to be treated as "no credits" rather than shown
+#. literally.
+#: src/modules/dialog.cpp:266
+msgid "translator-credits"
+msgstr ""
+
+#: src/modules/dialog.cpp:272
+msgid "Based on"
+msgstr "기반"
+
+#: src/modules/dialog.cpp:288
+msgid "Window Transparency"
+msgstr "창 투명도"
+
+#: src/resources/ui/menus.ui:22
+msgid "_File"
+msgstr "파일(_F)"
+
+#: src/resources/ui/menus.ui:25
+msgid "_New"
+msgstr "새로 만들기(_N)"
+
+#: src/resources/ui/menus.ui:29
+msgid "_Open..."
+msgstr "열기...(_O)"
+
+#: src/resources/ui/menus.ui:37
+msgid "Save _As..."
+msgstr "다른 이름으로 저장...(_A)"
+
+#: src/resources/ui/menus.ui:50
+msgid "Recent _Files"
+msgstr "최근 파일(_R)"
+
+#: src/resources/ui/menus.ui:57
+msgid "_Print..."
+msgstr "인쇄...(_P)"
+
+#: src/resources/ui/menus.ui:61
+msgid "Page Set_up..."
+msgstr "페이지 설정...(_U)"
+
+#: src/resources/ui/menus.ui:67
+msgid "E_xit"
+msgstr "끝내기(_X)"
+
+#: src/resources/ui/menus.ui:74
+msgid "_Edit"
+msgstr "편집(_E)"
+
+#: src/resources/ui/menus.ui:77
+msgid "_Undo"
+msgstr "실행 취소(_U)"
+
+#: src/resources/ui/menus.ui:81
+msgid "_Redo"
+msgstr "다시 실행(_R)"
+
+#: src/resources/ui/menus.ui:87
+msgid "Cu_t"
+msgstr "잘라내기(_T)"
+
+#: src/resources/ui/menus.ui:91
+msgid "_Copy"
+msgstr "복사(_C)"
+
+#: src/resources/ui/menus.ui:95
+msgid "_Paste"
+msgstr "붙여넣기(_P)"
+
+#: src/resources/ui/menus.ui:99
+msgid "De_lete"
+msgstr "삭제(_L)"
+
+#: src/resources/ui/menus.ui:105
+msgid "_Find..."
+msgstr "찾기...(_F)"
+
+#: src/resources/ui/menus.ui:109
+msgid "Find _Next"
+msgstr "다음 찾기(_N)"
+
+#: src/resources/ui/menus.ui:113
+msgid "Find Pre_vious"
+msgstr "이전 찾기(_V)"
+
+#: src/resources/ui/menus.ui:117
+msgid "_Replace..."
+msgstr "바꾸기...(_B)"
+
+#: src/resources/ui/menus.ui:121
+msgid "_Go To..."
+msgstr "이동...(_G)"
+
+#: src/resources/ui/menus.ui:127
+msgid "Select _All"
+msgstr "모두 선택(_A)"
+
+#: src/resources/ui/menus.ui:131
+msgid "Time/_Date"
+msgstr "날짜/시간(_D)"
+
+#: src/resources/ui/menus.ui:138
+msgid "F_ormat"
+msgstr "서식(_O)"
+
+#: src/resources/ui/menus.ui:141
+msgid "_Word Wrap"
+msgstr "자동 줄 바꿈(_W)"
+
+#: src/resources/ui/menus.ui:145
+msgid "_Font..."
+msgstr "글꼴...(_F)"
+
+#: src/resources/ui/menus.ui:152
+msgid "_View"
+msgstr "보기(_V)"
+
+#: src/resources/ui/menus.ui:155
+msgid "Zoom _In"
+msgstr "확대(_I)"
+
+#: src/resources/ui/menus.ui:159
+msgid "Zoom _Out"
+msgstr "축소(_O)"
+
+#: src/resources/ui/menus.ui:163
+msgid "_Restore Default Zoom"
+msgstr "기본 확대/축소로 복원(_R)"
+
+#: src/resources/ui/menus.ui:169
+msgid "_Status Bar"
+msgstr "상태 표시줄(_S)"
+
+#: src/resources/ui/menus.ui:173
+msgid "_Dark Mode"
+msgstr "다크 모드(_D)"
+
+#: src/resources/ui/menus.ui:179
+msgid "_Background"
+msgstr "배경(_B)"
+
+#: src/resources/ui/menus.ui:182
+msgid "_Select Image..."
+msgstr "이미지 선택...(_S)"
+
+#: src/resources/ui/menus.ui:186
+msgid "_Clear Background"
+msgstr "배경 지우기(_C)"
+
+#: src/resources/ui/menus.ui:190
+msgid "_Opacity..."
+msgstr "불투명도...(_O)"
+
+#: src/resources/ui/menus.ui:195
+msgid "_Position"
+msgstr "위치(_P)"
+
+#: src/resources/ui/menus.ui:198
+msgid "Top Left"
+msgstr "왼쪽 위"
+
+#: src/resources/ui/menus.ui:203
+msgid "Top Center"
+msgstr "가운데 위"
+
+#: src/resources/ui/menus.ui:208
+msgid "Top Right"
+msgstr "오른쪽 위"
+
+#: src/resources/ui/menus.ui:215
+msgid "Center Left"
+msgstr "왼쪽 가운데"
+
+#: src/resources/ui/menus.ui:220
+msgid "Center"
+msgstr "가운데"
+
+#: src/resources/ui/menus.ui:225
+msgid "Center Right"
+msgstr "오른쪽 가운데"
+
+#: src/resources/ui/menus.ui:232
+msgid "Bottom Left"
+msgstr "왼쪽 아래"
+
+#: src/resources/ui/menus.ui:237
+msgid "Bottom Center"
+msgstr "가운데 아래"
+
+#: src/resources/ui/menus.ui:242
+msgid "Bottom Right"
+msgstr "오른쪽 아래"
+
+#: src/resources/ui/menus.ui:249
+msgid "Tile"
+msgstr "바둑판식"
+
+#: src/resources/ui/menus.ui:254
+msgid "Stretch"
+msgstr "늘이기"
+
+#: src/resources/ui/menus.ui:259
+msgid "Fit"
+msgstr "맞춤"
+
+#: src/resources/ui/menus.ui:264
+msgid "Fill"
+msgstr "채우기"
+
+#: src/resources/ui/menus.ui:274
+msgid "Window _Transparency..."
+msgstr "창 투명도...(_T)"
+
+#: src/resources/ui/menus.ui:278
+msgid "Always on _Top"
+msgstr "항상 위에 표시(_A)"
+
+#: src/resources/ui/menus.ui:285
+msgid "_Language"
+msgstr "언어(_L)"
+
+#: src/resources/ui/menus.ui:288
+msgid "_English"
+msgstr "영어(_E)"
+
+#: src/resources/ui/menus.ui:293
+msgid "_Spanish"
+msgstr "스페인어(_S)"
+
+#: src/resources/ui/menus.ui:298
+msgid "Por_tuguese"
+msgstr "포르투갈어(_T)"
+
+#: src/resources/ui/menus.ui:303
+msgid "_French"
+msgstr "프랑스어(_F)"
+
+#: src/resources/ui/menus.ui:308
+msgid "_German"
+msgstr "독일어(_G)"
+
+#: src/resources/ui/menus.ui:313
+msgid "_Japanese"
+msgstr "일본어(_J)"
+
+#: src/resources/ui/menus.ui:318
+msgid "_Korean"
+msgstr "한국어(_K)"
+
+#: src/resources/ui/menus.ui:323
+msgid "_Arabic"
+msgstr "아랍어(_A)"
+
+#: src/resources/ui/menus.ui:328
+msgid "_Hindi"
+msgstr "힌디어(_H)"
+
+#: src/resources/ui/menus.ui:333
+msgid "_Chinese"
+msgstr "중국어(_C)"
+
+#: src/resources/ui/menus.ui:338
+msgid "_Polish"
+msgstr "폴란드어(_P)"
+
+#: src/resources/ui/menus.ui:346
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: src/resources/ui/menus.ui:349
+msgid "Check for _Updates..."
+msgstr "업데이트 확인...(_U)"
+
+#: src/resources/ui/menus.ui:353
+msgid "_About Notepad"
+msgstr "메모장 정보(_A)"
+
+#: data/io.github.chiddekel.Notepad.desktop.in:2
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:8
+msgid "A simple, native GNOME text editor"
+msgstr "간단한 GNOME 네이티브 텍스트 편집기"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:11
+msgid ""
+"Notepad is a lightweight, native GNOME port of legacy-notepad, a Win32 "
+"Notepad clone. It supports multi-encoding text (UTF-8, UTF-8 BOM, UTF-16 "
+"LE/BE, ANSI) with configurable line endings, find/replace with wraparound "
+"search, printing, an optional background image behind the editor, and "
+"light/dark themes that follow your system preference."
+msgstr ""
+"Notepad는 Win32 메모장의 클론인 legacy-notepad를 가볍고 네이티브하게 GNOME용으로 이식한 것입니다. "
+"UTF-8, UTF-8 BOM, UTF-16 LE/BE, ANSI 등 다양한 인코딩의 텍스트를 지원하며, 줄 끝 형식 설정, 순환 "
+"검색을 지원하는 찾기/바꾸기, 인쇄, 편집기 뒤에 표시할 수 있는 선택적 배경 이미지, 시스템 설정을 따르는 밝은/어두운 테마를 "
+"제공합니다."
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:24
+msgid "Notepad's main editing window"
+msgstr "Notepad의 기본 편집 창"
+
+#: data/io.github.chiddekel.Notepad.metainfo.xml.in:41
+msgid "Initial release: a native GNOME port of legacy-notepad."
+msgstr "초기 릴리스: legacy-notepad의 네이티브 GNOME 이식판입니다."

@@ -1,0 +1,13 @@
+<map id="Glib::VariantStringBase" name="Glib::VariantStringBase">
+<area shape="rect" id="Node000001" title="Base class from which string variant classes derive." alt="" coords="188,109,360,134"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Variant_3_01Glib_1_1DBusObjectPathString_01_4.html" title="Specialization of Variant containing a Glib::DBusObjectPathString, for variants of type object path." alt="" coords="408,5,595,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,100,407,55,438,43,440,48,409,60,313,105"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1Variant_3_01Glib_1_1DBusSignatureString_01_4.html" title="Specialization of Variant containing a Glib::DBusSignatureString, for variants of type signature." alt="" coords="412,69,591,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,105,412,99,412,105,374,110"/>
+<area shape="rect" id="Node000005" href="$classGlib_1_1Variant_3_01Glib_1_1ustring_01_4.html" title="Specialization of Variant containing a Glib::ustring, for variants of type string,..." alt="" coords="430,133,573,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="374,133,430,141,430,146,374,138"/>
+<area shape="rect" id="Node000006" href="$classGlib_1_1Variant_3_01std_1_1string_01_4.html" title="Specialization of Variant containing a std::string, for variants of type bytestring,..." alt="" coords="433,197,570,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="313,138,409,183,440,195,438,200,407,188,311,143"/>
+<area shape="rect" id="Node000002" href="$classGlib_1_1VariantBase.html" title="This is the base class for all Variant types." alt="" coords="5,109,140,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,119,188,119,188,124,154,124"/>
+</map>

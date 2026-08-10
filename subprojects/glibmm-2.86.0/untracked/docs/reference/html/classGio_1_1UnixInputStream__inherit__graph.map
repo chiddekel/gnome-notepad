@@ -1,0 +1,21 @@
+<map id="Gio::UnixInputStream" name="Gio::UnixInputStream">
+<area shape="rect" id="Node000001" title="UnixInputStream implements InputStream for reading from a unix file descriptor, including asynchronou..." alt="" coords="173,372,335,397"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1InputStream.html" title="Base class for implementing streaming input." alt="" coords="5,299,137,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,326,225,369,223,374,112,331"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="49,225,147,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,265,78,299,73,298,86,263"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="98,152,229,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="145,189,111,227,107,223,141,186"/>
+<area shape="rect" id="Node000008" href="$classGlib_1_1Interface.html" title=" " alt="" coords="197,225,311,251"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="190,184,241,223,238,227,187,188"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="105,79,221,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="166,118,166,152,161,152,161,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="105,5,222,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="166,44,166,79,161,79,161,44"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1PollableInputStream.html" title="PollableInputStream &#45; Interface for pollable input streams." alt="" coords="162,299,346,324"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="257,338,257,372,251,372,251,338"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="257,264,257,299,251,299,251,264"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1FileDescriptorBased.html" title="Interface for file descriptor based IO." alt="" coords="371,299,553,324"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="301,253,429,296,427,301,300,258"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="416,331,289,374,287,369,415,326"/>
+</map>

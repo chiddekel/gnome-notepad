@@ -1,0 +1,9 @@
+[wrap-file]
+directory = gtkmm-4.20.0
+source_url = https://download.gnome.org/sources/gtkmm/4.20/gtkmm-4.20.0.tar.xz
+source_filename = gtkmm-4.20.0.tar.xz
+source_hash = daad9bf9b70f90975f91781fc7a656c923a91374261f576c883cd3aebd59c833
+patch_directory = gtkmm
+
+[provide]
+dependency_names = gtkmm-4.0

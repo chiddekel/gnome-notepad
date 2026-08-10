@@ -1,0 +1,16 @@
+<map id="Gtk::FilterListModel" name="Gtk::FilterListModel">
+<area shape="rect" id="Node000001" title="A list model that filters its items." alt="" coords="45,372,195,397"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="5,299,104,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,333,111,370,107,374,73,336"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="53,152,184,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,191,62,300,57,297,106,189"/>
+<area shape="rect" id="Node000007" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="119,225,233,251"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="139,186,169,224,165,227,134,190"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="61,79,177,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="121,118,121,152,116,152,116,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="60,5,177,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="121,44,121,79,116,79,116,44"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGio_1_1ListModel.html" title=" " alt="" coords="128,299,243,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,336,133,374,129,370,163,333"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="182,264,186,298,181,299,177,265"/>
+</map>

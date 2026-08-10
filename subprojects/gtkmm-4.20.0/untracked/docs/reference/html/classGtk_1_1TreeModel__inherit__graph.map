@@ -1,0 +1,19 @@
+<map id="Gtk::TreeModel" name="Gtk::TreeModel">
+<area shape="rect" id="Node000001" title="This class defines a generic tree interface for use by the Gtk::TreeView widget." alt="" coords="243,299,363,324"/>
+<area shape="rect" id="Node000006" href="$classGtk_1_1ListStore.html" title="This is a list model for use with a Gtk::TreeView widget." alt="" coords="5,372,116,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="252,330,101,374,99,369,251,325"/>
+<area shape="rect" id="Node000007" href="$classGtk_1_1TreeModelFilter.html" title="A Gtk::TreeModel which hides parts of an underlying tree model." alt="" coords="140,372,293,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="281,335,233,374,229,370,277,330"/>
+<area shape="rect" id="Node000008" href="$classGtk_1_1TreeModelSort.html" title="A wrapper which makes an underlying Gtk::TreeModel sortable." alt="" coords="318,372,465,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="330,330,379,370,375,374,326,335"/>
+<area shape="rect" id="Node000009" href="$classGtk_1_1TreeStore.html" title="A tree&#45;like data structure that can be used with the Gtk::TreeView." alt="" coords="489,372,603,397"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="356,325,507,369,506,374,354,330"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="246,225,361,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,264,306,299,301,299,301,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="238,152,369,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,191,306,225,301,225,301,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="245,79,361,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="306,118,306,152,301,152,301,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="245,5,362,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="306,44,306,79,301,79,301,44"/>
+</map>

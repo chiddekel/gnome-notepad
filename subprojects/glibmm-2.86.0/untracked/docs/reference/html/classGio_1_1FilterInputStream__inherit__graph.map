@@ -1,0 +1,19 @@
+<map id="Gio::FilterInputStream" name="Gio::FilterInputStream">
+<area shape="rect" id="Node000001" title="Filter Input Stream." alt="" coords="124,372,289,397"/>
+<area shape="rect" id="Node000007" href="$classGio_1_1BufferedInputStream.html" title="The buffered input stream implements FilterInputStream and provides for buffered reads." alt="" coords="5,445,192,471"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="179,407,118,447,115,443,177,403"/>
+<area shape="rect" id="Node000009" href="$classGio_1_1ConverterInputStream.html" title="ConverterInputstream &#45; Converter Input Stream." alt="" coords="217,445,413,471"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="237,403,298,443,296,447,234,407"/>
+<area shape="rect" id="Node000002" href="$classGio_1_1InputStream.html" title="Base class for implementing streaming input." alt="" coords="141,299,273,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,338,209,372,204,372,204,338"/>
+<area shape="rect" id="Node000003" href="$classGlib_1_1Object.html" title=" " alt="" coords="157,225,256,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,264,209,299,204,299,204,264"/>
+<area shape="rect" id="Node000004" href="$classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces." alt="" coords="141,152,272,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="209,191,209,225,204,225,204,191"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="149,79,265,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="209,118,209,152,204,152,204,118"/>
+<area shape="rect" id="Node000006" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="148,5,265,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="209,44,209,79,204,79,204,44"/>
+<area shape="rect" id="Node000008" href="$classGio_1_1DataInputStream.html" title="An implementation of BufferedInputStream that allows for high&#45;level data manipulation of arbitrary da..." alt="" coords="17,519,180,544"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="101,484,101,519,96,519,96,484"/>
+</map>

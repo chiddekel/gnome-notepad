@@ -1,0 +1,5 @@
+<map id="sigc::signal&lt; T_return(T_arg...)&gt;::accumulated&lt; T_accumulator &gt;" name="sigc::signal&lt; T_return(T_arg...)&gt;::accumulated&lt; T_accumulator &gt;">
+<area shape="rect" id="node1" title="Like sigc::signal but the additional template parameter T_accumulator defines the accumulator type th..." alt="" coords="23,184,206,240"/>
+<area shape="rect" id="node2" href="$classsigc_1_1signal__with__accumulator.html" title=" " alt="" coords="5,80,224,136"/>
+<area shape="rect" id="node3" href="$structsigc_1_1signal__base.html" title="Base class for the sigc::signal template." alt="" coords="48,5,181,32"/>
+</map>

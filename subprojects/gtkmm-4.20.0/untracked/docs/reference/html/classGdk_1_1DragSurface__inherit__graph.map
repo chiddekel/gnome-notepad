@@ -1,0 +1,13 @@
+<map id="Gdk::DragSurface" name="Gdk::DragSurface">
+<area shape="rect" id="Node000001" title="Interface for drag surface surfaces." alt="" coords="20,299,156,324"/>
+<area shape="rect" id="Node000006" href="$classGdk_1_1DragSurfaceImpl.html" title="Gdk::DragSurfaceImpl is a Gdk::Surface that implements the Gdk::DragSurface interface." alt="" coords="5,372,171,397"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="91,338,91,372,85,372,85,338"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Interface.html" title=" " alt="" coords="31,225,145,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,264,91,299,85,299,85,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="23,152,153,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,191,91,225,85,225,85,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="30,79,146,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,118,91,152,85,152,85,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="29,5,147,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,44,91,79,85,79,85,44"/>
+</map>

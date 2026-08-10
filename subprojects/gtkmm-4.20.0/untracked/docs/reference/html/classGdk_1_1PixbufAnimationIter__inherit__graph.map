@@ -1,0 +1,11 @@
+<map id="Gdk::PixbufAnimationIter" name="Gdk::PixbufAnimationIter">
+<area shape="rect" id="Node000001" title="An iterator which points to a certain position in a PixbufAnimation." alt="" coords="5,299,192,324"/>
+<area shape="rect" id="Node000002" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1Object.html" title=" " alt="" coords="49,225,148,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,264,101,299,96,299,96,264"/>
+<area shape="rect" id="Node000003" href="/usr/share/doc/glibmm-2.68/reference/glibmm-2.68.tag$classGlib_1_1ObjectBase.html" title=" " alt="" coords="33,152,164,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,191,101,225,96,225,96,191"/>
+<area shape="rect" id="Node000004" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1trackable.html" title=" " alt="" coords="41,79,157,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,118,101,152,96,152,96,118"/>
+<area shape="rect" id="Node000005" href="/usr/share/doc/libsigc++-3.0/reference/libsigc++-3.0.tag$structsigc_1_1notifiable.html" title=" " alt="" coords="40,5,157,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="101,44,101,79,96,79,96,44"/>
+</map>

@@ -1,0 +1,6 @@
+src/application.cpp
+src/window.cpp
+src/modules/commands.cpp
+src/modules/dialog.cpp
+src/modules/file.cpp
+src/resources/ui/menus.ui
