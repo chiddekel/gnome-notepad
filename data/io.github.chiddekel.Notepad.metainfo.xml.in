@@ -22,7 +22,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>Notepad's main editing window</caption>
-      <image type="source" width="640" height="480">https://raw.githubusercontent.com/chiddekel/gnome-notepad/v0.1.9-Beta/data/screenshots/main-window.png</image>
+      <image type="source" width="640" height="480">https://raw.githubusercontent.com/chiddekel/gnome-notepad/v0.1.11/data/screenshots/main-window.png</image>
     </screenshot>
   </screenshots>
 
