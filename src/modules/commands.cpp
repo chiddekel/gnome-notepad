@@ -172,36 +172,85 @@ void Commands::file_save(std::function<void()> on_done) {
   }
 }
 
-void Commands::file_save_as(std::function<void()> on_done) {
-  auto dialog = Gtk::FileDialog::create();
-  dialog->set_title(_("Save As"));
-  dialog->set_initial_name(state_.file_path.empty()
-                                ? _("Untitled.txt")
-                                : Glib::filename_display_basename(state_.file_path.raw()).raw());
+namespace {
+// Order matches legacy Notepad's Save As encoding combo box.
+constexpr Encoding kSaveEncodingOrder[] = {Encoding::ANSI, Encoding::UTF8, Encoding::UTF8BOM,
+                                            Encoding::UTF16LE, Encoding::UTF16BE};
+} // namespace
 
-  dialog->save(*window_.gtk_window(),
-               [this, dialog, on_done](const Glib::RefPtr<Gio::AsyncResult> &result) {
-                 try {
-                   auto file = dialog->save_finish(result);
-                   if (file) {
-                     Glib::ustring path = file->get_path();
-                     Glib::ustring error;
-                     if (save_file(path, editor_.get_text(), state_.encoding,
-                                    state_.line_ending, error)) {
-                       state_.file_path = path;
-                       state_.modified = false;
-                       update_recent_files(state_.recent_files, path);
-                       settings_.save_recent_files(state_.recent_files);
-                     }
-                   }
-                 } catch (const Glib::Error &) {
-                   // Cancelled or failed; nothing to do.
-                 }
-                 window_.refresh();
-                 if (on_done) {
-                   on_done();
-                 }
-               });
+void Commands::file_save_as(std::function<void()> on_done) {
+  // GtkFileDialog (the GTK4 replacement for GtkFileChooserDialog) has no
+  // extra-widget hook, so the encoding combo that legacy Notepad embedded
+  // directly in its Save As dialog has to be asked separately, up front.
+  GtkStringList *encoding_list = gtk_string_list_new(nullptr);
+  guint selected = 1; // UTF-8 fallback if state_.encoding isn't in the list.
+  for (std::size_t i = 0; i < std::size(kSaveEncodingOrder); ++i) {
+    gtk_string_list_append(encoding_list, encoding_display_name(kSaveEncodingOrder[i]).c_str());
+    if (kSaveEncodingOrder[i] == state_.encoding) {
+      selected = static_cast<guint>(i);
+    }
+  }
+  GtkWidget *dropdown = gtk_drop_down_new(G_LIST_MODEL(encoding_list), nullptr);
+  gtk_drop_down_set_selected(GTK_DROP_DOWN(dropdown), selected);
+
+  AdwDialog *encoding_dialog = adw_alert_dialog_new(_("Encoding"), nullptr);
+  auto *alert = ADW_ALERT_DIALOG(encoding_dialog);
+  adw_alert_dialog_set_extra_child(alert, dropdown);
+  adw_alert_dialog_add_responses(alert, "cancel", _("_Cancel"), "save", _("_Save"), nullptr);
+  adw_alert_dialog_set_response_appearance(alert, "save", ADW_RESPONSE_SUGGESTED);
+  adw_alert_dialog_set_default_response(alert, "save");
+  adw_alert_dialog_set_close_response(alert, "cancel");
+
+  auto *callback = new std::function<void(const Glib::ustring &)>(
+      [this, dropdown, on_done](const Glib::ustring &response) {
+        if (response != "save") {
+          // Cancelled or dismissed: mirror the native save dialog's own
+          // cancel path below, which still refreshes and calls on_done().
+          window_.refresh();
+          if (on_done) {
+            on_done();
+          }
+          return;
+        }
+        guint index = gtk_drop_down_get_selected(GTK_DROP_DOWN(dropdown));
+        Encoding chosen = index < std::size(kSaveEncodingOrder) ? kSaveEncodingOrder[index]
+                                                                 : Encoding::UTF8;
+
+        auto dialog = Gtk::FileDialog::create();
+        dialog->set_title(_("Save As"));
+        dialog->set_initial_name(
+            state_.file_path.empty()
+                ? _("Untitled.txt")
+                : Glib::filename_display_basename(state_.file_path.raw()).raw());
+
+        dialog->save(*window_.gtk_window(),
+                     [this, dialog, chosen, on_done](const Glib::RefPtr<Gio::AsyncResult> &result) {
+                       try {
+                         auto file = dialog->save_finish(result);
+                         if (file) {
+                           Glib::ustring path = file->get_path();
+                           Glib::ustring error;
+                           if (save_file(path, editor_.get_text(), chosen, state_.line_ending,
+                                          error)) {
+                             state_.file_path = path;
+                             state_.encoding = chosen;
+                             state_.modified = false;
+                             update_recent_files(state_.recent_files, path);
+                             settings_.save_recent_files(state_.recent_files);
+                           }
+                         }
+                       } catch (const Glib::Error &) {
+                         // Cancelled or failed; nothing to do.
+                       }
+                       window_.refresh();
+                       if (on_done) {
+                         on_done();
+                       }
+                     });
+      });
+
+  adw_alert_dialog_choose(alert, GTK_WIDGET(window_.gtk_window()->gobj()), nullptr,
+                           alert_dialog_choose_trampoline, callback);
 }
 
 void Commands::file_print() {
